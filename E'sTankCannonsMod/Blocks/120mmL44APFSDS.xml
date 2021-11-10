@@ -172,11 +172,9 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>APFSDShit</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			<!--
-			<TrailEffect>Trail</TrailEffect>
-			-->
+			<TrailEffect>APFSDStrail</TrailEffect>
 			
-			<BulletEffect>apfsdsbulleteffect</BulletEffect>
+			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.1</FuseDelayTime>

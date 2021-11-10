@@ -125,7 +125,7 @@ Check the documentation for more information on how to use modules. -->
 				
 				
 				<Mass>2.0</Mass>
-				<Drag>0.0</Drag>
+				<Drag>0.2</Drag>
 				<AngularDrag>0.2</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>40</EntityDamage>
