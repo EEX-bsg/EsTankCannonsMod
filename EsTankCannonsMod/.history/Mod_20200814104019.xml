@@ -155,22 +155,18 @@
 		<Texture name="metalYellow" path="metal3.png" />
 		<Texture name="metalGreen" path="metal4.png" />
 		<Texture name="metalBlack" path="metal5.png" />
-		<!--専用弾丸テクスチャ-->
+		<!---->
 		<Texture name="88mmShellTex" path="88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="smokegranadeTex.png" />
-		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
 		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" />
-		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
-		<!--サウンド-->
 		<AudioClip name="CannonSound" path="120fire.wav" />
 		<AudioClip name="CannonSound2" path="88fire.wav" />
 		<AudioClip name="HitSound" path="hit.wav" />
 		<AudioClip name="muon" path="muon.wav" />
 		<AudioClip name="granadeShot" path="smokegrabadeshot.wav" />
-		<!--アセット-->
 		<AssetBundle name="tankeffect" path="assets/tank_effect" />
 		<AssetBundle name="tankeffectMac" path="assetsMac/tank_effectmac" />
 	</Resources>
