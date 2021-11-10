@@ -59,6 +59,7 @@ Check the documentation for more information on how to use modules. -->
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="1.0" max="1.0" default="1.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+		<Slider displayName="Fuse Timer" key="fuse-timer" min="10" max="10" default="10" unclamped="false"/>
 	</ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
@@ -155,7 +156,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<DefaultAmmo>115</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
-			<ProjectilesExplode>true</ProjectilesExplode>
+			<ProjectilesExplode>false</ProjectilesExplode>
 			<ExplodeRadius>0.0</ExplodeRadius>
 			<ExplodePower>0.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
@@ -177,6 +178,10 @@ Check the documentation for more information on how to use modules. -->
 			<RecoilMultiplier>3.0</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.02</RandomDiffusion>
+
+			<useTimefuse>true</useTimefuse>
+			<TimefuseSlider key="fuse-timer" />
+			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>50</PoolSize>
 			
@@ -223,9 +228,9 @@ Can be one of "Blunt", "Sharp", "Fire" -->
 <Texture name="metalGrey" /> <!-- Must be defined as a resource
 	in the manifest. -->
 <Icon>
-	<Position x="0.0" y="0.0" z="0.0" />
-	<Rotation x="-45.0" y="-45.0" z="0.0" />
-	<Scale x="0.1" y="0.1" z="0.1" />
+	<Position x="0.2" y="0.2" z="0.0" />
+	<Rotation x="60.0" y="30.0" z="30.0" />
+	<Scale x="0.25" y="0.25" z="0.25" />
 </Icon>
 <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
 to be displayed. The child elements define how and where it is displayed. -->
