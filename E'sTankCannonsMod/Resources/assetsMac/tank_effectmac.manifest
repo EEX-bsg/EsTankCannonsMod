@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3227493288
+CRC: 3478186782
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2e927a25ef65be65e8e5ea83bf06acf5
+    Hash: 376cd535d64297068d3a1e751b0bb88b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 36daabf0a26aaa21fe4dae37acd3e3e0
+    Hash: 6db53008452eeaf774114f5d468567b3
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,6 +21,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
 - Class: 198
   Script: {instanceID: 0}
 - Class: 199
@@ -28,6 +30,7 @@ ClassTypes:
 Assets:
 - Assets/prefab/smoke.prefab
 - Assets/prefab/machinegunbulleteffect.prefab
+- Assets/prefab/heatbulleteffect (1).prefab
 - Assets/prefab/largeExplode.prefab
 - Assets/prefab/tankcannoneffect.prefab
 - Assets/prefab/none.prefab
@@ -39,4 +42,5 @@ Assets:
 - Assets/prefab/ShotEffectMB.prefab
 - Assets/prefab/apfsdsbulleteffect.prefab
 - Assets/prefab/bulleteffect.prefab
+- Assets/prefab/trail.prefab
 Dependencies: []

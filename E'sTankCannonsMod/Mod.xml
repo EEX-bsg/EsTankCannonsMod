@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.0.4</Version>
+	<Version>1.0.5</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
+		v1.0.5 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -97,6 +97,8 @@
 		<Block path="Blocks/152mmL23HE.xml" />
 		<Block path="Blocks/smokegranade.xml" />
 		<Block path="Blocks/antenna.xml" />
+
+		<!--<Block path="Blocks/MedievalCannon.xml" />-->
 	</Blocks>
 	
 	<!-- Any entities (level objects) your mod adds to the game.
@@ -108,6 +110,7 @@
 		<Entity path="Entities/88mmAPCR.xml" />
 		<Entity path="Entities/88mmAntiAir.xml" />
 		<Entity path="Entities/45mmHE.xml" />
+		<Entity path="Entities/45mmAP.xml" />
 		<Entity path="Entities/152mmHE.xml" />
 	</Entities>
 	
@@ -140,6 +143,7 @@
 		<Mesh name="45mmL46" path="45mmL46.obj" />
 		<Mesh name="152mmL23" path="152mmL23.obj" />
 		<Mesh name="smokeGranadeDischarger" path="smokedischarger.obj" />
+		<Mesh name="MedievalCannon" path="MedievalCannon.obj" />
 		<!--弾モデル-->
 		<Mesh name="APFSDS" path="APFSDS.obj" />
 		<Mesh name="HEAT" path="HEAT.obj" />
@@ -148,6 +152,7 @@
 		<Mesh name="45mmShell" path="45mmShell.obj" />
 		<Mesh name="152mmShell" path="152mmShell.obj" />
 		<Mesh name="smokeGranade" path="smokegranade.obj" />
+		<Mesh name="120mmICO球" path="120mmICO球.obj" />
 		<!--その他ブロックモデル-->
 		<Mesh name="antenna" path="antenna.obj" />
 		<!--メタルテクスチャ-->
@@ -159,6 +164,7 @@
 		<!--専用弾丸テクスチャ-->
 		<Texture name="88mmShellTex" path="88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="smokegranadeTex.png" />
+		<Texture name="MedievalCannonTex" path="MedievalCannonTex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
@@ -171,6 +177,8 @@
 		<AudioClip name="HitSound" path="hit.wav" />
 		<AudioClip name="muon" path="muon.wav" />
 		<AudioClip name="granadeShot" path="smokegrabadeshot.wav" />
+		<AudioClip name="MedievalCannonSound" path="MedievalCannonSound.wav" />
+		<AudioClip name="MedievalCannonHitSound" path="MedievalCannonHitSound.wav" />
 		<!--アセット-->
 		<AssetBundle name="tankeffect" path="assets/tank_effect" />
 		<AssetBundle name="tankeffectMac" path="assetsMac/tank_effectmac" />

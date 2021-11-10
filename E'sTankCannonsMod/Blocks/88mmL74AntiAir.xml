@@ -170,11 +170,11 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="tankeffect" />
 			<ExplodeEffect>FLAKexplode</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			<!--
-			<TrailEffect>Trail</TrailEffect>
-			-->
 			
-			<BulletEffect>machinegunbulleteffect</BulletEffect>
+			<TrailEffect>Trail</TrailEffect>
+			
+			
+			<BulletEffect>bulleteffect</BulletEffect>
 			
 
 			

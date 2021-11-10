@@ -123,7 +123,7 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalWhite" />
 				
 				
-				<Mass>3.0</Mass><!--v1.0.3で5.0-->
+				<Mass>2.0</Mass><!--v1.0.3で5.0-->
 				<Drag>0.0</Drag>
 				<AngularDrag>100.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
@@ -156,9 +156,9 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>40</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>0.1</ExplodeRadius>
+			<ExplodeRadius>0.05</ExplodeRadius>
 			<ExplodePower>50.0</ExplodePower>
-			<ExplodeUpPower>100.0</ExplodeUpPower>
+			<ExplodeUpPower>50.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>true</ProjectilesDespawnImmediately>
