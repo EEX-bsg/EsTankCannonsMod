@@ -170,7 +170,6 @@
 		<AudioClip name="HitSound" path="hit.wav" />
 		<AudioClip name="muon" path="muon.wav" />
 		<AudioClip name="granadeShot" path="smokegrabadeshot.wav" />
-		<!--アセット-->
 		<AssetBundle name="tankeffect" path="assets/tank_effect" />
 		<AssetBundle name="tankeffectMac" path="assetsMac/tank_effectmac" />
 	</Resources>
