@@ -133,6 +133,12 @@ Check the documentation for more information on how to use modules. -->
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
+				<BounceCombineType>Average</BounceCombineType>
+				<BounceStr>0.0</BounceStr>
+				<!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+				<FrictionCombineType>Average</FrictionCombineType>
+				<FrictionStr>10.0</FrictionStr>
+				
 			</ShootingState>
 			
 			<FireKey key="fire" />
@@ -168,6 +174,9 @@ Check the documentation for more information on how to use modules. -->
 			<ExplodeEffect>smallExplode</ExplodeEffect>
 			<ShotFlashEffect>flash</ShotFlashEffect>
 
+			<RandomDiffusion>0.01</RandomDiffusion>
+			<RandomFuseInterval>0.05</RandomFuseInterval>
+			<FuseDelayTime>0.0</FuseDelayTime>
 			
 			<RecoilMultiplier>0.1</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>

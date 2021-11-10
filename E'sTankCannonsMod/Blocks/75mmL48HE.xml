@@ -132,6 +132,12 @@ Check the documentation for more information on how to use modules. -->
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
+				<BounceCombineType>Minimum</BounceCombineType>
+				<BounceStr>0.0</BounceStr>
+				<!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+				<FrictionCombineType>Average</FrictionCombineType>
+				<FrictionStr>10.0</FrictionStr>
+				
 			</ShootingState>
 			
 			<FireKey key="fire" />
@@ -156,7 +162,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>40</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>3.5</ExplodeRadius>
+			<ExplodeRadius>4.0</ExplodeRadius>
 			<ExplodePower>50.0</ExplodePower>
 			<ExplodeUpPower>10.0</ExplodeUpPower>
 			
@@ -168,7 +174,8 @@ Check the documentation for more information on how to use modules. -->
 			<ShotFlashEffect>ShotEffectMB</ShotFlashEffect>
 			<BulletEffect>bulleteffect</BulletEffect>
 			
-
+			<RandomFuseInterval>0.0</RandomFuseInterval>
+			<FuseDelayTime>0.0</FuseDelayTime>
 			
 			<RecoilMultiplier>0.8</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>

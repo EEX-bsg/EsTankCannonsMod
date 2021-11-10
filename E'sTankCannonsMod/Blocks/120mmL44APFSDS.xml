@@ -123,7 +123,7 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalWhite" />
 				
 				
-				<Mass>1.9</Mass><!--v1.0.3で5.0 v1.1.1で2.0-->
+				<Mass>0.7</Mass><!--v1.0.3で5.0 v1.1.1で2.0-->
 				<Drag>0.0</Drag>
 				<AngularDrag>100.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
@@ -131,6 +131,12 @@ Check the documentation for more information on how to use modules. -->
 				<BlockDamage>20</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
+				
+				<BounceCombineType>Minimum</BounceCombineType>
+				<BounceStr>0.01</BounceStr>
+				<!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+				<FrictionCombineType>Average</FrictionCombineType>
+				<FrictionStr>20.0</FrictionStr>
 				
 			</ShootingState>
 			
@@ -157,8 +163,8 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>0.05</ExplodeRadius>
-			<ExplodePower>50.0</ExplodePower>
-			<ExplodeUpPower>50.0</ExplodeUpPower>
+			<ExplodePower>30.0</ExplodePower>
+			<ExplodeUpPower>30.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>true</ProjectilesDespawnImmediately>
@@ -172,7 +178,8 @@ Check the documentation for more information on how to use modules. -->
 			
 			<BulletEffect>apfsdsbulleteffect</BulletEffect>
 			
-
+			<RandomFuseInterval>0.0</RandomFuseInterval>
+			<FuseDelayTime>0.1</FuseDelayTime>
 			
 			<RecoilMultiplier>0.25</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
