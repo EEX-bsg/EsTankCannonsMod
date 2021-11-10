@@ -123,12 +123,12 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalBlack" />
 				
 				
-				<Mass>1.0</Mass>
+				<Mass>1.5</Mass>
 				<Drag>0.7</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>100</EntityDamage>
-				<BlockDamage>0.3</BlockDamage>
+				<BlockDamage>100.3</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>Continuous</CollisionTypeS>
 				
@@ -156,8 +156,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>42</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>0.0</ExplodeRadius>
-			<ExplodePower>0.0</ExplodePower>
+			<ExplodeRadius>1.0</ExplodeRadius>
+			<ExplodePower>0.1</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
