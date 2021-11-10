@@ -16,17 +16,17 @@ to assist in positioning them correctly.
 The ID must be unique among blocks in your mod.
 It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
-<ID>9</ID>
+<ID>13</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>152mmL23HE</Name>
+<Name>75mmL48AP</Name>
 <!-- TODO: Change the mass to something appropriate -->
-<Mass>2.0</Mass>
+<Mass>1.0</Mass>
 <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
 <SearchKeywords>
-	<Keyword>Es,152,he,es,l23</Keyword>
+	<Keyword>Es,75,he,es,l48</Keyword>
 </SearchKeywords>
 <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -55,10 +55,11 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="500" max="500" default="500 " unclamped="false"/>
+		<Slider displayName="Power" key="power" min="750" max="750" default="750" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.10" max="0.10" default="0.10" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.5" max="0.5" default="0.5" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+		<Slider displayName="Fuse Timer" key="fuse-timer" min="10" max="10" default="10" unclamped="false"/>
 	</ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
@@ -110,25 +111,25 @@ Check the documentation for more information on how to use modules. -->
 				<CapsuleCollider>
 					<Position x="0.0" y="0.0" z="0.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
-					<Capsule direction="X" radius="0.152" height="0.6" />
+					<Capsule direction="X" radius="0.075" height="0.30" />
 				</CapsuleCollider>
 			</Colliders>
 				
-				<Mesh name="152mmShell"> 
+				<Mesh name="75mmShell"> 
 					<Position x="0.0" y="0.0" z="-0.1" />
 					<Rotation x="0.0" y="-90.0" z="0.0" />
 					<Scale x="2.0" y="2.0" z="2.0" />
 				</Mesh>
 				
-				<Texture name="metalYellow" />
+				<Texture name="metalBlack" />
 				
 				
-				<Mass>2.3</Mass><!--v1.0.3で3.0-->
-				<Drag>0.3</Drag>
+				<Mass>2.0</Mass>
+				<Drag>0.0</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
-				<EntityDamage>20</EntityDamage>
-				<BlockDamage>50.0</BlockDamage>
+				<EntityDamage>40</EntityDamage>
+				<BlockDamage>1.0</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
@@ -140,43 +141,43 @@ Check the documentation for more information on how to use modules. -->
 			<HoldToShootToggle key="hold-to-shoot" />
 			
 			<ProjectileStart>
-				<Position x="0.0" y="-7.8" z="0.5" />
+				<Position x="0.0" y="-8.5" z="0.5" />
 				<Rotation x="90.0" y="0.0" z="0.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
 			
 			<ShotFlashPosition>
-				<Position x="0.0" y="-7.3" z="0.5" />
+				<Position x="0.0" y="-8.3" z="0.5" />
 				<Rotation x="90.0" y="0.0" z="0.0" />
 				<Scale x="2.0" y="2.0" z="2.0" />
 			</ShotFlashPosition>
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>8</DefaultAmmo>
+			<DefaultAmmo>40</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
-			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>7.0</ExplodeRadius>
-			<ExplodePower>500.0</ExplodePower>
-			<ExplodeUpPower>1000.0</ExplodeUpPower>
+			<ProjectilesExplode>false</ProjectilesExplode>
+			<ExplodeRadius>0.0</ExplodeRadius>
+			<ExplodePower>0.0</ExplodePower>
+			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>largeExplode</ExplodeEffect>
-			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			<!--
-			<TrailEffect>Trail</TrailEffect>
-			-->
-			
+			<ExplodeEffect>APFSDShit</ExplodeEffect>
+			<ShotFlashEffect>ShotEffectMB</ShotFlashEffect>
 			<BulletEffect>bulleteffect</BulletEffect>
 			
 
 			
-			<RecoilMultiplier>1.5</RecoilMultiplier>
+			<RecoilMultiplier>0.3</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.02</RandomDiffusion>
+			<RandomDiffusion>0.005</RandomDiffusion>
+
+			<useTimefuse>true</useTimefuse>
+			<TimefuseSlider key="fuse-timer" />
+			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>50</PoolSize>
 			
@@ -213,7 +214,7 @@ The Trigger element is optional. -->
 <!-- Optionally specify type of damage done to entities.
 Can be one of "Blunt", "Sharp", "Fire" -->
 <!-- <DamageType>Blunt</DamageType> -->
-<Mesh name="152mmL23"> 
+<Mesh name="75mmL48"> 
 	<!-- Must be defined as a resource in the
 	manifest. -->
 	<Position x="0.0" y="0.4" z="0.5" />
@@ -270,9 +271,9 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
 	<CapsuleCollider>
-		<Position x="0.0" y="-3.7" z="0.5" />
+		<Position x="0.0" y="-3.8" z="0.5" />
 		<Rotation x="90.0" y="90.0" z="90.0" />
-		<Capsule direction="Z" radius="0.34" height="7.0" />
+		<Capsule direction="Z" radius="0.24" height="7.5" />
 	</CapsuleCollider>
 </Colliders>
 <BasePoint hasAddingPoint="false">

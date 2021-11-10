@@ -156,7 +156,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>115</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>3.0</ExplodeRadius>
+			<ExplodeRadius>2.5</ExplodeRadius>
 			<ExplodePower>20.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
@@ -223,9 +223,9 @@ Can be one of "Blunt", "Sharp", "Fire" -->
 <Texture name="metalGrey" /> <!-- Must be defined as a resource
 	in the manifest. -->
 <Icon>
-	<Position x="0.0" y="0.0" z="0.0" />
-	<Rotation x="-45.0" y="-45.0" z="0.0" />
-	<Scale x="0.1" y="0.1" z="0.1" />
+	<Position x="0.2" y="0.2" z="0.0" />
+	<Rotation x="60.0" y="30.0" z="30.0" />
+	<Scale x="0.25" y="0.25" z="0.25" />
 </Icon>
 <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
 to be displayed. The child elements define how and where it is displayed. -->
