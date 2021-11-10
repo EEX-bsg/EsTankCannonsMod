@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.5</Version>
+	<Version>1.1.6</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.5 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
+		v1.1.6 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -82,7 +82,8 @@
 	<Assemblies>
 		<!-- <Assembly path="SomeAssembly.dll" /> -->
 		<!-- <ScriptAssembly path="SomeAssembly/" /> -->
-		<Assembly path="warning.dll" />
+		<Assembly path="modchecker.dll" />
+		<Assembly path="EsTankCannonsMod.dll" />
 	</Assemblies>
 	
 	<!-- Any blocks your mod adds to the game.
@@ -206,6 +207,7 @@
 		<AudioClip name="MedievalCannonHitSound" path="MedievalCannonHitSound.wav" />
 		<AudioClip name="machinegunfire" path="machinegunfire.wav" />
 		<AudioClip name="machinegunhit" path="machinegunhit.wav" />
+		<AudioClip name="nice" path="nice.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
