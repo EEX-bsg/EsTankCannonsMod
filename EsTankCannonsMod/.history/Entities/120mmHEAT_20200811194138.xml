@@ -1,0 +1,33 @@
+<Entity>
+
+	<Name>120mmHEAT</Name>
+
+	<ID>2</ID>
+	
+
+	<Debug>false</Debug>
+
+	<Colliders>
+		<CapsuleCollider>
+			<Position x="0.0" y="0.0" z="0.0" />
+			<Rotation x="0.0" y="90.0" z="0.0" />
+			<Capsule direction="X" radius="0.12" height="1.0" />
+		</CapsuleCollider>
+	</Colliders>
+	
+	<Mesh name="HEAT"> 
+		<Position x="0.0" y="0.0" z="0.0" />
+		<Rotation x="0.0" y="0.0" z="0.0" />
+		<Scale x="1.0" y="1.0" z="1.0" />
+	</Mesh>
+	
+	<Texture name="metalGreen" /> 
+	
+	<Icon name="120mmAPFSDS" />
+
+	<Category>Weaponry</Category>
+	
+	<Scale canScale="true" uniformScale="false" />
+	<CanPick>true</CanPick>
+    <ShowPhysicsToggle>false</ShowPhysicsToggle>
+</Entity>
