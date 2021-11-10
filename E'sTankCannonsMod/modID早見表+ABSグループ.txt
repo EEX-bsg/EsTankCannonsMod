@@ -29,4 +29,3 @@ ABSグループ
 ・45mmL46HE,45mmL46AP
 ・20mmL65HE,12.7mmMachineGunHE,12.7mmMachineGunT
 ・antenna,RedBigFlag,RedSmallFlag,BlueBigFlag,BlueSmallFlag
-・バニラ大砲,MedievalCannon

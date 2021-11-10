@@ -157,12 +157,12 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>1</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>false</ProjectilesExplode>
-			<ExplodeRadius>2.0</ExplodeRadius>
+			<ExplodeRadius>3.0</ExplodeRadius>
 			<ExplodePower>10.0</ExplodePower>
-			<ExplodeUpPower>0.0</ExplodeUpPower>
+			<ExplodeUpPower>5.0</ExplodeUpPower>
 			
-			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
-			<ProjectilesDespawnImmediately>true</ProjectilesDespawnImmediately>
+			<SupportsExplosionGodTool>true</SupportsExplosionGodTool>
+			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>smallExplode</ExplodeEffect>
