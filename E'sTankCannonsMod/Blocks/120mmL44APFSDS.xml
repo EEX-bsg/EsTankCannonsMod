@@ -172,7 +172,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>APFSDShit</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			<TrailEffect>APFSDStrail</TrailEffect>
+			<TrailEffect>Trail</TrailEffect>
 			
 			<BulletEffect>bulleteffect</BulletEffect>
 			
