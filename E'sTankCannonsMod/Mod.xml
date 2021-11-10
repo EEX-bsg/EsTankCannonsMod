@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.12</Version>
+	<Version>1.1.13</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.12 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.1.13 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -89,28 +89,28 @@
 	<!-- Any blocks your mod adds to the game.
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
-		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />-->
-		<Block path="Blocks/152mmL23HE.xml" />
-		<Block path="Blocks/120mmL44APFSDS.xml" />
-		<Block path="Blocks/120mmL44HEATFS.xml" />
-		<Block path="Blocks/88mmL74AntiAir.xml" />
-		<Block path="Blocks/88mmL74APCR.xml" />
-		<Block path="Blocks/75mmL48HE.xml" />
-		<Block path="Blocks/75mmL48AP.xml" />
-		<Block path="Blocks/75mmL24HEAT.xml" />
-		<Block path="Blocks/45mmL46HE.xml" />
-		<Block path="Blocks/45mmL46AP.xml" />
-		<Block path="Blocks/20mmL65HE.xml" />
-		<Block path="Blocks/12.7mmMachineGunHE.xml" />
-		<Block path="Blocks/12.7mmMachineGunT.xml" />
-		<Block path="Blocks/medievalCannon.xml" />
-		<Block path="Blocks/smokegranade.xml" />
-		<Block path="Blocks/antenna.xml" />
-		<!--<Block path="Blocks/nightvision.xml" />-->
-		<Block path="Blocks/redBigFlag.xml" />
-		<Block path="Blocks/blueBigFlag.xml" />
-		<Block path="Blocks/redSmallFlag.xml" />
-		<Block path="Blocks/blueSmallFlag.xml" />
+		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
+		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
+		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
+		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
+		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
+		<Block path="Blocks/88mmL74APCR.xml" /><!--blockid:#6-->
+		<Block path="Blocks/75mmL48HE.xml" /><!--blockid:#12-->
+		<Block path="Blocks/75mmL48AP.xml" /><!--blockid:#13-->
+		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
+		<Block path="Blocks/45mmL46HE.xml" /><!--blockid:#7-->
+		<Block path="Blocks/45mmL46AP.xml" /><!--blockid:#8-->
+		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
+		<Block path="Blocks/12.7mmMachineGunHE.xml" /><!--blockid:#19-->
+		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
+		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
+		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
+		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
+		<!--<Block path="Blocks/nightvision.xml" />--><!--blockid:#21-->
+		<Block path="Blocks/redBigFlag.xml" /><!--blockid:#14-->
+		<Block path="Blocks/blueBigFlag.xml" /><!--blockid:#15-->
+		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
+		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
 
 	</Blocks>
 	
@@ -178,6 +178,7 @@
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
 		<Mesh name="core" path="Models/startblock.obj" />
+		<Mesh name="bomb01" path="Models/bomb01.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
@@ -190,6 +191,7 @@
 		<Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
 		<!--その他のテクスチャ-->
 		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
+		<Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
 		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
@@ -212,6 +214,8 @@
 		<AudioClip name="machinegunfire" path="Sounds/machinegunfire.wav" />
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
+		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
+		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
