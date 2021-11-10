@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.0.6</Version>
+	<Version>1.0.7</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.0.6 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
+		v1.0.7 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -89,7 +89,7 @@
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
 		<Block path="Blocks/120mmL44APFSDS.xml" />
-		<Block path="Blocks/120mmL44HEAT.xml" />
+		<Block path="Blocks/120mmL44HEATFS.xml" />
 		<Block path="Blocks/88mmL74AntiAir.xml" />
 		<Block path="Blocks/88mmL74APCR.xml" />
 		<Block path="Blocks/45mmL46HE.xml" />
@@ -106,7 +106,7 @@
 	<Entities>
 		<!-- <Entity path="SomeEntity.xml" /> -->
 		<Entity path="Entities/120mmAPFSDS.xml" />
-		<Entity path="Entities/120mmHEAT.xml" />
+		<Entity path="Entities/120mmHEATFS.xml" />
 		<Entity path="Entities/88mmAPCR.xml" />
 		<Entity path="Entities/88mmAntiAir.xml" />
 		<Entity path="Entities/45mmHE.xml" />
@@ -146,7 +146,7 @@
 		<Mesh name="MedievalCannon" path="MedievalCannon.obj" />
 		<!--弾モデル-->
 		<Mesh name="APFSDS" path="APFSDS.obj" />
-		<Mesh name="HEAT" path="HEAT.obj" />
+		<Mesh name="HEATFS" path="HEATFS.obj" />
 		<Mesh name="88mmShell" path="88mmShell.obj" />
 		<Mesh name="88mmAPCR" path="88mmAPCR.obj" />
 		<Mesh name="45mmShell" path="45mmShell.obj" />
