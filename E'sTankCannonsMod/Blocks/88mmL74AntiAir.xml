@@ -167,7 +167,7 @@ Check the documentation for more information on how to use modules. -->
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>True</ProjectilesDespawnImmediately>
 			
-			<AssetBundleName name="tankeffect" />
+			<AssetBundleName name="myasset" />
 			<ExplodeEffect>FLAKexplode</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
 			
