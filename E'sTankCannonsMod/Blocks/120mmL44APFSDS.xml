@@ -163,7 +163,7 @@ Check the documentation for more information on how to use modules. -->
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>true</ProjectilesDespawnImmediately>
 			
-			<AssetBundleName name="tankeffect" />
+			<AssetBundleName name="myasset" />
 			<ExplodeEffect>APFSDShit</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
 			<!--
