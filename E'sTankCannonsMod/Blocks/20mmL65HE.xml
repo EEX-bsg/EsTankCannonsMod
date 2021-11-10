@@ -124,7 +124,7 @@ Check the documentation for more information on how to use modules. -->
 				
 				
 				<Mass>0.05</Mass>
-				<Drag>0.1</Drag>
+				<Drag>0.6</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>10</EntityDamage>
@@ -163,7 +163,7 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>2.0</ExplodeRadius>
-			<ExplodePower>5.0</ExplodePower>
+			<ExplodePower>10.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -178,7 +178,7 @@ Check the documentation for more information on how to use modules. -->
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.0</FuseDelayTime>
 			
-			<RecoilMultiplier>0.5</RecoilMultiplier>
+			<RecoilMultiplier>0.2</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.005</RandomDiffusion>
 			
