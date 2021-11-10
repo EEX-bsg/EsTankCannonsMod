@@ -20,7 +20,7 @@ The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <!-- Name of the block, shown in the user interface. -->
 <Name>120mmL44HEAT</Name>
 <!-- TODO: Change the mass to something appropriate -->
-<Mass>2.0</Mass>
+<Mass>5.0</Mass>
 <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="700" max="700" default="700" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.25" max="0.25" default="0.25" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.20" max="0.20" default="0.20" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 	</ModuleMapperTypes>
 <Modules>
@@ -122,7 +122,7 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalGreen" />
 				
 				
-				<Mass>2.0</Mass>
+				<Mass>1.0</Mass>
 				<Drag>0.1</Drag>
 				<AngularDrag>100.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
@@ -156,7 +156,7 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>4.0</ExplodeRadius>
-			<ExplodePower>2000.0</ExplodePower>
+			<ExplodePower>500.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>

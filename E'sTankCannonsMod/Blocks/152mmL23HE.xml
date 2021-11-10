@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="500" max="500" default="500 " unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.09" max="0.09" default="0.09" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.10" max="0.10" default="0.10" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 	</ModuleMapperTypes>
 <Modules>
@@ -123,8 +123,8 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalYellow" />
 				
 				
-				<Mass>3.0</Mass>
-				<Drag>0.5</Drag>
+				<Mass>2.3</Mass><!--v1.0.3で3.0-->
+				<Drag>0.3</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>20</EntityDamage>
