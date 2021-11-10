@@ -50,6 +50,7 @@ namespace ETCM
             yield return new WaitForSeconds(1f);
             //Guid‚É‚Í‚ÍŽ©•ª‚ÌMod.xml“à‚ÌID‚ð“ü‚ê‚é‚±‚Æ
             Mod.Log("Version " + Mods.GetVersion(new Guid("50e63b55-b976-4009-82ab-66f989218122")));
+            Mod.Log("April Foooooooooooooooool's");
         }
         public void Awake()
         {
