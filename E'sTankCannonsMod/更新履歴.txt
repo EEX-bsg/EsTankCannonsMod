@@ -33,7 +33,6 @@ v1.0.5
 120mmL44APFSDS　下方修正(砲弾重量　炸裂威力　炸裂範囲)
 88mmL74APCR　上方修正(砲弾重量　炸裂範囲　炸裂威力)
 エフェクトの変更修正
-]utyu・|Sq~~~惣D､協S想のシークレット追加
 ※v1.1で追加する砲を見据えた変更
 
 v1.0.6
@@ -45,3 +44,19 @@ smokeのエフェクトの変更
 射撃のエフェクトの変更(一部除く)
 着弾のエフェクトの変更(一部除く)
 120mmL44HEATを120mmL44HEATFSに変更
+
+v1.1.0　大型アップデート
+45mmL46HE　下方修正(炸裂範囲)
+88mmL74AntiAir 下方修正(砲弾コライダー)
+88mmL74APCR 上方修正(砲重量　炸裂威力　上方炸裂威力)
+12.7mmMachineGunHE　追加
+12.7mmMachineGunT　追加
+75mmL48HE　追加
+75mmL48AP　追加
+75mmL24HEAT　追加
+MedievalCannon　追加
+BlueBigFlag　追加
+RedBigFlag　追加
+BlueSmallFlag　追加
+RedeSmallFlag　追加
+NightVision　追加
