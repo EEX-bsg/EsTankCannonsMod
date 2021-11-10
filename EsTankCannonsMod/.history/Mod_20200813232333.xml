@@ -9,7 +9,7 @@
 	<Name>EsTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.0.2</Version>
+	<Version>1.0.1</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
@@ -133,13 +133,10 @@
 		 You also need to list resources used in your Blocks and Entities.
 		 Available resource types are Mesh, Texture, AudioClip, and AssetBundle. -->
 	<Resources>
-		<!--砲モデル-->
 		<Mesh name="120mmL44" path="120mmL44.obj" />
 		<Mesh name="88mmL74" path="88mmL74.obj" />
 		<Mesh name="45mmL46" path="45mmL46.obj" />
 		<Mesh name="152mmL23" path="152mmL23.obj" />
-		<Mesh name="smokeGranadeDischarger" path="smokedischarger.obj" />
-		<!--弾モデル-->
 		<Mesh name="APFSDS" path="APFSDS.obj" />
 		<Mesh name="HEAT" path="HEAT.obj" />
 		<Mesh name="88mmShell" path="88mmShell.obj" />
@@ -147,32 +144,26 @@
 		<Mesh name="45mmShell" path="45mmShell.obj" />
 		<Mesh name="152mmShell" path="152mmShell.obj" />
 		<Mesh name="smokeGranade" path="smokegranade.obj" />
-		<!--その他ブロックモデル-->
 		<Mesh name="antenna" path="antenna.obj" />
-		<!--メタルテクスチャ-->
+		<Mesh name="smokeGranadeDischarger" path="smokedischarger.obj" />
 		<Texture name="metalGrey" path="metal1.png" />
 		<Texture name="metalWhite" path="metal2.png" />
 		<Texture name="metalYellow" path="metal3.png" />
 		<Texture name="metalGreen" path="metal4.png" />
 		<Texture name="metalBlack" path="metal5.png" />
-		<!--専用弾丸テクスチャ-->
 		<Texture name="88mmShellTex" path="88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="smokegranadeTex.png" />
-		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
 		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" />
-		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
-		<!--サウンド-->
 		<AudioClip name="CannonSound" path="120fire.wav" />
 		<AudioClip name="CannonSound2" path="88fire.wav" />
 		<AudioClip name="HitSound" path="hit.wav" />
 		<AudioClip name="muon" path="muon.wav" />
 		<AudioClip name="granadeShot" path="smokegrabadeshot.wav" />
-		<!--アセット-->
 		<AssetBundle name="tankeffect" path="assets/tank_effect" />
-		<AssetBundle name="tankeffectMac" path="assetsMac/tank_effectmac" />
+		<AssetBundle name="tankeffectMac" path="assets/tank_effect" />
 	</Resources>
 
 
