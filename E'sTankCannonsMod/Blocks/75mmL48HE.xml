@@ -59,7 +59,7 @@ Check the documentation for more information on how to use modules. -->
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.33" max="0.33" default="0.33" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
-	</ModuleMapperTypes>
+</ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		<BlockState>

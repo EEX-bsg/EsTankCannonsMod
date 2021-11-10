@@ -53,8 +53,18 @@ These behaviours are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
+<ModuleMapperTypes>
+	<Key displayName="say nice(Pre)" key="play" default="None" /> 
+</ModuleMapperTypes>
 
 <Modules>
+	<ETCMSoundBlockModule modid="50e63b55-b976-4009-82ab-66f989218122">
+		<PlayKey key="play" />
+		<Sounds>
+			<AudioClip name="nice" />
+		</Sounds>
+	</ETCMSoundBlockModule>
+
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		<BlockState>
 			<!-- Deault = 15000.if set 0,become infinity -->
