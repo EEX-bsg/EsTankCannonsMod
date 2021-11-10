@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.8</Version>
+	<Version>1.1.9</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.8 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
+		April Fooooooooool's!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -89,6 +89,7 @@
 	<!-- Any blocks your mod adds to the game.
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
+		<Block path="Blocks/50000mmL0.036-typeCore.xml" />
 		<Block path="Blocks/152mmL23HE.xml" />
 		<Block path="Blocks/120mmL44APFSDS.xml" />
 		<Block path="Blocks/120mmL44HEATFS.xml" />
@@ -176,6 +177,7 @@
 		<Mesh name="bigFlag" path="big_flag.obj" />
 		<Mesh name="GunMount" path="GunMount.obj" />
 		<Mesh name="Nightvision" path="Nightvision.obj" />
+		<Mesh name="core" path="startblock.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="metal1.png" />
 		<Texture name="metalWhite" path="metal2.png" />
@@ -191,6 +193,8 @@
 		<Texture name="redBigFlagTex" path="red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="blue_big_flag.png" />
 		<Texture name="NightvisionTex" path="Nightvision.png" />
+		<Texture name="coreTex" path="startblocktex_png.png" />
+		<Texture name="rainbow" path="rainbow.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
