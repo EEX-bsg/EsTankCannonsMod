@@ -128,8 +128,8 @@ Check the documentation for more information on how to use modules. -->
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>100</EntityDamage>
-				<BlockDamage>100.3</BlockDamage>
-				<Attaches>false</Attaches>
+				<BlockDamage>1000.0</BlockDamage>
+				<Attaches>true</Attaches>
 				<CollisionTypeS>Continuous</CollisionTypeS>
 				
 			</ShootingState>
@@ -157,8 +157,8 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>1.0</ExplodeRadius>
-			<ExplodePower>0.1</ExplodePower>
-			<ExplodeUpPower>0.0</ExplodeUpPower>
+			<ExplodePower>3.0E30</ExplodePower>
+			<ExplodeUpPower>3.0E30</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
@@ -167,7 +167,7 @@ Check the documentation for more information on how to use modules. -->
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
 			<!--
-			<TrailEffect>Trail</TrailEffect>
+			<TrailEffect>trail</TrailEffect>
 			-->
 			
 			<BulletEffect>bulleteffect</BulletEffect>
