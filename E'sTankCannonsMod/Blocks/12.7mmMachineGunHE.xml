@@ -209,7 +209,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>1.0</ExplodeRadius>
+			<ExplodeRadius>0.5</ExplodeRadius>
 			<ExplodePower>5.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
@@ -291,7 +291,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>1.0</ExplodeRadius>
+			<ExplodeRadius>0.5</ExplodeRadius>
 			<ExplodePower>5.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
@@ -346,7 +346,7 @@ Check the documentation for more information on how to use modules. -->
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>10</EntityDamage>
-				<BlockDamage>0.3</BlockDamage>
+				<BlockDamage>10</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
@@ -433,7 +433,7 @@ Check the documentation for more information on how to use modules. -->
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>10</EntityDamage>
-				<BlockDamage>0.3</BlockDamage>
+				<BlockDamage>10</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
