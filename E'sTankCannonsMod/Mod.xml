@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.9</Version>
+	<Version>1.1.12</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.9 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod". <!-- FIX: Insert a short description here. -->
+		v1.1.12 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -89,6 +89,7 @@
 	<!-- Any blocks your mod adds to the game.
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
+		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />-->
 		<Block path="Blocks/152mmL23HE.xml" />
 		<Block path="Blocks/120mmL44APFSDS.xml" />
 		<Block path="Blocks/120mmL44HEATFS.xml" />
@@ -150,47 +151,50 @@
 		 Available resource types are Mesh, Texture, AudioClip, and AssetBundle. -->
 	<Resources>
 		<!--砲モデル-->
-		<Mesh name="120mmL44" path="120mmL44.obj" />
-		<Mesh name="88mmL74" path="88mmL74.obj" />
-		<Mesh name="45mmL46" path="45mmL46.obj" />
-		<Mesh name="152mmL23" path="152mmL23.obj" />
-		<Mesh name="20mmL65" path="20mmL65.obj" />
-		<Mesh name="75mmL48" path="75mmL48.obj" />
-		<Mesh name="75mmL24" path="75mmL24.obj" />
-		<Mesh name="12.7mmMachineGun" path="12.7mmMachineGun.obj" />
-		<Mesh name="smokeGranadeDischarger" path="smokedischarger.obj" />
-		<Mesh name="MedievalCannon" path="MedievalCannon.obj" />
+		<Mesh name="120mmL44" path="Models/120mmL44.obj" />
+		<Mesh name="88mmL74" path="Models/88mmL74.obj" />
+		<Mesh name="45mmL46" path="Models/45mmL46.obj" />
+		<Mesh name="152mmL23" path="Models/152mmL23.obj" />
+		<Mesh name="20mmL65" path="Models/20mmL65.obj" />
+		<Mesh name="75mmL48" path="Models/75mmL48.obj" />
+		<Mesh name="75mmL24" path="Models/75mmL24.obj" />
+		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
+		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
+		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
 		<!--弾モデル-->
-		<Mesh name="APFSDS" path="APFSDS.obj" />
-		<Mesh name="HEATFS" path="HEATFS.obj" />
-		<Mesh name="88mmShell" path="88mmShell.obj" />
-		<Mesh name="88mmAPCR" path="88mmAPCR.obj" />
-		<Mesh name="45mmShell" path="45mmShell.obj" />
-		<Mesh name="152mmShell" path="152mmShell.obj" />
-		<Mesh name="20mmShell" path="20mmShell.obj" />
-		<Mesh name="75mmShell" path="75mmShell.obj" />
-		<Mesh name="smokeGranade" path="smokegranade.obj" />
-		<Mesh name="120mmICO球" path="120mmICO球.obj" />
+		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
+		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
+		<Mesh name="88mmShell" path="Models/88mmShell.obj" />
+		<Mesh name="88mmAPCR" path="Models/88mmAPCR.obj" />
+		<Mesh name="45mmShell" path="Models/45mmShell.obj" />
+		<Mesh name="152mmShell" path="Models/152mmShell.obj" />
+		<Mesh name="20mmShell" path="Models/20mmShell.obj" />
+		<Mesh name="75mmShell" path="Models/75mmShell.obj" />
+		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
+		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
 		<!--その他ブロックモデル-->
-		<Mesh name="antenna" path="antenna.obj" />
-		<Mesh name="bigFlag" path="big_flag.obj" />
-		<Mesh name="GunMount" path="GunMount.obj" />
-		<Mesh name="Nightvision" path="Nightvision.obj" />
+		<Mesh name="antenna" path="Models/antenna.obj" />
+		<Mesh name="bigFlag" path="Models/big_flag.obj" />
+		<Mesh name="GunMount" path="Models/GunMount.obj" />
+		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
+		<Mesh name="core" path="Models/startblock.obj" />
 		<!--メタルテクスチャ-->
-		<Texture name="metalGrey" path="metal1.png" />
-		<Texture name="metalWhite" path="metal2.png" />
-		<Texture name="metalYellow" path="metal3.png" />
-		<Texture name="metalGreen" path="metal4.png" />
-		<Texture name="metalBlack" path="metal5.png" />
+		<Texture name="metalGrey" path="Textures/metal1.png" />
+		<Texture name="metalWhite" path="Textures/metal2.png" />
+		<Texture name="metalYellow" path="Textures/metal3.png" />
+		<Texture name="metalGreen" path="Textures/metal4.png" />
+		<Texture name="metalBlack" path="Textures/metal5.png" />
 		<!--専用弾丸テクスチャ-->
-		<Texture name="88mmShellTex" path="88mmShellTex.png" />
-		<Texture name="smokeGranadeTex" path="smokegranadeTex.png" />
-		<Texture name="MedievalCannonTex" path="MedievalCannonTex.png" />
+		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
+		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
+		<Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
 		<!--その他のテクスチャ-->
-		<Texture name="12.7mmMachineGunTex" path="12.7mmMachineGun.png" />
-		<Texture name="redBigFlagTex" path="red_big_flag.png" />
-		<Texture name="blueBigFlagTex" path="blue_big_flag.png" />
-		<Texture name="NightvisionTex" path="Nightvision.png" />
+		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
+		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
+		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
+		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
+		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
+		<Texture name="rainbow" path="Textures/rainbow.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
@@ -198,16 +202,16 @@
 		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--サウンド-->
-		<AudioClip name="CannonSound" path="120fire.wav" />
-		<AudioClip name="CannonSound2" path="88fire.wav" />
-		<AudioClip name="HitSound" path="hit.wav" />
-		<AudioClip name="muon" path="muon.wav" />
-		<AudioClip name="granadeShot" path="smokegrabadeshot.wav" />
-		<AudioClip name="MedievalCannonSound" path="MedievalCannonSound.wav" />
-		<AudioClip name="MedievalCannonHitSound" path="MedievalCannonHitSound.wav" />
-		<AudioClip name="machinegunfire" path="machinegunfire.wav" />
-		<AudioClip name="machinegunhit" path="machinegunhit.wav" />
-		<AudioClip name="nice" path="nice.wav" />
+		<AudioClip name="CannonSound" path="Sounds/120fire.wav" />
+		<AudioClip name="CannonSound2" path="Sounds/88fire.wav" />
+		<AudioClip name="HitSound" path="Sounds/hit.wav" />
+		<AudioClip name="muon" path="Sounds/muon.wav" />
+		<AudioClip name="granadeShot" path="Sounds/smokegrabadeshot.wav" />
+		<AudioClip name="MedievalCannonSound" path="Sounds/MedievalCannonSound.wav" />
+		<AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
+		<AudioClip name="machinegunfire" path="Sounds/machinegunfire.wav" />
+		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
+		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />

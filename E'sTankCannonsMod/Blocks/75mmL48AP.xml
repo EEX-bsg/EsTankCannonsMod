@@ -160,7 +160,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>40</DefaultAmmo>
+			<DefaultAmmo>20</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>false</ProjectilesExplode>
 			<ExplodeRadius>0.0</ExplodeRadius>
