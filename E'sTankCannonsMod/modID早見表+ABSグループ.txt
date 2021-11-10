@@ -21,6 +21,7 @@
 19: 12.7mmMachineGunHE
 20: 12.7mmMachineGunT
 21: (削除:Nightvision)
+22: (削除:100000mmL0.036-typeCore)
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE
