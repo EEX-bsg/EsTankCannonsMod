@@ -133,7 +133,7 @@ Check the documentation for more information on how to use modules. -->
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
 				<BounceCombineType>Minimum</BounceCombineType>
-				<BounceStr>10.0</BounceStr>
+				<BounceStr>0.1</BounceStr>
 				<!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
 				<FrictionCombineType>Average</FrictionCombineType>
 				<FrictionStr>10.0</FrictionStr>
