@@ -7,17 +7,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System;
+using System.Collections;
 
 namespace ETCM
 {
     public class Mod : ModEntryPoint
     {
-        public override void OnLoad()
-        {
-            // Called when the mod is loaded.
-            Log("Loaded correctly");
-            CustomModules.AddBlockModule<ETCMSoundBlockModule, ETCMSoundBlockBehaviour>("ETCMSoundBlockModule", canReload: true);
-        }
+        
         public static void Log(string message)
         {
             ModConsole.Log("ETCM Log:" + message);
@@ -30,7 +26,37 @@ namespace ETCM
         {
             ModConsole.Log("ETCM Error:" + message);
         }
+        public override void OnLoad()
+        {
+            // Called when the mod is loaded.
+            CustomModules.AddBlockModule<ETCMSoundBlockModule, ETCMSoundBlockBehaviour>("ETCMSoundBlockModule", canReload: true);
+            UnityEngine.Object.DontDestroyOnLoad(SingleInstance<ETCMmodule>.Instance);
+        }
     }
+
+    public class ETCMmodule : SingleInstance<ETCMmodule>
+    {
+        public override string Name
+        {
+            get
+            {
+                return "ETCMmodule";
+
+            }
+        }
+        private IEnumerator CheckVersion()
+        {
+            //âΩÇ∆Ç»Ç≠1ïbë“ã@(èàóùèáóp)
+            yield return new WaitForSeconds(1f);
+            //GuidÇ…ÇÕÇÕé©ï™ÇÃMod.xmlì‡ÇÃIDÇì¸ÇÍÇÈÇ±Ç∆
+            Mod.Log("Version " + Mods.GetVersion(new Guid("50e63b55-b976-4009-82ab-66f989218122")));
+        }
+        public void Awake()
+        {
+            StartCoroutine(CheckVersion());
+        }
+    }
+
     [XmlRoot("ETCMSoundBlockModule")]
     [Reloadable]
     public class ETCMSoundBlockModule : BlockModule
