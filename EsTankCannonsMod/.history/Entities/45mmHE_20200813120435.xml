@@ -1,0 +1,34 @@
+<Entity>
+
+	<Name>45mmHE</Name>
+
+	<ID>5</ID>
+	
+
+	<Debug>true</Debug>
+
+	<Colliders>
+		<CapsuleCollider>
+			<Position x="0.0" y="0.0" z="0.0" />
+			<Rotation x="0.0" y="90.0" z="0.0" />
+			<Capsule direction="X" radius="0.045" height="0.4" />
+		</CapsuleCollider>
+	</Colliders>
+	
+	<Mesh name="45mmShell"> 
+		<Position x="0.0" y="0.0" z="-0.1" />
+		<Rotation x="0.0" y="-90.0" z="0.0" />
+		<Scale x="2.0" y="2.0" z="2.0" />
+	</Mesh>
+	
+	<Texture name="metalYellow" /> 
+	
+	<Icon name="88mmAntiAir_tn" />
+
+	<Category>Weaponry</Category>
+	
+	
+	<Scale canScale="true" uniformScale="false" />
+	    <CanPick>true</CanPick>
+    <ShowPhysicsToggle>false</ShowPhysicsToggle>
+</Entity>
