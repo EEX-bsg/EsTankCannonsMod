@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 676115604
+CRC: 95121430
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6992a2f6db02032bd3731d4dad8bda36
+    Hash: c1ac35aad5bc02aead23a0c2f878fc2f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6c67211cb1eff1f2f9edb2bd2f39a24b
@@ -34,6 +34,7 @@ ClassTypes:
 Assets:
 - Assets/prefab/smoke.prefab
 - Assets/prefab/heatbulleteffect.prefab
+- Assets/prefab/APFSDShit.prefab
 - Assets/prefab/machinegunshoteffect.prefab
 - Assets/prefab/machinegunbulleteffect.prefab
 - Assets/prefab/trailG.prefab
@@ -45,7 +46,6 @@ Assets:
 - Assets/prefab/smallExplode.prefab
 - Assets/prefab/120mmShotEffect.prefab
 - Assets/prefab/flash.prefab
-- Assets/prefab/APFSDShit.prefab
 - Assets/prefab/heatfsbulleteffect.prefab
 - Assets/prefab/FLAKexplode.prefab
 - Assets/prefab/ShotEffectMB.prefab
