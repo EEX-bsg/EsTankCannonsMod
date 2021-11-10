@@ -60,3 +60,8 @@ RedBigFlag　追加
 BlueSmallFlag　追加
 RedeSmallFlag　追加
 NightVision　追加
+
+v1.1.1
+NightVision　削除
+12.7mmMachineGunHE　弱体化(炸裂範囲)
+12.7mmMachineGunT　弱体化(炸裂範囲)
