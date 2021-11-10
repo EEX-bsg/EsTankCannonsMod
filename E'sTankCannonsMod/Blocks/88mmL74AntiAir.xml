@@ -108,9 +108,9 @@ Check the documentation for more information on how to use modules. -->
 			
 			<Colliders>
 				<BoxCollider>
-					<Position x="0.0" y="0.0" z="10.0" />
+					<Position x="0.0" y="0.0" z="25.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
-					<Scale x="20.0" y="0.1" z="0.1" />
+					<Scale x="0.1" y="1.0" z="1.0" />
 				</BoxCollider>
 				<CapsuleCollider>
 					<Position x="0.0" y="0.0" z="0.0" />
