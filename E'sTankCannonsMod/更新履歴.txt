@@ -65,3 +65,10 @@ v1.1.1
 NightVision　削除
 12.7mmMachineGunHE　弱体化(炸裂範囲)
 12.7mmMachineGunT　弱体化(炸裂範囲)
+
+v1.1.2
+120mmL44APFSDS　弱体化(砲弾重量)
+75mmL48HE 強化(パワー　リコイル)
+75mmL48AP 強化(パワー　リコイル)
+75mmL24HEAT 強化(リロード速度)
+ACM非導入時の警告表示
