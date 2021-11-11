@@ -215,7 +215,7 @@
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
-		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
+		<!--<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />-->
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
