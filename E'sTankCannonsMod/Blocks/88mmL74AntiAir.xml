@@ -129,7 +129,7 @@ Check the documentation for more information on how to use modules. -->
 				
 				<Mass>0.5</Mass>
 				<Drag>0.0</Drag>
-				<AngularDrag>0.0</AngularDrag>
+				<AngularDrag>10.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>100</EntityDamage>
 				<BlockDamage>0.3</BlockDamage>
