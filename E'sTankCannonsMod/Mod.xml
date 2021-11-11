@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.13</Version>
+	<Version>1.1.14</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.13 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.1.14 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -215,7 +215,7 @@
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
-		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
+		<!--<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />-->
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
