@@ -178,7 +178,11 @@
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
 		<Mesh name="core" path="Models/startblock.obj" />
+<<<<<<< HEAD
 		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
+=======
+		<Mesh name="bomb01" path="Models/bomb01.obj" />
+>>>>>>> main
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
