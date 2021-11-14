@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.14</Version>
+	<Version>1.1.15</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.14 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.1.15 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -178,7 +178,7 @@
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
 		<Mesh name="core" path="Models/startblock.obj" />
-		<Mesh name="bomb01" path="Models/bomb01.obj" />
+		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
