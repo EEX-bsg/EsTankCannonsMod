@@ -23,6 +23,8 @@
 21: (削除:Nightvision)
 22: (削除:100000mmL0.036-typeCore)
 23: (削除: bomb01)
+24: XmasCannon
+25: PresentBoxBay
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE

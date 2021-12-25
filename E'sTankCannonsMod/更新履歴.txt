@@ -169,3 +169,11 @@ v1.1.14
 v1.1.15
 ・120mmL44APFSDS
 性能の適正化
+
+v1.1.16
+・バグ修正
+
+v1.1.17
+・クリスマスアップデート
+・XmasCannnon追加
+・PresentBoxBay追加
