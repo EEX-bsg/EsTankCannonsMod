@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.1.15</Version>
+	<Version>1.1.17</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.1.15 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.1.17 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -90,6 +90,8 @@
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
 		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
+		<Block path="Blocks/XmasCannon.xml" /><!--blockid:#24-->
+		<Block path="Blocks/PresentBoxBay.xml" /><!--blockid:#25-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
 		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
@@ -178,6 +180,8 @@
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
 		<Mesh name="core" path="Models/startblock.obj" />
+		<Mesh name="xmasTree" path="Models/xmasTree.obj" />
+		<Mesh name="xmasBox" path="Models/xmasBox.obj" />
 		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
@@ -197,6 +201,8 @@
 		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
 		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
 		<Texture name="rainbow" path="Textures/rainbow.png" />
+		<Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" />
+		<Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
@@ -215,7 +221,8 @@
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
-		<!--<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />-->
+		<AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
+		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
