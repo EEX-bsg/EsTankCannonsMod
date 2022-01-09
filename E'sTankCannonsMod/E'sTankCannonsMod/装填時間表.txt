@@ -1,0 +1,16 @@
+砲名称　設定時間　実際の装填時間(秒)v1.1.14
+152mmL23HE 0.10 10s
+120mmL44APFSDS 0.15 8.33s
+120mmL44HEATFS 0.20 5.00s
+88mmL74AntiAir 0.80 1.25s
+88mmL74APCR 0.60 1.67s
+75mmL24HE 0.33 3.00s
+75mmL24AP 0.33 3.00s
+75mmL24HEAT 0.60 1.67s
+45mmL46HE 1.0 1.00s
+45mmL46AP 1.0 1.00s
+20mmL65HE 5.0 0.20s
+12.7mmMachineGunHE 3.0*4 0.08s
+12.7mmMachineGunT 3.0*4 0.08s
+medievalCannon 1.0 1.00s
+smokegranadedischarger 0.1 10s
