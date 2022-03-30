@@ -196,7 +196,7 @@
 		<!--その他のテクスチャ-->
 		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
 		<Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
-		<Texture name="EcannonTex" path="Textures/E-Cannon_tex.png" />
+		<Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
 		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
