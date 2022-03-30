@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 970260292
+CRC: 121649471
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: abf6a1c37c8a13d81648ad524aee2b02
+    Hash: be6911a27426cab8f07a9c9abf784851
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6c67211cb1eff1f2f9edb2bd2f39a24b
@@ -55,6 +55,7 @@ Assets:
 - Assets/prefab/heatfsbulleteffect.prefab
 - Assets/prefab/FLAKexplode.prefab
 - Assets/prefab/ShotEffectMB.prefab
+- Assets/prefab/heatfsbulleteffect 1.prefab
 - Assets/prefab/APFSDStrail.prefab
 - Assets/prefab/bombExplode.prefab
 - Assets/prefab/apfsdsbulleteffect.prefab

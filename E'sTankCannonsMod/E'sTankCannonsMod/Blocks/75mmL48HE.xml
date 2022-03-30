@@ -163,7 +163,7 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>4.5</ExplodeRadius>
-			<ExplodePower>5000.0</ExplodePower>
+			<ExplodePower>9000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
