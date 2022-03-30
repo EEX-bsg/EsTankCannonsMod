@@ -63,10 +63,6 @@ Check the documentation for more information on how to use modules. -->
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Slider displayName="Speed" key="speed" min="0" max="1" default="0.5" unclamped="false"/>
 		<Toggle displayName="Auto" key="automatic" default="false" />
-		<Slider displayName="Shot Delay" key="delay1" min="0.083" max="0.083" default="0.083" unclamped="true"/>
-		<Slider displayName="Shot Delay" key="delay2" min="0.166" max="0.166" default="0.166" unclamped="true"/>
-		<Slider displayName="Shot Delay" key="delay3" min="0.2499" max="0.2499" default="0.2499" unclamped="true"/>
-		<Slider displayName="Fuse Timer" key="fuse-timer" min="10" max="10" default="10" unclamped="false"/>
 	</ModuleMapperTypes>
 <Modules>
 	<Steering>
@@ -304,15 +300,13 @@ Check the documentation for more information on how to use modules. -->
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
-			<useDelayTimer>true</useDelayTimer>
-			<DelayTimerSlider key="delay1" />
+			<DelayTime>10</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.003</RandomDiffusion>
 
-			<useTimefuse>true</useTimefuse>
-			<TimefuseSlider key="fuse-timer" />
+			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
@@ -392,16 +386,15 @@ Check the documentation for more information on how to use modules. -->
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
-			<useDelayTimer>true</useDelayTimer>
-			<DelayTimerSlider key="delay2" />
+			<useDelay>true</useDelay>
+			<DelayTime>0.166</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.003</RandomDiffusion>
 
 			<useTimefuse>true</useTimefuse>
-			<TimefuseSlider key="fuse-timer" />
-			<RandomFuseInterval>0.0</RandomFuseInterval>
+			<DelayTime>10</DelayTime>
 			
 			<PoolSize>100</PoolSize>
 			
@@ -480,15 +473,14 @@ Check the documentation for more information on how to use modules. -->
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
-			<useDelayTimer>true</useDelayTimer>
-			<DelayTimerSlider key="delay3" />
+			<useDelay>true</useDelay>
+			<DelayTime>0.2499</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.003</RandomDiffusion>
 
-			<useTimefuse>true</useTimefuse>
-			<TimefuseSlider key="fuse-timer" />
+			<DelayTime>10</DelayTime>
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
