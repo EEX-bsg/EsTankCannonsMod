@@ -164,7 +164,7 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>2.5</ExplodeRadius>
 			<ExplodePower>1000.0</ExplodePower>
-			<ExplodeUpPower>3.0</ExplodeUpPower>
+			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
