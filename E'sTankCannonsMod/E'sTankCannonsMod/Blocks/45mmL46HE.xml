@@ -128,7 +128,7 @@ Check the documentation for more information on how to use modules. -->
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>20</EntityDamage>
-				<BlockDamage>0.3</BlockDamage>
+				<BlockDamage>10000</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
