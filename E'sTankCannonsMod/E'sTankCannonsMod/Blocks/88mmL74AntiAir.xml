@@ -176,10 +176,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>FLAKexplode</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			
-			<TrailEffect>Trail</TrailEffect>
-			
-			
+			<TrailEffect>newBulletTrailV100</TrailEffect>
 			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.05</RandomFuseInterval>
