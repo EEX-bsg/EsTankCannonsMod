@@ -170,9 +170,9 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>smallExplode</ExplodeEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>flash</ShotFlashEffect>
-			<TrailEffect>TrailG</TrailEffect>
+			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>

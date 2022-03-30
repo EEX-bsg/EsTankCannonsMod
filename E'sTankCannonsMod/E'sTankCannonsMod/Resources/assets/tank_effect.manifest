@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2107571372
+CRC: 1138704441
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 503b1482a52ebcf200e017f07172628e
+    Hash: 7ca0ac3a1ca339278c6e843265aac67d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6c67211cb1eff1f2f9edb2bd2f39a24b
@@ -32,16 +32,22 @@ ClassTypes:
 - Class: 199
   Script: {instanceID: 0}
 Assets:
+- Assets/prefab/newBulleteffect.prefab
 - Assets/prefab/smoke.prefab
 - Assets/prefab/heatbulleteffect.prefab
 - Assets/prefab/APFSDShit.prefab
+- Assets/prefab/machinegunHit.prefab
 - Assets/prefab/machinegunshoteffect.prefab
+- Assets/prefab/newFlash.prefab
+- Assets/prefab/newBulletTrailGV100.prefab
+- Assets/prefab/newBulletTrailWV100.prefab
 - Assets/prefab/machinegunbulleteffect.prefab
 - Assets/prefab/trailG.prefab
 - Assets/prefab/largeExplode.prefab
 - Assets/prefab/v117.prefab
 - Assets/prefab/tankcannoneffect.prefab
 - Assets/prefab/test.prefab
+- Assets/prefab/newBulletTrailV100.prefab
 - Assets/prefab/none.prefab
 - Assets/prefab/smallExplode.prefab
 - Assets/prefab/120mmShotEffect.prefab
@@ -50,6 +56,7 @@ Assets:
 - Assets/prefab/FLAKexplode.prefab
 - Assets/prefab/ShotEffectMB.prefab
 - Assets/prefab/APFSDStrail.prefab
+- Assets/prefab/bombExplode.prefab
 - Assets/prefab/apfsdsbulleteffect.prefab
 - Assets/prefab/bulleteffect.prefab
 - Assets/prefab/trail.prefab

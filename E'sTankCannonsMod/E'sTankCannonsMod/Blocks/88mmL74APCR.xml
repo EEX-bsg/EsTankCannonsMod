@@ -172,9 +172,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
-			<!--
-			<TrailEffect>trail</TrailEffect>
-			-->
+			<TrailEffect>newBulletTrailWV100</TrailEffect>
 			
 			<BulletEffect>bulleteffect</BulletEffect>
 			

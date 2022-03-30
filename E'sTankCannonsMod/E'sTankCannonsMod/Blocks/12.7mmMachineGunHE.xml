@@ -217,7 +217,7 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>smallExplode</ExplodeEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
@@ -299,7 +299,7 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>smallExplode</ExplodeEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
@@ -471,7 +471,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
-			<TrailEffect>TrailG</TrailEffect>
+			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelayTimer>true</useDelayTimer>

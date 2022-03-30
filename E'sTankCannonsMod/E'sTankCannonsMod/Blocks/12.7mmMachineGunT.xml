@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <ID>20</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>12.7mmMachineGunT</Name>
+<Name>12.7mmMachineGunTR</Name>
 <!-- TODO: Change the mass to something appropriate -->
 <Mass>0.1</Mass>
 <!-- Additional keywords that can be used to search for this block
@@ -217,7 +217,7 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>smallExplode</ExplodeEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
@@ -301,7 +301,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
-			<TrailEffect>TrailG</TrailEffect>
+			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelayTimer>true</useDelayTimer>
@@ -389,7 +389,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
-			<TrailEffect>TrailG</TrailEffect>
+			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelayTimer>true</useDelayTimer>
@@ -477,7 +477,7 @@ Check the documentation for more information on how to use modules. -->
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
 			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
-			<TrailEffect>TrailG</TrailEffect>
+			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelayTimer>true</useDelayTimer>
