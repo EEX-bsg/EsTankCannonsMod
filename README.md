@@ -12,8 +12,4 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1778796598
 Turn on these mods in the mod list that is upper right conner of the Besiege's title screen. and restart Besiege.  
 
 
-<<<<<<< HEAD:README.md
 If you want to install the development version, download the development branch and extract it to your mods folder.
-=======
-If you want to install the development version, download the development branch and extract it to your mods folder.
->>>>>>> main:E'sTankCannonsMod/README.md

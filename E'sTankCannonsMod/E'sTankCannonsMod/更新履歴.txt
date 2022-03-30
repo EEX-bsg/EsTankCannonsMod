@@ -164,9 +164,6 @@ v1.1.14
 ・45mmL46AP
 上方修正
 ・その他
-<<<<<<< HEAD:E'sTankCannonsMod/更新履歴.txt
-エイプリールフールとコンソールログに出るバグを修正
-=======
 エイプリールフールとコンソールログに出るバグを修正
 
 v1.1.15
@@ -180,4 +177,11 @@ v1.1.17
 ・クリスマスアップデート
 ・XmasCannnon追加
 ・PresentBoxBay追加
->>>>>>> main:E'sTankCannonsMod/E'sTankCannonsMod/更新履歴.txt
+
+v1.1.19
+・XmasCannon,PresentBoxBayの削除
+・多くの砲のモデルの修正(スペシャルサンクス  狩月よもぎ さん)
+・トレイルエフェクトの変更
+・12.77mmMachineGunの着弾エフェクト変更
+・榴弾系の砲の威力上方修正
+・45mmL46の威力上方修正

@@ -1,13 +1,13 @@
-﻿弾数　プールサイズ　表 E砲v1.1.7 
+﻿弾数　プールサイズ　表 E砲v1.1.19
 砲名称                    弾数  プールサイズ
 152mmL23HE                   8            50
-120mmL44APFSDS              40            50
-120mmL44HEATFS              40            50
+120mmL44APFSDS              10            50
+120mmL44HEATFS              14            50
 88mmL74AntiAir              84            50
 88mmL74APCR                 42            50
-75mmL24HE                   40            50
-75mmL24AP                   40            50
-75mmL24HEAT                 40            50
+75mmL24HE                   20            50
+75mmL24AP                   20            50
+75mmL24HEAT                 20            50
 45mmL46HE                  115            50
 45mmL46AP                  115            50
 20mmL65HE                  300            50
