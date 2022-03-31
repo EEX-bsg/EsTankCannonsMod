@@ -185,3 +185,11 @@ v1.1.19
 ・12.77mmMachineGunの着弾エフェクト変更
 ・榴弾系の砲の威力上方修正
 ・45mmL46の威力上方修正
+
+v1.2.0
+・弾丸オブジェクトの統一
+・75mmL48APの弾速上方修正
+・88mmL74APCRの削除
+・88mmL74APHEの追加
+・600mmL8SBの追加
+・[WIP]100mmRecoillessHESHの追加
