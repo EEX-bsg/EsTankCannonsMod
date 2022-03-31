@@ -166,12 +166,8 @@
 		<!--弾モデル-->
 		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
 		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
-		<Mesh name="88mmShell" path="Models/88mmShell.obj" />
+		<Mesh name="100mmShell" path="Models/100mmShell.obj" />
 		<Mesh name="88mmAPCR" path="Models/88mmAPCR.obj" />
-		<Mesh name="45mmShell" path="Models/45mmShell.obj" />
-		<Mesh name="152mmShell" path="Models/152mmShell.obj" />
-		<Mesh name="20mmShell" path="Models/20mmShell.obj" />
-		<Mesh name="75mmShell" path="Models/75mmShell.obj" />
 		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
 		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
 		<!--その他ブロックモデル-->

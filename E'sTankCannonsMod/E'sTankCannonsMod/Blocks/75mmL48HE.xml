@@ -114,10 +114,10 @@ Check the documentation for more information on how to use modules. -->
 				</CapsuleCollider>
 			</Colliders>
 				
-				<Mesh name="75mmShell"> 
+				<Mesh name="100mmShell"> 
 					<Position x="0.0" y="0.0" z="-0.1" />
 					<Rotation x="0.0" y="-90.0" z="0.0" />
-					<Scale x="2.0" y="2.0" z="2.0" />
+					<Scale x="0.75" y="0.75" z="0.75" />
 				</Mesh>
 				
 				<Texture name="metalYellow" />
