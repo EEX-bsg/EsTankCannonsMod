@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 121649471
+CRC: 298468195
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: be6911a27426cab8f07a9c9abf784851
+    Hash: 0404bc51523c24ef6eec6af313bda3b0
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6c67211cb1eff1f2f9edb2bd2f39a24b
+    Hash: 8fb91d6db2cb6cff0790dd08976e2460
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -19,9 +19,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
 - Class: 48
+  Script: {instanceID: 0}
+- Class: 64
   Script: {instanceID: 0}
 - Class: 96
   Script: {instanceID: 0}
@@ -48,6 +52,7 @@ Assets:
 - Assets/prefab/tankcannoneffect.prefab
 - Assets/prefab/test.prefab
 - Assets/prefab/newBulletTrailV100.prefab
+- Assets/prefab/RecoillessShotEffect.prefab
 - Assets/prefab/none.prefab
 - Assets/prefab/smallExplode.prefab
 - Assets/prefab/120mmShotEffect.prefab
@@ -58,6 +63,8 @@ Assets:
 - Assets/prefab/heatfsbulleteffect 1.prefab
 - Assets/prefab/APFSDStrail.prefab
 - Assets/prefab/bombExplode.prefab
+- Assets/prefab/HESHhit.prefab
+- Assets/prefab/5000kgBombExplode.prefab
 - Assets/prefab/apfsdsbulleteffect.prefab
 - Assets/prefab/bulleteffect.prefab
 - Assets/prefab/trail.prefab
