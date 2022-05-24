@@ -193,3 +193,10 @@ v1.2.0
 ・88mmL74APHEの追加
 ・600mmL8SBの追加
 ・[WIP]100mmRecoillessHESHの追加
+
+v1.2.1
+・ドキュメントファイルの移行
+・MedievalCannonの弾数を増やした
+・45mmL46HEの威力の見直し
+・45mmL46APの反動軽減
+・75mmL24HEATのリロード時間を増やした
