@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="1" max="2400" default="480" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="1.0" max="1.0" default="1.0" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.8" max="0.8" default="0.8" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Slider displayName="Fuse Timer" key="fuse-timer" min="10" max="10" default="10" unclamped="false"/>
 	</ModuleMapperTypes>
@@ -160,7 +160,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>1</DefaultAmmo>
+			<DefaultAmmo>100</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>false</ProjectilesExplode>
 			<ExplodeRadius>3.0</ExplodeRadius>
@@ -186,7 +186,7 @@ Check the documentation for more information on how to use modules. -->
 			<TimefuseSlider key="fuse-timer" />
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
-			<PoolSize>50</PoolSize>
+			<PoolSize>100</PoolSize>
 			
 			<Sounds>
 				<AudioClip name="MedievalCannonSound" />
