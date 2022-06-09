@@ -20,7 +20,7 @@ The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <!-- Name of the block, shown in the user interface. -->
 <Name>600mmL8SB</Name>
 <!-- TODO: Change the mass to something appropriate -->
-<Mass>100.0</Mass>
+<Mass>50.0</Mass>
 <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="80000" max="80000" default="80000 " unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.005" max="0.005" default="0.005" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.01" max="0.01" default="0.01" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 	</ModuleMapperTypes>
 <Modules>
@@ -172,7 +172,7 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>50</ExplodeRadius>
-			<ExplodePower>20000.0</ExplodePower>
+			<ExplodePower>18000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -184,8 +184,11 @@ Check the documentation for more information on how to use modules. -->
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.5</FuseDelayTime>
+
+			<useDelay>true</useDelay>
+			<DelayTime>1.0</DelayTime>
 			
-			<RecoilMultiplier>0.2</RecoilMultiplier>
+			<RecoilMultiplier>0.1</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.02</RandomDiffusion>
 			
