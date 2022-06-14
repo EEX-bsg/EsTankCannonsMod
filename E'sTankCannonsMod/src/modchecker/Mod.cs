@@ -22,7 +22,7 @@ namespace warning
                 return "CreateTextArea";
             }
         }
-        private string textToEdit = "AddCustomModuleMod(ACMmod) is not loaded.\nPlease try the following.\n1. Subscribe to ACM on SteamWorkshop.\n2. Open the Mods tab in Besiege's title scene.\n3. Turn on the ACMmod and E'sTankCannonsMod.\n4. Restart Besiege.\n(Using Deepl translator)";
+        private string textToEdit = "AddCustomModuleMod(ACMmod) is not loaded.\nPlease try the following.\n1. Subscribe to ACM on SteamWorkshop.\n2. Open the Mods tab in Besiege's title scene.\n3. Turn on the ACMmod and E'sTankCannonsMod.\n4. Restart Besiege.\nIf the problem persists, contact @EEX_bsg.)";
         private GUIStyle style = new GUIStyle();
         private int width = Screen.width;
         private int height = Screen.height;
@@ -30,7 +30,7 @@ namespace warning
         {
             style.fontSize = width / 40;
             style.normal.textColor = Color.red;
-            // テキストエリアを表示する
+            // 繝�繧ｭ繧ｹ繝医お繝ｪ繧｢繧定｡ｨ遉ｺ縺吶ｋ
             GUI.TextArea(new Rect(width / 10, height / 10, width - (width / 10), height - (height / 10)), textToEdit, style);
         }
         internal static void destroyMe()
@@ -56,8 +56,7 @@ namespace warning
             if (!Mods.IsModLoaded(ACMguid))
             {
                 w = false;
-                ModConsole.Log("ACMが読み込まれていません");
-                ModConsole.Log("ACM is not loaded");
+                Debug.LogError("ETCM-ModChecker: ACM is not loaded");
                 DontDestroyOnLoad(SingleInstance<CreateTextArea>.Instance);
 
             }
