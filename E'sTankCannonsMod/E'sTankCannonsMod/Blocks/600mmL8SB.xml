@@ -237,9 +237,9 @@ Can be one of "Blunt", "Sharp", "Fire" -->
 <Texture name="metalBlack" /> <!-- Must be defined as a resource
 	in the manifest. -->
 <Icon>
-	<Position x="0.2" y="0.2" z="0.0" />
+	<Position x="0.0" y="0.0" z="0.0" />
 	<Rotation x="60.0" y="30.0" z="30.0" />
-	<Scale x="0.25" y="0.25" z="0.25" />
+	<Scale x="0.15" y="0.15" z="0.15" />
 </Icon>
 <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
 to be displayed. The child elements define how and where it is displayed. -->
