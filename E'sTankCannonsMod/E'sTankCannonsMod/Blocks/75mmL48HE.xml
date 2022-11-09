@@ -129,7 +129,7 @@ Check the documentation for more information on how to use modules. -->
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>40</EntityDamage>
 				<BlockDamage>10000.0</BlockDamage>
-				<Attaches>false</Attaches>
+				<Attaches>true</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
 				<BounceCombineType>Minimum</BounceCombineType>
