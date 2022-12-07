@@ -106,6 +106,7 @@
 		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
 		<Block path="Blocks/45mmL46HE.xml" /><!--blockid:#7-->
 		<Block path="Blocks/45mmL46AP.xml" /><!--blockid:#8-->
+		<Block path="Blocks/45mmL46APHE.xml" /><!--blockid:#29-->
 		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
 		<Block path="Blocks/12.7mmMachineGunHE.xml" /><!--blockid:#19-->
 		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
@@ -229,7 +230,7 @@
 		<AudioClip name="granadeShot" path="Sounds/smokegrabadeshot.wav" />
 		<AudioClip name="MedievalCannonSound" path="Sounds/MedievalCannonSound.wav" />
 		<AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
-		<AudioClip name="machinegunfire" path="Sounds/machinegunfire.wav" />
+		<AudioClip name="machinegunfire" path="Sounds/RifleFire.wav" />
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
