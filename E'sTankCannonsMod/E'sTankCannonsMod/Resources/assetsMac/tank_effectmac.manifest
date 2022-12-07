@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1179558263
+CRC: 3538469777
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 05a3631222a32aa95054e64a0f5037b4
+    Hash: a1d4a06093928233e233d628706fdf52
   TypeTreeHash:
     serializedVersion: 2
     Hash: 06f2cfb245d05bca53ca6751db58a19c
@@ -70,4 +70,5 @@ Assets:
 - Assets/prefab/apfsdsbulleteffect.prefab
 - Assets/prefab/bulleteffect.prefab
 - Assets/prefab/trail.prefab
+- Assets/prefab/PartyCracker.prefab
 Dependencies: []
