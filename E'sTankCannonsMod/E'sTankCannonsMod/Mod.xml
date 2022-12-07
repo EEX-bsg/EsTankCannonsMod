@@ -125,13 +125,13 @@
 		 The path attribute is relative to the location of this file. -->
 	<Entities>
 		<!-- <Entity path="SomeEntity.xml" /> -->
-		<Entity path="Entities/120mmAPFSDS.xml" />
+		<!-- <Entity path="Entities/120mmAPFSDS.xml" />
 		<Entity path="Entities/120mmHEAT.xml" />
 		<Entity path="Entities/88mmAPCR.xml" />
 		<Entity path="Entities/88mmAntiAir.xml" />
 		<Entity path="Entities/45mmHE.xml" />
 		<Entity path="Entities/45mmAP.xml" />
-		<Entity path="Entities/152mmHE.xml" />
+		<Entity path="Entities/152mmHE.xml" /> -->
 	</Entities>
 	
 	<!-- Any logic trigger types your mod adds to the game. -->
@@ -217,9 +217,9 @@
 		<Texture name="CrackerTex" path="Textures/party-cracker-tex.png" />
 		<Texture name="CrackerBulletTex" path="Textures/CrackerBulletTex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
-		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
+		<!-- <Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
-		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" />
+		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" /> -->
 		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--サウンド-->
