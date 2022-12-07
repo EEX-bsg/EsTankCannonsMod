@@ -120,7 +120,7 @@ Check the documentation for more information on how to use modules. -->
 					<Scale x="0.45" y="0.45" z="0.45" />
 				</Mesh>
 				
-				<Texture name="metalGrey" />
+				<Texture name="metalYellow" />
 				
 				
 				<Mass>1.0</Mass>
@@ -146,14 +146,14 @@ Check the documentation for more information on how to use modules. -->
 			<HoldToShootToggle key="hold-to-shoot" />
 			
 			<ProjectileStart>
-				<Position x="0.0" y="-5.0" z="0.5" />
-				<Rotation x="90.0" y="0.0" z="0.0" />
+				<Position x="0.0" y="0.0" z="4.5" />
+				<Rotation x="0.0" y="0.0" z="90.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
 			
 			<ShotFlashPosition>
-				<Position x="0.0" y="-3.8" z="0.5" />
-				<Rotation x="90.0" y="0.0" z="0.0" />
+				<Position x="0.0" y="0.0" z="4.0" />
+				<Rotation x="0.0" y="0.0" z="90.0" />
 				<Scale x="2.0" y="2.0" z="2.0" />
 			</ShotFlashPosition>
 			
@@ -171,13 +171,13 @@ Check the documentation for more information on how to use modules. -->
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>smallExplode</ExplodeEffect>
-			<ShotFlashEffect>flash</ShotFlashEffect>
-			<TrailEffect>newBulletTrailWV100</TrailEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
+			<!-- <TrailEffect>newBulletTrailWV100</TrailEffect> -->
 			
 			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
-			<FuseDelayTime>0.1</FuseDelayTime>
+			<FuseDelayTime>0.15</FuseDelayTime>
 			
 			<RecoilMultiplier>0.25</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
@@ -221,8 +221,8 @@ Can be one of "Blunt", "Sharp", "Fire" -->
 <Mesh name="45mmL46"> 
 	<!-- Must be defined as a resource in the
 	manifest. -->
-	<Position x="0.0" y="0.4" z="0.5" />
-	<Rotation x="0.0" y="90.0" z="90.0" />
+	<Position x="0.0" y="0.0" z="0.05" />
+	<Rotation x="0.0" y="90.0" z="0.0" />
 	<Scale x="2.0" y="2.0" z="2.0" />
 </Mesh>
 <Texture name="EcannonTex" /> <!-- Must be defined as a resource
@@ -266,18 +266,18 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
 	<!-- TODO: Insert Collider definitions here.
 	Examples: -->
 	<BoxCollider>
-		<Position x="0.0" y="0.0" z="0.5" />
+		<Position x="0.0" y="0.0" z="0.22" />
 		<Rotation x="0.0" y="0.0" z="0.0" />
-		<Scale x="0.8" y="0.8" z="0.8" /><!--yが前zが上-->
+		<Scale x="0.33" y="0.33" z="0.33" /><!--yが前zが上-->
 	</BoxCollider>
 	<!--<SphereCollider>
 		<Position x="0.0" y="0.0" z="0.0" />
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
 	<CapsuleCollider>
-		<Position x="0.0" y="-2.0" z="0.5" />
-		<Rotation x="90.0" y="90.0" z="90.0" />
-		<Capsule direction="Z" radius="0.1" height="3.7" />
+		<Position x="0.0" y="-0.0" z="2.0" />
+		<Rotation x="0.0" y="90.0" z="0.0" />
+		<Capsule direction="X" radius="0.1" height="3.7" />
 	</CapsuleCollider>
 </Colliders>
 <BasePoint hasAddingPoint="false">
