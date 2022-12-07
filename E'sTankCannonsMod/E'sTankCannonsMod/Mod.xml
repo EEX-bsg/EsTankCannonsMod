@@ -92,6 +92,7 @@
 		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
 		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
 		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
+		<Block path="Blocks/PartyCracker.xml" /><!--blockid:#32-->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
@@ -168,6 +169,8 @@
 		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
 		<Mesh name="100mmRecoilless" path="Models/100mmRecoilless.obj" />
 		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
+		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
+		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />
 		<!--弾モデル-->
 		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
 		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
@@ -175,15 +178,19 @@
 		<Mesh name="88mmAPCR" path="Models/88mmAPCR.obj" />
 		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
 		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
+		<Mesh name="GMissile" path="Models/GMissile.obj" />
+		<Mesh name="Rocket" path="Models/rocket.obj" />
 		<!--その他ブロックモデル-->
 		<Mesh name="antenna" path="Models/antenna.obj" />
 		<Mesh name="bigFlag" path="Models/big_flag.obj" />
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
-		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
-		<Mesh name="core" path="Models/startblock.obj" />
-		<Mesh name="xmasTree" path="Models/xmasTree.obj" />
-		<Mesh name="xmasBox" path="Models/xmasBox.obj" />
+		<!-- <Mesh name="Nightvision" path="Models/Nightvision.obj" /> -->
+		<!-- <Mesh name="core" path="Models/startblock.obj" /> -->
+		<!-- <Mesh name="xmasTree" path="Models/xmasTree.obj" /> -->
+		<!-- <Mesh name="xmasBox" path="Models/xmasBox.obj" />  -->
 		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
+		<Mesh name="Cracker" path="Models/party-cracker.obj" />
+		<Mesh name="CrackerBullet" path="Models/CrackerBullet.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
@@ -194,17 +201,20 @@
 		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
 		<Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
+		<Texture name="GMissileTex" path="Textures/GMmissile_tex.png" />
 		<!--その他のテクスチャ-->
 		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
 		<Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
 		<Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
-		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
-		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
-		<Texture name="rainbow" path="Textures/rainbow.png" />
-		<Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" />
-		<Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" />
+		<!-- <Texture name="NightvisionTex" path="Textures/Nightvision.png" /> -->
+		<!-- <Texture name="coreTex" path="Textures/startblocktex_png.png" /> -->
+		<!-- <Texture name="rainbow" path="Textures/rainbow.png" /> -->
+		<!-- <Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" /> -->
+		<!-- <Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" /> -->
+		<Texture name="CrackerTex" path="Textures/party-cracker-tex.png" />
+		<Texture name="CrackerBulletTex" path="Textures/CrackerBulletTex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
@@ -225,6 +235,7 @@
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
 		<AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
 		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
+		<AudioClip name="Booster" path="Sounds/Booster.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
