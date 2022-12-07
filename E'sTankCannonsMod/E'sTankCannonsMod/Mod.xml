@@ -104,18 +104,18 @@
 		<Block path="Blocks/75mmL48HE.xml" /><!--blockid:#12-->
 		<Block path="Blocks/75mmL48AP.xml" /><!--blockid:#13-->
 		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
-		<Block path="Blocks/45mmL46HE.xml" /><!--blockid:#7-->
-		<Block path="Blocks/45mmL46AP.xml" /><!--blockid:#8-->
+		<!--<Block path="Blocks/45mmL46HE.xml" />--><!--blockid:#7-->
+		<!--<Block path="Blocks/45mmL46AP.xml" />--><!--blockid:#8-->
 		<Block path="Blocks/45mmL46APHE.xml" /><!--blockid:#29-->
 		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
-		<Block path="Blocks/12.7mmMachineGunHE.xml" /><!--blockid:#19-->
+		<!--<Block path="Blocks/12.7mmMachineGunHE.xml" />--><!--blockid:#19-->
 		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
 		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
 		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
 		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
 		<!--<Block path="Blocks/nightvision.xml" />--><!--blockid:#21-->
-		<Block path="Blocks/redBigFlag.xml" /><!--blockid:#14-->
-		<Block path="Blocks/blueBigFlag.xml" /><!--blockid:#15-->
+		<!--<Block path="Blocks/redBigFlag.xml" />--><!--blockid:#14-->
+		<!--<Block path="Blocks/blueBigFlag.xml" />--><!--blockid:#15-->
 		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
 		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
 
