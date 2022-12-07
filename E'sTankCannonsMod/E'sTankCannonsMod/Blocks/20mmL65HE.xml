@@ -146,14 +146,14 @@ Check the documentation for more information on how to use modules. -->
 			<HoldToShootToggle key="hold-to-shoot" />
 			
 			<ProjectileStart>
-				<Position x="0.0" y="-3.5" z="0.5" />
-				<Rotation x="90.0" y="0.0" z="0.0" />
+				<Position x="0.0" y="0.0" z="4.0" />
+				<Rotation x="0.0" y="0.0" z="90.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
 			
 			<ShotFlashPosition>
-				<Position x="0.0" y="-3.3" z="0.5" />
-				<Rotation x="90.0" y="0.0" z="0.0" />
+				<Position x="0.0" y="0.0" z="3.3" />
+				<Rotation x="0.0" y="0.0" z="90.0" />
 				<Scale x="2.0" y="2.0" z="2.0" />
 			</ShotFlashPosition>
 			
@@ -171,7 +171,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>machinegunHit</ExplodeEffect>
-			<ShotFlashEffect>flash</ShotFlashEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
@@ -220,8 +220,8 @@ Can be one of "Blunt", "Sharp", "Fire" -->
 <Mesh name="20mmL65"> 
 	<!-- Must be defined as a resource in the
 	manifest. -->
-	<Position x="0.0" y="0.4" z="0.5" />
-	<Rotation x="0.0" y="90.0" z="90.0" />
+	<Position x="0.0" y="0." z="0.05" />
+	<Rotation x="0.0" y="90.0" z="0.0" />
 	<Scale x="2.0" y="2.0" z="2.0" />
 </Mesh>
 <Texture name="metalGrey" /> <!-- Must be defined as a resource
@@ -265,18 +265,18 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
 	<!-- TODO: Insert Collider definitions here.
 	Examples: -->
 	<BoxCollider>
-		<Position x="0.0" y="0.0" z="0.5" />
+		<Position x="0.0" y="0.0" z="0.18" />
 		<Rotation x="0.0" y="0.0" z="0.0" />
-		<Scale x="0.8" y="0.8" z="0.8" /><!--yが前zが上-->
+		<Scale x="0.25" y="0.25" z="0.25" /><!--yが前zが上-->
 	</BoxCollider>
 	<!--<SphereCollider>
 		<Position x="0.0" y="0.0" z="0.0" />
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
 	<CapsuleCollider>
-		<Position x="0.0" y="-1.5" z="0.5" />
-		<Rotation x="90.0" y="90.0" z="90.0" />
-		<Capsule direction="Z" radius="0.05" height="2.7" />
+		<Position x="0.0" y="-0.045" z="1.55" />
+		<Rotation x="0.0" y="90.0" z="0.0" />
+		<Capsule direction="X" radius="0.05" height="2.7" />
 	</CapsuleCollider>
 </Colliders>
 <BasePoint hasAddingPoint="false">
