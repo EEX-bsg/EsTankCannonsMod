@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <ID>20</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>12.7mmMachineGunTR</Name>
+<Name>12.7mmMachineGun</Name>
 <!-- TODO: Change the mass to something appropriate -->
 <Mass>0.1</Mass>
 <!-- Additional keywords that can be used to search for this block
@@ -214,7 +214,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>machinegunHit</ExplodeEffect>
-			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 
@@ -232,7 +232,7 @@ Check the documentation for more information on how to use modules. -->
 				<AudioClip name="machinegunhit" />
 			</HitSounds>
 	</AdShootingProp>
-	<!--T2-->
+	<!--HE2-->
 	<AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		
 			<ShootingState>
@@ -251,7 +251,7 @@ Check the documentation for more information on how to use modules. -->
 					<Scale x="0.127" y="0.127" z="0.127" />
 				</Mesh>
 				
-				<Texture name="metalGrey" />
+				<Texture name="metalYellow" />
 				
 				
 				<Mass>0.05</Mass>
@@ -286,28 +286,25 @@ Check the documentation for more information on how to use modules. -->
 			
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
-			<ProjectilesExplode>false</ProjectilesExplode>
-			<ExplodeRadius>0.0</ExplodeRadius>
-			<ExplodePower>0.0</ExplodePower>
+			<ProjectilesExplode>true</ProjectilesExplode>
+			<ExplodeRadius>1.0</ExplodeRadius>
+			<ExplodePower>10.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>none</ExplodeEffect>
-			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
-			<TrailEffect>newBulletTrailGV100</TrailEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
-			<DelayTime>10</DelayTime>
+			<useDelay>true</useDelay>
+			<DelayTime>0.083</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
-
-			
-			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			
@@ -382,7 +379,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
-			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
@@ -393,8 +390,8 @@ Check the documentation for more information on how to use modules. -->
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
 
-			<useTimefuse>true</useTimefuse>
 			<DelayTime>10</DelayTime>
+			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			
@@ -469,7 +466,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<AssetBundleName name="myasset" />
 			<ExplodeEffect>none</ExplodeEffect>
-			<ShotFlashEffect>machinegunshoteffect</ShotFlashEffect>
+			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<TrailEffect>newBulletTrailGV100</TrailEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			

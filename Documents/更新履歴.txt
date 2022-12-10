@@ -225,3 +225,31 @@ v1.2.6
 ・45mmL46HE 45mmL46AP 75mmL24HEAT 120mmL44HEATの弾丸生成位置を1m先に増やした。
 ・120mmL44HEATの発射エフェクトが砲からズレている問題を修正した。
 ・600mmL8SBのアイコンがはみ出ている問題を修正した。
+
+v1.3.0
+・注意
+    大型アップデートに付き、一部ブロックが削除、変更されています。
+    v1.2.6以前の一部の機体は互換性がなくなっていることにご注意下さい。
+・新しい武装の追加
+    45mmL46APHE
+    100mmRecoillessHESH
+    RocketLauncher
+    GMissileLauncher
+・期間限定武器の追加
+    PartyCracker
+・一部ブロックを削除
+    45mmL46HE
+    45mmL46AP
+    12.7mmMachineGunHE
+    RedBigFlag
+    BlueBigFlag
+・20mmL65HEのモデルを変更
+    砲の基部が小さくなりました。
+・20mmL65HEのエフェクトが壁に沿って発生するように変更
+・12.7mmMachineGunTRを「12.7mmMachineGun」に名称を変更
+・12.7mmMachineGunの2弾目をTR弾からHE弾に変更
+・12.7mmMachineGunの3弾目が正常に発射されない不具合を修正
+・小口径砲のエフェクト(12.7mmMachineGun 20mmL65HE 45mmL46APHE)のエフェクトを変更
+・12.7mmMachineGun 20mmL65HEの発射音を変更
+・一部の武装を長時間撃ち続けるとエフェクトが表示されない、炸裂音声が再生されない、炸裂が発生しない等の問題が起きていたことを修正
+・E砲のアイコンを変更

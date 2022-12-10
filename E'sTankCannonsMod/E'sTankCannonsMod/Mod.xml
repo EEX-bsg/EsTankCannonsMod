@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.2.6</Version>
+	<Version>1.3.0</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.2.6 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.3.0 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -92,6 +92,7 @@
 		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
 		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
 		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
+		<Block path="Blocks/PartyCracker.xml" /><!--blockid:#32-->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
@@ -103,17 +104,20 @@
 		<Block path="Blocks/75mmL48HE.xml" /><!--blockid:#12-->
 		<Block path="Blocks/75mmL48AP.xml" /><!--blockid:#13-->
 		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
-		<Block path="Blocks/45mmL46HE.xml" /><!--blockid:#7-->
-		<Block path="Blocks/45mmL46AP.xml" /><!--blockid:#8-->
+		<!--<Block path="Blocks/45mmL46HE.xml" />--><!--blockid:#7-->
+		<!--<Block path="Blocks/45mmL46AP.xml" />--><!--blockid:#8-->
+		<Block path="Blocks/45mmL46APHE.xml" /><!--blockid:#29-->
 		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
-		<Block path="Blocks/12.7mmMachineGunHE.xml" /><!--blockid:#19-->
+		<!--<Block path="Blocks/12.7mmMachineGunHE.xml" />--><!--blockid:#19-->
 		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
+		<Block path="Blocks/RocketLauncher.xml" /><!--blockid:#30-->
+		<Block path="Blocks/GMissileLauncher.xml" /><!--blockid:#31-->
 		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
 		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
 		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
 		<!--<Block path="Blocks/nightvision.xml" />--><!--blockid:#21-->
-		<Block path="Blocks/redBigFlag.xml" /><!--blockid:#14-->
-		<Block path="Blocks/blueBigFlag.xml" /><!--blockid:#15-->
+		<!--<Block path="Blocks/redBigFlag.xml" />--><!--blockid:#14-->
+		<!--<Block path="Blocks/blueBigFlag.xml" />--><!--blockid:#15-->
 		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
 		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
 
@@ -123,13 +127,13 @@
 		 The path attribute is relative to the location of this file. -->
 	<Entities>
 		<!-- <Entity path="SomeEntity.xml" /> -->
-		<Entity path="Entities/120mmAPFSDS.xml" />
+		<!-- <Entity path="Entities/120mmAPFSDS.xml" />
 		<Entity path="Entities/120mmHEAT.xml" />
 		<Entity path="Entities/88mmAPCR.xml" />
 		<Entity path="Entities/88mmAntiAir.xml" />
 		<Entity path="Entities/45mmHE.xml" />
 		<Entity path="Entities/45mmAP.xml" />
-		<Entity path="Entities/152mmHE.xml" />
+		<Entity path="Entities/152mmHE.xml" /> -->
 	</Entities>
 	
 	<!-- Any logic trigger types your mod adds to the game. -->
@@ -166,8 +170,10 @@
 		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
 		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
 		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
-		<Mesh name="100mmRecoilless" path="Models/100mmRecoilless.obj" />
+		<Mesh name="100mmRecoilless" path="Models/100mmL31_recoilless.obj" />
 		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
+		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
+		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />
 		<!--弾モデル-->
 		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
 		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
@@ -175,15 +181,19 @@
 		<Mesh name="88mmAPCR" path="Models/88mmAPCR.obj" />
 		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
 		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
+		<Mesh name="GMissile" path="Models/GMissile.obj" />
+		<Mesh name="Rocket" path="Models/rocket.obj" />
 		<!--その他ブロックモデル-->
 		<Mesh name="antenna" path="Models/antenna.obj" />
 		<Mesh name="bigFlag" path="Models/big_flag.obj" />
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
-		<Mesh name="Nightvision" path="Models/Nightvision.obj" />
-		<Mesh name="core" path="Models/startblock.obj" />
-		<Mesh name="xmasTree" path="Models/xmasTree.obj" />
-		<Mesh name="xmasBox" path="Models/xmasBox.obj" />
+		<!-- <Mesh name="Nightvision" path="Models/Nightvision.obj" /> -->
+		<!-- <Mesh name="core" path="Models/startblock.obj" /> -->
+		<!-- <Mesh name="xmasTree" path="Models/xmasTree.obj" /> -->
+		<!-- <Mesh name="xmasBox" path="Models/xmasBox.obj" />  -->
 		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
+		<Mesh name="Cracker" path="Models/party-cracker.obj" />
+		<Mesh name="CrackerBullet" path="Models/CrackerBullet.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
@@ -194,21 +204,24 @@
 		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
 		<Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
+		<Texture name="GMissileTex" path="Textures/GMmissile_tex.png" />
 		<!--その他のテクスチャ-->
 		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
 		<Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
 		<Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
-		<Texture name="NightvisionTex" path="Textures/Nightvision.png" />
-		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
-		<Texture name="rainbow" path="Textures/rainbow.png" />
-		<Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" />
-		<Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" />
+		<!-- <Texture name="NightvisionTex" path="Textures/Nightvision.png" /> -->
+		<!-- <Texture name="coreTex" path="Textures/startblocktex_png.png" /> -->
+		<!-- <Texture name="rainbow" path="Textures/rainbow.png" /> -->
+		<!-- <Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" /> -->
+		<!-- <Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" /> -->
+		<Texture name="CrackerTex" path="Textures/party-cracker-tex.png" />
+		<Texture name="CrackerBulletTex" path="Textures/CrackerBulletTex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
-		<Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
+		<!-- <Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
-		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" />
+		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" /> -->
 		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--サウンド-->
@@ -219,12 +232,13 @@
 		<AudioClip name="granadeShot" path="Sounds/smokegrabadeshot.wav" />
 		<AudioClip name="MedievalCannonSound" path="Sounds/MedievalCannonSound.wav" />
 		<AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
-		<AudioClip name="machinegunfire" path="Sounds/machinegunfire.wav" />
+		<AudioClip name="machinegunfire" path="Sounds/RifleFire.wav" />
 		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
 		<AudioClip name="nice" path="Sounds/nice.wav" />
 		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
 		<AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
 		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
+		<AudioClip name="Booster" path="Sounds/Booster.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />

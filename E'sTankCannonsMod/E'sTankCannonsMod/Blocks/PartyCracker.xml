@@ -16,17 +16,17 @@ to assist in positioning them correctly.
 The ID must be unique among blocks in your mod.
 It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
-<ID>11</ID>
+<ID>32</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>20mmL65HE</Name>
+<Name>PartyCracker</Name>
 <!-- TODO: Change the mass to something appropriate -->
-<Mass>0.1</Mass>
+<Mass>1.0</Mass>
 <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
 <SearchKeywords>
-	<Keyword>Es,20,he,es,l65</Keyword>
+	<Keyword>Es,es,xmas,chrismas,party,cracker</Keyword>
 </SearchKeywords>
 <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -55,11 +55,12 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="40" max="40" default="40 " unclamped="false"/>
+		<Slider displayName="Power" key="power" min="200" max="200" default="200" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="5.0" max="5.0" default="5.0" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="4.0" max="4.0" default="4.0" unclamped="false"/>
+		<Slider displayName="FuseTimer" key="fuse-timer" min="0.1" max="0.1" default="0.1" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
-	</ModuleMapperTypes>
+</ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		<BlockState>
@@ -107,33 +108,33 @@ Check the documentation for more information on how to use modules. -->
 			<ShootingState>
 			
 			<Colliders>
-				<CapsuleCollider>
-					<Position x="-0.07" y="0.0" z="0.0" />
+				<BoxCollider>
+					<Position x="0.0" y="0.0" z="0.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
-					<Capsule direction="X" radius="0.020" height="0.15" />
-				</CapsuleCollider>
+					<Scale x="1.0" y="1.0" z="1.0" /><!--yが前zが上-->
+				</BoxCollider>
 			</Colliders>
 				
-				<Mesh name="100mmShell"> 
-					<Position x="0.0" y="0.0" z="-0.1" />
-					<Rotation x="0.0" y="-90.0" z="0.0" />
-					<Scale x="0.2" y="0.2" z="0.2" />
+				<Mesh name="CrackerBullet"> 
+					<Position x="0.0" y="0.0" z="0.0" />
+					<Rotation x="0.0" y="0.0" z="0.0" />
+					<Scale x="1.0" y="1.0" z="1.0" />
 				</Mesh>
 				
-				<Texture name="metalYellow" />
+				<Texture name="CrackerBulletTex" />
 				
 				
-				<Mass>0.05</Mass>
-				<Drag>0.3</Drag>
+				<Mass>1.0</Mass>
+				<Drag>0.0</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
-				<EntityDamage>10</EntityDamage>
-				<BlockDamage>10000</BlockDamage>
+				<EntityDamage>10000</EntityDamage>
+				<BlockDamage>10000.0</BlockDamage>
 				<Attaches>false</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
 				<BounceCombineType>Minimum</BounceCombineType>
-				<BounceStr>0.0</BounceStr>
+				<BounceStr>0.1</BounceStr>
 				<!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
 				<FrictionCombineType>Average</FrictionCombineType>
 				<FrictionStr>10.0</FrictionStr>
@@ -144,52 +145,54 @@ Check the documentation for more information on how to use modules. -->
 			<PowerSlider key="power" />
 			<RateOfFireSlider key="rate-of-fire" />
 			<HoldToShootToggle key="hold-to-shoot" />
+
+			<useTimefuse>true</useTimefuse>
+			<TimefuseSlider key="fuse-timer" />
+			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<ProjectileStart>
-				<Position x="0.0" y="0.0" z="4.0" />
-				<Rotation x="0.0" y="0.0" z="90.0" />
+				<Position x="0.0" y="0.0" z="2.0" />
+				<Rotation x="0.0" y="0.0" z="0.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
 			
 			<ShotFlashPosition>
-				<Position x="0.0" y="0.0" z="3.3" />
-				<Rotation x="0.0" y="0.0" z="90.0" />
+				<Position x="0.0" y="0.0" z="2.0" />
+				<Rotation x="0.0" y="0.0" z="0.0" />
 				<Scale x="2.0" y="2.0" z="2.0" />
 			</ShotFlashPosition>
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>300</DefaultAmmo>
+			<DefaultAmmo>1000000</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<useExplodeRotation>true</useExplodeRotation>
-			<ExplodeRadius>2.0</ExplodeRadius>
-			<ExplodePower>10.0</ExplodePower>
+			<ExplodeRadius>7.0</ExplodeRadius>
+			<ExplodePower>24000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>machinegunHit</ExplodeEffect>
-			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
-			<TrailEffect>newBulletTrailGV100</TrailEffect>
-			<!--<BulletEffect>bulleteffect</BulletEffect>-->
+			<ExplodeEffect>PartyCracker</ExplodeEffect>
+			<ShotFlashEffect>flash</ShotFlashEffect>
+			<BulletEffect>newBulletTrailV100</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.0</FuseDelayTime>
 			
-			<RecoilMultiplier>0.2</RecoilMultiplier>
+			<RecoilMultiplier>0.0</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.005</RandomDiffusion>
+			<RandomDiffusion>0.5</RandomDiffusion>
 			
-			<PoolSize>50</PoolSize>
+			<PoolSize>100</PoolSize>
 			
 			<Sounds>
-				<AudioClip name="machinegunfire" />
+				<AudioClip name="GrabObjectSound" />
 			</Sounds>
 			<HitSounds>
-				<AudioClip name="machinegunhit" />
+				<AudioClip name="merryxmas" />
 			</HitSounds>
 	</AdShootingProp>
 </Modules>
@@ -218,19 +221,19 @@ The Trigger element is optional. -->
 <!-- Optionally specify type of damage done to entities.
 Can be one of "Blunt", "Sharp", "Fire" -->
 <!-- <DamageType>Blunt</DamageType> -->
-<Mesh name="20mmL65"> 
+<Mesh name="Cracker"> 
 	<!-- Must be defined as a resource in the
 	manifest. -->
-	<Position x="0.0" y="0.0" z="0.05" />
+	<Position x="0.0" y="0." z="0.2" />
 	<Rotation x="0.0" y="90.0" z="0.0" />
-	<Scale x="2.0" y="2.0" z="2.0" />
+	<Scale x="1.0" y="1.0" z="1.0" />
 </Mesh>
-<Texture name="metalGrey" /> <!-- Must be defined as a resource
+<Texture name="CrackerTex" /> <!-- Must be defined as a resource
 	in the manifest. -->
 <Icon>
 	<Position x="0.2" y="0.2" z="0.0" />
 	<Rotation x="60.0" y="30.0" z="30.0" />
-	<Scale x="0.3" y="0.3" z="0.3" />
+	<Scale x="0.25" y="0.25" z="0.25" />
 </Icon>
 <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
 to be displayed. The child elements define how and where it is displayed. -->
@@ -266,19 +269,14 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
 	<!-- TODO: Insert Collider definitions here.
 	Examples: -->
 	<BoxCollider>
-		<Position x="0.0" y="0.0" z="0.18" />
+		<Position x="0.0" y="0.0" z="0.5" />
 		<Rotation x="0.0" y="0.0" z="0.0" />
-		<Scale x="0.25" y="0.25" z="0.25" /><!--yが前zが上-->
+		<Scale x="0.7" y="0.7" z="0.7" /><!--yが前zが上-->
 	</BoxCollider>
 	<!--<SphereCollider>
 		<Position x="0.0" y="0.0" z="0.0" />
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
-	<CapsuleCollider>
-		<Position x="0.0" y="-0.045" z="1.55" />
-		<Rotation x="0.0" y="90.0" z="0.0" />
-		<Capsule direction="X" radius="0.05" height="2.7" />
-	</CapsuleCollider>
 </Colliders>
 <BasePoint hasAddingPoint="false">
 	<Stickiness enabled="true" radius="0.6" />
