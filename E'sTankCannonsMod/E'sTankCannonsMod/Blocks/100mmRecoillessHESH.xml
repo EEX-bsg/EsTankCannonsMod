@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <ID>27</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>[WIP]100mmRecoillessHESH</Name>
+<Name>100mmRecoillessHESH</Name>
 <!-- TODO: Change the mass to something appropriate -->
 <Mass>0.5</Mass>
 <!-- Additional keywords that can be used to search for this block
@@ -26,7 +26,7 @@ in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
 <SearchKeywords>
-	<Keyword>Es,100,he,sh,es,recoilless</Keyword>
+	<Keyword>Es,100,he,at,es,recoilless</Keyword>
 </SearchKeywords>
 <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -54,11 +54,10 @@ The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
-        <Key displayName="Work In Progress" key="wip" default="None" />
-		<!-- <Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="300" max="300" default="300" unclamped="false"/>
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.10" max="0.10" default="0.10" unclamped="false"/>
-		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" /> -->
+		<Key displayName="Shot" key="fire" default="C" /> 
+		<Slider displayName="Power" key="power" min="250" max="250" default="250" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.1" max="0.1" default="0.1" unclamped="false"/>
+		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 </ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
@@ -115,7 +114,7 @@ Check the documentation for more information on how to use modules. -->
 			</Colliders>
 				
 				<Mesh name="100mmShell"> 
-					<Position x="0.0" y="0.0" z="-0.1" />
+					<Position x="0.0" y="0.0" z="0.1" />
 					<Rotation x="0.0" y="-90.0" z="0.0" />
 					<Scale x="1.0" y="1.0" z="1.0" />
 				</Mesh>
@@ -124,12 +123,12 @@ Check the documentation for more information on how to use modules. -->
 				
 				
 				<Mass>0.5</Mass>
-				<Drag>0.0</Drag>
+				<Drag>0.1</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
 				<EntityDamage>40</EntityDamage>
 				<BlockDamage>10000.0</BlockDamage>
-				<Attaches>false</Attaches>
+				<Attaches>true</Attaches>
 				<CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 				
 				<BounceCombineType>Minimum</BounceCombineType>
@@ -159,11 +158,11 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>5</DefaultAmmo>
+			<DefaultAmmo>4</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>3.0</ExplodeRadius>
-			<ExplodePower>0.0</ExplodePower>
+			<ExplodeRadius>2.0</ExplodeRadius>
+			<ExplodePower>1000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -178,9 +177,9 @@ Check the documentation for more information on how to use modules. -->
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.0</FuseDelayTime>
 			
-			<RecoilMultiplier>0.1</RecoilMultiplier>
+			<RecoilMultiplier>0.05</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.015</RandomDiffusion>
+			<RandomDiffusion>0.06</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
 			

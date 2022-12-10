@@ -1,18 +1,19 @@
-﻿弾数　プールサイズ　表 E砲v1.2.3
+﻿弾数　プールサイズ　表 E砲v1.3.0
 砲名称                    弾数  プールサイズ
 600mmL8SB                    3            50
 152mmL23HE                   8            50
 120mmL44APFSDS              10            50
 120mmL44HEATFS              14            50
+100mmRecoillessHESH          4            50
 88mmL74AntiAir              84            50
 88mmL74APHE                 16            50
 75mmL24HE                   20            50
 75mmL24AP                   20            50
 75mmL24HEAT                 20            50
-45mmL46HE                  115            50
-45mmL46AP                  115            50
+45mmL46APHE                115            50
 20mmL65HE                  300            50
-12.7mmMachineGunHE         500           100
-12.7mmMachineGunT          500           100
+12.7mmMachineGun           500           100
+RocketLauncher               2            50
+GMissleLauncher             10            50
 medievalCannon             100           100
 smokegranadedischarger       1            50
