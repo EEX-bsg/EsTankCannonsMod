@@ -110,6 +110,8 @@
 		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
 		<!--<Block path="Blocks/12.7mmMachineGunHE.xml" />--><!--blockid:#19-->
 		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
+		<Block path="Blocks/RocketLauncher.xml" /><!--blockid:#30-->
+		<Block path="Blocks/GMissileLauncher.xml" /><!--blockid:#31-->
 		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
 		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
 		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
@@ -168,7 +170,7 @@
 		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
 		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
 		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
-		<Mesh name="100mmRecoilless" path="Models/100mmRecoilless.obj" />
+		<Mesh name="100mmRecoilless" path="Models/100mmL31_recoilless.obj" />
 		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
 		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
 		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />

@@ -251,7 +251,7 @@ Check the documentation for more information on how to use modules. -->
 					<Scale x="0.127" y="0.127" z="0.127" />
 				</Mesh>
 				
-				<Texture name="metalGrey" />
+				<Texture name="metalYellow" />
 				
 				
 				<Mass>0.05</Mass>
@@ -286,7 +286,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
-			<ProjectilesExplode>false</ProjectilesExplode>
+			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>1.0</ExplodeRadius>
 			<ExplodePower>10.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
@@ -295,18 +295,16 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 			
 			<AssetBundleName name="myasset" />
-			<ExplodeEffect>machinegunhit</ExplodeEffect>
+			<ExplodeEffect>machinegunHit</ExplodeEffect>
 			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
-			<DelayTime>10</DelayTime>
+			<useDelay>true</useDelay>
+			<DelayTime>0.083</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
-
-			
-			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			
@@ -392,8 +390,8 @@ Check the documentation for more information on how to use modules. -->
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
 
-			<useTimefuse>true</useTimefuse>
 			<DelayTime>10</DelayTime>
+			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			

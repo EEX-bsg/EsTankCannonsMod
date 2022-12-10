@@ -162,6 +162,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>300</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
+			<useExplodeRotation>true</useExplodeRotation>
 			<ExplodeRadius>2.0</ExplodeRadius>
 			<ExplodePower>10.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
