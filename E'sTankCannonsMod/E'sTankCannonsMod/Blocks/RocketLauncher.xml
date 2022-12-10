@@ -172,7 +172,7 @@
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.005</RandomDiffusion>
 			
-			<PoolSize>20</PoolSize>
+			<PoolSize>50</PoolSize>
 			
 			<Sounds>
 				<AudioClip name="muon" />

@@ -6,19 +6,19 @@
  4: 120mmL44HEATFS
  5: 88mmL74AntiAir
  6: 88mmL74APCR
- 7: 45mmL46HE
- 8: 45mmL46AP
+ 7: (削除: 45mmL46HE)
+ 8: (削除: 45mmL46AP)
  9: 152mmL23HE
 10: MedievalCannon
 11: 20mmL65HE
 12: 75mmL48HE
 13: 75mmL48AP
-14: RedBigFlag
-15: BlueBigFlag
+14: (削除: RedBigFlag)
+15: (削除: BlueBigFlag)
 16: RedSmallFlag
 17: BlueSmallFlag
 18: 75mmL24HEAT
-19: 12.7mmMachineGunHE
+19: (削除: 12.7mmMachineGunHE)
 20: 12.7mmMachineGunT
 21: (削除: Nightvision)
 22: (削除: 100000mmL0.036-typeCore)
@@ -37,6 +37,5 @@ ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE
 ・88mmL74AntiAir,88mmL74APCR
 ・75mmL48HE,75mmL48AP,75mmL24HEAT
-・45mmL46HE,45mmL46AP
-・20mmL65HE,12.7mmMachineGunHE,12.7mmMachineGunT
-・antenna,RedBigFlag,RedSmallFlag,BlueBigFlag,BlueSmallFlag
+・20mmL65HE,12.7mmMachineGunT
+・antenna,RedSmallFlag,BlueSmallFlag
