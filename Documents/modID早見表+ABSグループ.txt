@@ -31,7 +31,7 @@
 29: 45mmL46APHE
 30: RocketLauncher
 31: GMissileLauncher
-32: PartyCracker
+32: (削除: PartyCracker)
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE
