@@ -1,4 +1,4 @@
-‚±‚±‚©‚ç“Ç‚İ‚ñ‚Å‚é‚í‚¯‚Å‚Í‚È‚¢
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚İï¿½ï¿½ï¿½Å‚ï¿½í‚¯ï¿½Å‚Í‚È‚ï¿½
 
 AddCustomModuleMod(ACMmod) is not loaded.
 Please try the following.
@@ -6,6 +6,5 @@ Please try the following.
 2. Open the mod tab in the upper right corner of the Besiege title scene.
 3. Turn on the ACM and E'sTankCannonsMod.
 4. Restart Besiege.
-(Using Deepl translator)
 
 AddCustomModuleMod(ACMmod) is not loaded.\nPlease try the following.\n1. Subscribe to ACM on SteamWorkshop.\n2. Open the mod tab in the upper right corner of the Besiege title scene.\n3. Turn on the ACM and E'sTankCannonsMod.\n4. Restart Besiege.\n(Using Deepl translator)

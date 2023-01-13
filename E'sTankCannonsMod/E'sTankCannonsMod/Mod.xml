@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.3.0</Version>
+	<Version>1.3.1</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.3.0 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.3.1 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -92,7 +92,7 @@
 		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
 		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
 		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
-		<Block path="Blocks/PartyCracker.xml" /><!--blockid:#32-->
+		<!-- <Block path="Blocks/PartyCracker.xml" />blockid:#32 -->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
@@ -239,6 +239,8 @@
 		<AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
 		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
 		<AudioClip name="Booster" path="Sounds/Booster.wav" />
+		<AudioClip name="Reload10s" path="Sounds/Reload10s.wav" />
+		<AudioClip name="Reload5s" path="Sounds/Reload5s.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
