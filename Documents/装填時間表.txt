@@ -1,4 +1,4 @@
-砲名称　発射レート　装填時間(秒)v1.3.0
+砲名  発射レート  装填時間(秒)  マガジンリロード(秒)  v1.3.1
 600mmL8SB 0.01 100s
 152mmL23HE 0.10 10s
 120mmL44APFSDS 0.12 8.33s
@@ -10,7 +10,7 @@
 75mmL24AP 0.33 3.00s
 75mmL24HEAT 0.33 3.00s
 45mmL46APHE 1.0 1.00s
-20mmL65HE 5.0 0.20s
+20mmL65HE 5.0 0.10s 10s
 12.7mmMachineGun 3.0*4 0.08s
 RocketLauncher 0.5 2.00s
 GMissileLauncher 0.16 6.25s
