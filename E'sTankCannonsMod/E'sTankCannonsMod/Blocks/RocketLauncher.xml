@@ -134,7 +134,7 @@
 			<HoldToShootToggle key="hold-to-shoot" />
 			
 			<ProjectileStart>
-				<Position x="0.0" y="-0.2" z="0.4" />
+				<Position x="0.0" y="-0.2" z="0.5" />
 				<Rotation x="90" y="0.0" z="0.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
@@ -218,9 +218,9 @@
 	<!-- <DamageType>Blunt</DamageType> -->
 	
 	<Mesh name="RocketBay">
-		<Position x="0.0" y="0.0" z="0.2" />
+		<Position x="0.0" y="0.0" z="0.24" />
 		<Rotation x="90.0" y="0.0" z="0.0" />
-		<Scale x="0.9" y="1.5" z="1.5" />
+		<Scale x="0.9" y="2.0" z="1.5" />
 	</Mesh>
 	
 	<Texture name="metalGreen" />
@@ -263,9 +263,9 @@
 	
 	<Colliders>
 		<BoxCollider>
-			<Position x="0.0" y="0.0" z="0.16" />
+			<Position x="0.0" y="0.0" z="0.14" />
 			<Rotation x="0.0" y="0.0" z="0.0" />
-			<Scale x="0.14" y="0.43" z="0.2" />
+			<Scale x="0.14" y="0.43" z="0.15" />
 		</BoxCollider>
 	</Colliders>
 	
