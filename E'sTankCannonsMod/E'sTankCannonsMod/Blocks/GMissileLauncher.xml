@@ -116,7 +116,7 @@
 				<Mass>5.0</Mass>
 				<Drag>0.0</Drag>
 				<AngularDrag>15.0</AngularDrag>
-				<IgnoreGravity>False</IgnoreGravity>
+				<IgnoreGravity>true</IgnoreGravity>
 				<EntityDamage>100</EntityDamage>
 				<BlockDamage>2.0</BlockDamage>
 				<Attaches>false</Attaches>
@@ -146,7 +146,7 @@
 			</ShotFlashPosition>
 			
 			<PurgeVector x="0.0" y="0.0" z="1.0" />
-			<PurgePower>5.0</PurgePower>
+			<PurgePower>10.0</PurgePower>
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
@@ -160,7 +160,7 @@
 			<useExplodeRotation>false</useExplodeRotation>
 			<useJamReducer>true</useJamReducer>
 			<useBeacon>true</useBeacon>
-			<GuidRatio>0.2</GuidRatio>
+			<GuidRatio>0.3</GuidRatio>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
@@ -170,9 +170,9 @@
 			<ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
 			<BulletEffect>MissileEffect</BulletEffect>
 			
-			<RecoilMultiplier>0.6</RecoilMultiplier>
+			<RecoilMultiplier>0.0</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.005</RandomDiffusion>
+			<RandomDiffusion>0.00</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
 			
