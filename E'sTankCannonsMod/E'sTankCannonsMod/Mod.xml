@@ -40,7 +40,7 @@
 		 Important: You cannot upload mods to Steam or WeGame while Debug is turned on.
 		 
 		 Note: This value is independent of the Debug values for specific Blocks and Entities.-->
-	<Debug>false</Debug>
+	<Debug>true</Debug>
 	
 	<!-- Whether the mod can be used in MP or only in SP.
 		 SP-only mods are easier to write but obviously more limited in their uses.
@@ -241,6 +241,7 @@
 		<AudioClip name="Booster" path="Sounds/Booster.wav" />
 		<AudioClip name="Reload10s" path="Sounds/Reload10s.wav" />
 		<AudioClip name="Reload5s" path="Sounds/Reload5s.wav" />
+		<AudioClip name="Reload" path="Sounds/Reload.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
