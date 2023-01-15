@@ -205,8 +205,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>1.0</ExplodeRadius>
-			<ExplodePower>8.0</ExplodePower>
+			<ExplodeRadius>0.4</ExplodeRadius>
+			<ExplodePower>1000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -287,8 +287,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>1.0</ExplodeRadius>
-			<ExplodePower>10.0</ExplodePower>
+			<ExplodeRadius>0.4</ExplodeRadius>
+			<ExplodePower>1000.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
