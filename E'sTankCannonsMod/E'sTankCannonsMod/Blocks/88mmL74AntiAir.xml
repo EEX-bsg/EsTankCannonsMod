@@ -55,11 +55,15 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
+		<Key displayName="Reload" key="reload" default="R" /> 
 		<Slider displayName="Power" key="power" min="400" max="400" default="400" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Fuse Timer" key="fuse-timer" min="0.1" max="5" default="1.0" unclamped="false"/>
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.8" max="0.8" default="0.8" unclamped="false"/>
+		<Slider displayName="Reload Time" key="reload-time" min="10.0" max="10.0" default="10.0" unclamped="false"/>
+		<Slider displayName="Magazine Capacity" key="capacity" min="5.0" max="5.0" default="5.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+		<Toggle displayName="Auto Reload" key="auto-reload" default="true" />
 	</ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
@@ -107,11 +111,12 @@ Check the documentation for more information on how to use modules. -->
 			<ShootingState>
 			
 			<Colliders>
-				<BoxCollider>
+				<!-- かつて近接信管だったコライダー -->
+				<!-- <BoxCollider>
 					<Position x="0.0" y="0.0" z="25.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
 					<Scale x="0.1" y="1.0" z="1.0" />
-				</BoxCollider>
+				</BoxCollider> -->
 				<CapsuleCollider>
 					<Position x="0.0" y="0.0" z="0.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
@@ -166,8 +171,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>84</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>15.0</ExplodeRadius>
-			<ExplodePower>1.0</ExplodePower>
+			<ExplodeRadius>6.0</ExplodeRadius>
+			<ExplodePower>9000.0</ExplodePower>
 			<ExplodeUpPower>1.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -191,6 +196,20 @@ Check the documentation for more information on how to use modules. -->
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>50</PoolSize>
+
+			<useMagazine>true</useMagazine>
+			<MagazineInfo>
+				<MagazineCapacitySlider key="capacity" />
+				<ReloadTimeSlider key="reload-time" />
+				<useReloadKey>true</useReloadKey>
+				<ReloadKey key="reload" />
+				<forceAutoReload>false</forceAutoReload>
+				<useAutoReloadToggle>true</useAutoReloadToggle>
+				<AutoReloadToggle key="auto-reload" />
+				<ReloadSounds>
+					<AudioClip name="Reload" />
+				</ReloadSounds>
+			</MagazineInfo>
 			
 			<Sounds>
 				<AudioClip name="CannonSound2" />

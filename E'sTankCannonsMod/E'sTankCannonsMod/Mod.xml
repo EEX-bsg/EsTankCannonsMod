@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.3.1</Version>
+	<Version>1.3.2</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.3.1 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.3.2 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -241,6 +241,7 @@
 		<AudioClip name="Booster" path="Sounds/Booster.wav" />
 		<AudioClip name="Reload10s" path="Sounds/Reload10s.wav" />
 		<AudioClip name="Reload5s" path="Sounds/Reload5s.wav" />
+		<AudioClip name="Reload" path="Sounds/Reload.wav" />
 		<!--アセット-->
 		<AssetBundle name="myasset" path="assets/tank_effect" />
 		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
