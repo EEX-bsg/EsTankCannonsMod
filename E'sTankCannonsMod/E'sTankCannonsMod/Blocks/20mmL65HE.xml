@@ -60,6 +60,7 @@ Check the documentation for more information on how to use modules. -->
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="10.0" max="10.0" default="10.0" unclamped="false"/>
 		<Slider displayName="Reload Time" key="reload-time" min="5.0" max="5.0" default="5.0" unclamped="false"/>
+		<Slider displayName="Shot Delay" key="delay-timer" min="0" max="3" default="0" unclamped="true"/>
 		<Slider displayName="Magazine Capacity" key="capacity" min="20.0" max="20.0" default="20.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Toggle displayName="Auto Reload" key="auto-reload" default="true" />
@@ -148,6 +149,8 @@ Check the documentation for more information on how to use modules. -->
 			<PowerSlider key="power" />
 			<RateOfFireSlider key="rate-of-fire" />
 			<HoldToShootToggle key="hold-to-shoot" />
+			<useDelayTimer>true</useDelayTimer>
+			<DelayTimerSlider key="delay-timer" />
 			
 			<ProjectileStart>
 				<Position x="0.0" y="0.0" z="4.0" />
