@@ -55,9 +55,13 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
+		<Key displayName="Reload" key="reload" default="R" />
 		<Slider displayName="Power" key="power" min="250" max="250" default="250" unclamped="false"/>
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.1" max="0.1" default="0.1" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.5" max="0.5" default="0.5" unclamped="false"/>
+		<Slider displayName="Reload Time" key="reload-time" min="10.0" max="10.0" default="10.0" unclamped="false"/>
+		<Slider displayName="Magazine Capacity" key="capacity" min="2.0" max="2.0" default="2.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+		<Toggle displayName="Auto Reload" key="auto-reload" default="true" />
 </ModuleMapperTypes>
 <Modules>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
@@ -158,7 +162,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>4</DefaultAmmo>
+			<DefaultAmmo>20</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>2.0</ExplodeRadius>
@@ -182,6 +186,19 @@ Check the documentation for more information on how to use modules. -->
 			<RandomDiffusion>0.06</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
+
+			<MagazineInfo>
+				<MagazineCapacitySlider key="capacity" />
+				<ReloadTimeSlider key="reload-time" />
+				<useReloadKey>true</useReloadKey>
+				<ReloadKey key="reload" />
+				<forceAutoReload>false</forceAutoReload>
+				<useAutoReloadToggle>true</useAutoReloadToggle>
+				<AutoReloadToggle key="auto-reload" />
+				<ReloadSounds>
+					<AudioClip name="Reload10s" />
+				</ReloadSounds>
+			</MagazineInfo>
 			
 			<Sounds>
 				<AudioClip name="CannonSound2" />
