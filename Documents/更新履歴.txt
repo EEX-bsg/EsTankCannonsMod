@@ -263,6 +263,7 @@ v1.3.1
 v1.3.2
 ・GMissileLauncherの誘導率を50%上昇
 ・GMissileLauncherに重力が働かないように変更
+・GMissileLauncherの発射時拡散を0に変更
 ・RocketLauncherの発射位置を変更
     ロケットとランチャーのコライダーが干渉していたのを修正しました。
 ・RocketLauncherにマガジンリロードを導入
@@ -281,3 +282,8 @@ v1.3.2
     マガジン弾数は5発  マガジンリロードは10秒
 ・100mmRecoillessHESHの発射レートを0.5へ変更
 ・100mmRecoillessHESHの弾数を20発へ変更
+
+v1.3.3
+・88mmL74AntiAirの炸裂力を2000に変更
+・RocketLauncherの発射時拡散を0に変更
+・RocketLauncherが発射時自爆する問題を修正

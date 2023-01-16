@@ -148,7 +148,7 @@
 			</ShotFlashPosition>
 			
 			<PurgeVector x="0.0" y="1.0" z="0.0" />
-			<PurgePower>0.0</PurgePower>
+			<PurgePower>5.0</PurgePower>
 			
 			<ShowPlaceholderProjectile>true</ShowPlaceholderProjectile>
 			
@@ -172,7 +172,7 @@
 			
 			<RecoilMultiplier>0.6</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.005</RandomDiffusion>
+			<RandomDiffusion>0.0</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
 
