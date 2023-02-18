@@ -4,14 +4,14 @@
 120mmL44APFSDS 0.12 8.33s
 120mmL44HEATFS 0.20 5.00s
 100mmRecoillessHESH 0.1 2.00s 10s
-88mmL74AntiAir 0.80 1.25s 10s
+88mmL74AntiAir 0.40 2.5s 10s
 88mmL74APHE 0.25 4.00s
 75mmL24HE 0.33 3.00s
 75mmL24AP 0.33 3.00s
 75mmL24HEAT 0.33 3.00s
 45mmL46APHE 1.0 1.00s
-20mmL65HE 5.0 0.10s 5s
-12.7mmMachineGun 3.0*4 0.08s
+20mmL65HE 8.0 0.125s 5s
+12.7mmMachineGun 2.0*4 0.125s
 RocketLauncher 0.5 2.00s 10s
 GMissileLauncher 0.16 6.25s
 medievalCannon 1.0 1.00s

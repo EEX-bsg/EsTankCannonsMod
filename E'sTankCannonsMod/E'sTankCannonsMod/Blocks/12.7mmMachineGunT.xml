@@ -59,7 +59,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="45" max="45" default="45" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="3.0" max="3.0" default="3.0" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="2.0" max="2.0" default="2.0" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Slider displayName="Speed" key="speed" min="0" max="1" default="0.5" unclamped="false"/>
 		<Toggle displayName="Auto" key="automatic" default="false" />
@@ -232,7 +232,7 @@ Check the documentation for more information on how to use modules. -->
 				<AudioClip name="machinegunhit" />
 			</HitSounds>
 	</AdShootingProp>
-	<!--HE2-->
+	<!--AP2-->
 	<AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		
 			<ShootingState>
@@ -286,9 +286,9 @@ Check the documentation for more information on how to use modules. -->
 			
 			<DefaultAmmo>500</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
-			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>0.4</ExplodeRadius>
-			<ExplodePower>1000.0</ExplodePower>
+			<ProjectilesExplode>false</ProjectilesExplode>
+			<ExplodeRadius>0.0</ExplodeRadius>
+			<ExplodePower>0.0</ExplodePower>
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -300,7 +300,7 @@ Check the documentation for more information on how to use modules. -->
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelay>true</useDelay>
-			<DelayTime>0.083</DelayTime>
+			<DelayTime>0.125</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
@@ -384,14 +384,11 @@ Check the documentation for more information on how to use modules. -->
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelay>true</useDelay>
-			<DelayTime>0.166</DelayTime>
+			<DelayTime>0.250</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
-
-			<DelayTime>10</DelayTime>
-			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			
@@ -471,14 +468,12 @@ Check the documentation for more information on how to use modules. -->
 			<!--<BulletEffect>bulleteffect</BulletEffect>-->
 			
 			<useDelay>true</useDelay>
-			<DelayTime>0.2499</DelayTime>
+			<DelayTime>0.370</DelayTime>
 			
 			<RecoilMultiplier>0.01</RecoilMultiplier>
 			<RandomInterval>0.0</RandomInterval>
 			<RandomDiffusion>0.006</RandomDiffusion>
 
-			<DelayTime>10</DelayTime>
-			<RandomFuseInterval>0.0</RandomFuseInterval>
 			
 			<PoolSize>100</PoolSize>
 			
