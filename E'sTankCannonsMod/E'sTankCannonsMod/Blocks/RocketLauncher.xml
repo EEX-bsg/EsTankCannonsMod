@@ -118,7 +118,7 @@
 				<Mass>2.0</Mass>
 				<Drag>0.0</Drag>
 				<AngularDrag>0.0</AngularDrag>
-				<IgnoreGravity>False</IgnoreGravity>
+				<IgnoreGravity>false</IgnoreGravity>
 				<EntityDamage>40</EntityDamage>
 				<BlockDamage>0.3</BlockDamage>
 				<Attaches>false</Attaches>
