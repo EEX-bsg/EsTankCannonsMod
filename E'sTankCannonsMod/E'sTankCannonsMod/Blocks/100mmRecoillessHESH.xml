@@ -183,10 +183,11 @@ Check the documentation for more information on how to use modules. -->
 			
 			<RecoilMultiplier>0.05</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.06</RandomDiffusion>
+			<RandomDiffusion>0.02</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
 
+			<useMagazine>true</useMagazine>
 			<MagazineInfo>
 				<MagazineCapacitySlider key="capacity" />
 				<ReloadTimeSlider key="reload-time" />

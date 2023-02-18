@@ -55,7 +55,7 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="2900" max="2900" default="2900" unclamped="false"/>
+		<Slider displayName="Power" key="power" min="4800" max="4800" default="4800" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.12" max="0.12" default="0.12" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
@@ -123,7 +123,7 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalWhite" />
 				
 				
-				<Mass>2.0</Mass><!--v1.0.3で5.0 v1.1.1で2.0-->
+				<Mass>6.0</Mass><!--v1.0.3で5.0 v1.1.1で2.0 v1.3.2で4.0-->
 				<Drag>0.0</Drag>
 				<AngularDrag>100.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
@@ -163,8 +163,8 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>0.05</ExplodeRadius>
-			<ExplodePower>30.0</ExplodePower>
-			<ExplodeUpPower>30.0</ExplodeUpPower>
+			<ExplodePower>30000.0</ExplodePower>
+			<ExplodeUpPower>0.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>true</ProjectilesDespawnImmediately>
