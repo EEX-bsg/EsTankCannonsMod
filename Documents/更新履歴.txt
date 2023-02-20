@@ -305,3 +305,7 @@ v1.3.4
 ・12.7mmMachineGunの発射レートを秒間8発へ変更
 ・12.7mmMachineGunの２弾目をHE弾からAP弾に変更
 ・GMissileLauncherの発射位置を1m前方に変更
+
+v1.3.5
+・120mmL44APFSDSのRecoilMultiplierを0.24に変更
+    従来どおり、サス6個で耐えれるように修正しました。
