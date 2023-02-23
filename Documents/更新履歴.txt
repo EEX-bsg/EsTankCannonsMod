@@ -309,3 +309,13 @@ v1.3.4
 v1.3.5
 ・120mmL44APFSDSのRecoilMultiplierを0.24に変更
     従来どおり、サス6個で耐えれるように修正しました。
+
+v1.3.6
+・150mmL23HEのExplodeUpPowerを-2に変更
+・120mmL44HEATFSの炸裂力を13000に変更
+・120mmL44HEATFSのExplodeUpPowerを-4に変更
+    炸裂を受けた際に対象が異様に跳ね上がる現象が抑制されます。
+・88mmL74APHEが炸裂しない問題を解消
+    ただし、副作用としてトレイルエフェクトは削除されます。
+・75mmL24HEATのExplodeUpPowerを-4に変更
+・75mmL48HEのExplodeUpPowerを-4に変更
