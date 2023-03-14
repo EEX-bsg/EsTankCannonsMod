@@ -319,3 +319,26 @@ v1.3.6
     ただし、副作用としてトレイルエフェクトは削除されます。
 ・75mmL24HEATのExplodeUpPowerを-4に変更
 ・75mmL48HEのExplodeUpPowerを-4に変更
+
+v1.3.7
+・120mmL44APFSDSの弾丸重量を5に変更
+    従来より弾速を若干増やしました
+・88mmL74APHEのパワーを1700に変更
+・88mmL74APHEのExplodeUpPowerを-4に変更
+・88mmL74APHEの炸裂までの遅延を0.02に変更
+・88mmL74APHEのリコイル係数を0.28に変更
+    従来よりも弾速が増え、また炸裂が当たりやすいよう変更しました
+・75mmL48HEのパワーを260に変更
+・75mmL48HEの弾丸重量を0.6に変更
+・75mmL48HEの炸裂力を8800に変更
+・75mmL48HEのExplodeUpPowerを-3.5に変更
+    従来より弾速を下げ、破壊力も若干減るように変更しました
+・45mmL46APHEのExplodeUpPowerを-1に変更
+・45mmL46APHEの炸裂までの遅延を0.03に変更
+    炸裂の当たり方を適正化しました
+・RocketLauncher発射前の弾丸コライダを無効化
+・RocketLauncherのuseJamReducerを無効化
+    自爆をしづらくしました
+・GMissileLauncherのuseJamReducerを無効化
+・GMissileLauncherのリロード時間を10秒に変更
+    ミサイルが真っ直ぐ発射されない問題を軽減し、リロード時間を増やして強さを適正化しました。
