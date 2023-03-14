@@ -69,7 +69,7 @@
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="10.0" max="10" default="10" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.16" max="0.16" default="0.16" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.1" max="0.1" default="0.1" unclamped="false"/>
 		<Slider displayName="Fuse Timer" key="fuse-timer" min="5" max="5" default="5" unclamped="false"/>
 		<Slider displayName="Shot Delay" key="delay-timer" min="0" max="3" default="0" unclamped="true"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
@@ -98,9 +98,9 @@
 			
 				<Colliders>
 					<CapsuleCollider>
-						<Position x="0.0" y="0.0" z="0.0" />
+						<Position x="0.0" y="0.0" z="1.5" />
 						<Rotation x="0.0" y="0.0" z="0.0" />
-						<Capsule direction="Z" radius="0.2" height="2.0" />
+						<Capsule direction="Z" radius="0.2" height="3.0" />
 					</CapsuleCollider>
 				</Colliders>
 				
@@ -158,7 +158,7 @@
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			<useBooster>true</useBooster>
 			<useExplodeRotation>false</useExplodeRotation>
-			<useJamReducer>true</useJamReducer>
+			<useJamReducer>false</useJamReducer>
 			<useBeacon>true</useBeacon>
 			<GuidRatio>0.3</GuidRatio>
 			
