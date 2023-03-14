@@ -164,7 +164,7 @@ Check the documentation for more information on how to use modules. -->
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>2.5</ExplodeRadius>
 			<ExplodePower>6000.0</ExplodePower>
-			<ExplodeUpPower>0.0</ExplodeUpPower>
+			<ExplodeUpPower>-1.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>True</ProjectilesDespawnImmediately>
@@ -177,7 +177,7 @@ Check the documentation for more information on how to use modules. -->
 			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
-			<FuseDelayTime>0.15</FuseDelayTime>
+			<FuseDelayTime>0.03</FuseDelayTime>
 			
 			<RecoilMultiplier>0.25</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>

@@ -151,6 +151,7 @@
 			<PurgePower>5.0</PurgePower>
 			
 			<ShowPlaceholderProjectile>true</ShowPlaceholderProjectile>
+			<PlaceholderProjectileUseCollider>false</PlaceholderProjectileUseCollider>
 			
 			<DefaultAmmo>10</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
@@ -160,7 +161,7 @@
 			<ExplodeUpPower>0.0</ExplodeUpPower>
 			<useBooster>true</useBooster>
 			<useExplodeRotation>false</useExplodeRotation>
-			<useJamReducer>true</useJamReducer>
+			<useJamReducer>false</useJamReducer>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
