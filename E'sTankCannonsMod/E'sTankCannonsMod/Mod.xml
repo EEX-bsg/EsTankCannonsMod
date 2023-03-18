@@ -223,6 +223,15 @@
 		<!-- <Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
 		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
 		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" /> -->
+		<!--UIIcon-->
+		<Texture name="IconAP" path="Textures/Icons/IconAP.png" />
+		<Texture name="IconHE" path="Textures/Icons/IconHE.png" />
+		<Texture name="IconHEAT" path="Textures/Icons/IconHEAT.png" />
+		<Texture name="IconAPFSDS" path="Textures/Icons/IconAPFSDS.png" />
+		<Texture name="IconHEATFS" path="Textures/Icons/IconHEATFS.png" />
+		<Texture name="IconRocket" path="Textures/Icons/IconRocket.png" />
+		<Texture name="Icon600mm" path="Textures/Icons/Icon600mm.png" />
+		<Texture name="IconBullet" path="Textures/Icons/IconBullet.png" />
 		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--サウンド-->
