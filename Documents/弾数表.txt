@@ -4,6 +4,7 @@
 152mmL23HE                   8            50
 120mmL44APFSDS              10            50
 120mmL44HEATFS              14            50
+105mmL28                    30            50
 100mmRecoillessHESH         20            50             5
 88mmL74AntiAir              84            50             5
 88mmL74APHE                 16            50
