@@ -98,6 +98,7 @@
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
 		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
+		<Block path="Blocks/105mmL28HE.xml" /><!--blockid:#33-->
 		<Block path="Blocks/90mmRecoillessHESH.xml" /><!--blockid:#27-->
 		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
 		<Block path="Blocks/88mmL74APHE.xml" /><!--blockid:#26-->
@@ -162,6 +163,7 @@
 	<Resources>
 		<!--砲モデル-->
 		<Mesh name="120mmL44" path="Models/120mmL44.obj" />
+		<Mesh name="105mmL28" path="Models/105mmL28.obj" />
 		<Mesh name="88mmL74" path="Models/88mmL74.obj" />
 		<Mesh name="45mmL46" path="Models/45mmL46.obj" />
 		<Mesh name="152mmL23" path="Models/152mmL23.obj" />
