@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
 <ID>27</ID>
 <!-- Name of the block, shown in the user interface. -->
-<Name>100mmRecoillessHESH</Name>
+<Name>90mmRecoillessHESH</Name>
 <!-- TODO: Change the mass to something appropriate -->
 <Mass>0.5</Mass>
 <!-- Additional keywords that can be used to search for this block
@@ -26,7 +26,7 @@ in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
 <SearchKeywords>
-	<Keyword>Es,100,he,at,es,recoilless</Keyword>
+	<Keyword>Es,90,he,at,es,recoilless</Keyword>
 </SearchKeywords>
 <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -120,7 +120,7 @@ Check the documentation for more information on how to use modules. -->
 				<Mesh name="100mmShell"> 
 					<Position x="0.0" y="0.0" z="0.1" />
 					<Rotation x="0.0" y="-90.0" z="0.0" />
-					<Scale x="1.0" y="1.0" z="1.0" />
+					<Scale x="0.9" y="0.9" z="0.9" />
 				</Mesh>
 				
 				<Texture name="metalYellow" />
@@ -234,7 +234,7 @@ The Trigger element is optional. -->
 <!-- Optionally specify type of damage done to entities.
 Can be one of "Blunt", "Sharp", "Fire" -->
 <!-- <DamageType>Blunt</DamageType> -->
-<Mesh name="100mmRecoilless"> 
+<Mesh name="90mmRecoilless"> 
 	<!-- Must be defined as a resource in the
 	manifest. -->
 	<Position x="0.0" y="0.4" z="0.5" />

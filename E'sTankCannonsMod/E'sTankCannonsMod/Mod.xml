@@ -98,7 +98,7 @@
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
 		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
-		<Block path="Blocks/100mmRecoillessHESH.xml" /><!--blockid:#27-->
+		<Block path="Blocks/90mmRecoillessHESH.xml" /><!--blockid:#27-->
 		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
 		<Block path="Blocks/88mmL74APHE.xml" /><!--blockid:#26-->
 		<!--<Block path="Blocks/88mmL74APCR.xml" />--><!--blockid:#6-->
@@ -171,7 +171,7 @@
 		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
 		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
 		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
-		<Mesh name="100mmRecoilless" path="Models/100mmL31_recoilless.obj" />
+		<Mesh name="90mmRecoilless" path="Models/90mmL34_recoilless.obj" />
 		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
 		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
 		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />

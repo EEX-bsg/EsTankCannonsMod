@@ -26,7 +26,7 @@
 24: (削除: XmasCannon)
 25: (削除: PresentBoxBay)
 26: 88mmL74APHE
-27: 100mmRecoillessHESH
+27: 90mmRecoillessHESH
 28: 600mmL8SB
 29: 45mmL46APHE
 30: RocketLauncher
