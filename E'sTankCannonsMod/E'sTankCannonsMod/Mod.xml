@@ -41,7 +41,7 @@
 		 Important: You cannot upload mods to Steam or WeGame while Debug is turned on.
 		 
 		 Note: This value is independent of the Debug values for specific Blocks and Entities.-->
-	<Debug>false</Debug>
+	<Debug>true</Debug>
 	
 	<!-- Whether the mod can be used in MP or only in SP.
 		 SP-only mods are easier to write but obviously more limited in their uses.
@@ -94,6 +94,7 @@
 		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
 		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
 		<!-- <Block path="Blocks/PartyCracker.xml" />blockid:#32 -->
+		<Block path="Blocks/BV-2.xml" /><!--blockid:#34 -->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
@@ -191,19 +192,20 @@
 		<Mesh name="bigFlag" path="Models/big_flag.obj" />
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<!-- <Mesh name="Nightvision" path="Models/Nightvision.obj" /> -->
-		<!-- <Mesh name="core" path="Models/startblock.obj" /> -->
+		<Mesh name="core" path="Models/startblock.obj" />
 		<!-- <Mesh name="xmasTree" path="Models/xmasTree.obj" /> -->
 		<!-- <Mesh name="xmasBox" path="Models/xmasBox.obj" />  -->
-		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
+		<!-- <Mesh name="bomb01" path="Models/bomb01.obj" /> -->
 		<Mesh name="Cracker" path="Models/party-cracker.obj" />
 		<Mesh name="CrackerBullet" path="Models/CrackerBullet.obj" />
-		<Mesh name="KV-2" path="Models/KV-2.obj" />
+		<Mesh name="BV-2" path="Models/BV-2.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
 		<Texture name="metalYellow" path="Textures/metal3.png" />
 		<Texture name="metalGreen" path="Textures/metal4.png" />
 		<Texture name="metalBlack" path="Textures/metal5.png" />
+		<Texture name="metalDarkgreen" path="Textures/metal6.png" />
 		<!--専用弾丸テクスチャ-->
 		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
@@ -216,7 +218,7 @@
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
 		<!-- <Texture name="NightvisionTex" path="Textures/Nightvision.png" /> -->
-		<!-- <Texture name="coreTex" path="Textures/startblocktex_png.png" /> -->
+		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
 		<!-- <Texture name="rainbow" path="Textures/rainbow.png" /> -->
 		<!-- <Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" /> -->
 		<!-- <Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" /> -->
