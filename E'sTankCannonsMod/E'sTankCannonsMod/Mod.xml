@@ -9,11 +9,11 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.3.7</Version>
+	<Version>1.4.0</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.3.7 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.4.0 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.
@@ -94,11 +94,13 @@
 		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
 		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
 		<!-- <Block path="Blocks/PartyCracker.xml" />blockid:#32 -->
+		<Block path="Blocks/BV-2.xml" /><!--blockid:#34 -->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
 		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
-		<Block path="Blocks/100mmRecoillessHESH.xml" /><!--blockid:#27-->
+		<Block path="Blocks/105mmL28HE.xml" /><!--blockid:#33-->
+		<Block path="Blocks/90mmRecoillessHESH.xml" /><!--blockid:#27-->
 		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
 		<Block path="Blocks/88mmL74APHE.xml" /><!--blockid:#26-->
 		<!--<Block path="Blocks/88mmL74APCR.xml" />--><!--blockid:#6-->
@@ -162,6 +164,7 @@
 	<Resources>
 		<!--砲モデル-->
 		<Mesh name="120mmL44" path="Models/120mmL44.obj" />
+		<Mesh name="105mmL28" path="Models/105mmL28.obj" />
 		<Mesh name="88mmL74" path="Models/88mmL74.obj" />
 		<Mesh name="45mmL46" path="Models/45mmL46.obj" />
 		<Mesh name="152mmL23" path="Models/152mmL23.obj" />
@@ -171,7 +174,7 @@
 		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
 		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
 		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
-		<Mesh name="100mmRecoilless" path="Models/100mmL31_recoilless.obj" />
+		<Mesh name="90mmRecoilless" path="Models/90mmL34_recoilless.obj" />
 		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
 		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
 		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />
@@ -189,18 +192,20 @@
 		<Mesh name="bigFlag" path="Models/big_flag.obj" />
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
 		<!-- <Mesh name="Nightvision" path="Models/Nightvision.obj" /> -->
-		<!-- <Mesh name="core" path="Models/startblock.obj" /> -->
+		<Mesh name="core" path="Models/startblock.obj" />
 		<!-- <Mesh name="xmasTree" path="Models/xmasTree.obj" /> -->
 		<!-- <Mesh name="xmasBox" path="Models/xmasBox.obj" />  -->
-		<!--<Mesh name="bomb01" path="Models/bomb01.obj" />-->
+		<!-- <Mesh name="bomb01" path="Models/bomb01.obj" /> -->
 		<Mesh name="Cracker" path="Models/party-cracker.obj" />
 		<Mesh name="CrackerBullet" path="Models/CrackerBullet.obj" />
+		<Mesh name="BV-2" path="Models/BV-2.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
 		<Texture name="metalWhite" path="Textures/metal2.png" />
 		<Texture name="metalYellow" path="Textures/metal3.png" />
 		<Texture name="metalGreen" path="Textures/metal4.png" />
 		<Texture name="metalBlack" path="Textures/metal5.png" />
+		<Texture name="metalDarkgreen" path="Textures/metal6.png" />
 		<!--専用弾丸テクスチャ-->
 		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
 		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
@@ -213,7 +218,7 @@
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
 		<!-- <Texture name="NightvisionTex" path="Textures/Nightvision.png" /> -->
-		<!-- <Texture name="coreTex" path="Textures/startblocktex_png.png" /> -->
+		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
 		<!-- <Texture name="rainbow" path="Textures/rainbow.png" /> -->
 		<!-- <Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" /> -->
 		<!-- <Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" /> -->

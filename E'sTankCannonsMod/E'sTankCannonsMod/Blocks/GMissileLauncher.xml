@@ -98,9 +98,9 @@
 			
 				<Colliders>
 					<CapsuleCollider>
-						<Position x="0.0" y="0.0" z="1.5" />
+						<Position x="0.0" y="0.0" z="0.0" />
 						<Rotation x="0.0" y="0.0" z="0.0" />
-						<Capsule direction="Z" radius="0.2" height="3.0" />
+						<Capsule direction="Z" radius="0.2" height="1.0" />
 					</CapsuleCollider>
 				</Colliders>
 				
@@ -134,7 +134,7 @@
 			<HoldToShootToggle key="hold-to-shoot" />
 			
 			<ProjectileStart>
-				<Position x="0.0" y="-4.2" z="0.4" />
+				<Position x="0.0" y="-5.0" z="0.4" />
 				<Rotation x="90" y="0.0" z="0.0" />
 				<Scale x="1.0" y="1.0" z="1.0" />
 			</ProjectileStart>
@@ -146,9 +146,10 @@
 			</ShotFlashPosition>
 			
 			<PurgeVector x="0.0" y="0.0" z="1.0" />
-			<PurgePower>10.0</PurgePower>
+			<PurgePower>30.0</PurgePower>
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
+			<PlaceholderProjectileUseCollider>false</PlaceholderProjectileUseCollider>
 			
 			<DefaultAmmo>10</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
