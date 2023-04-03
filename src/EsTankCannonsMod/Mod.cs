@@ -36,14 +36,14 @@ namespace ETCM
             CustomModules.AddBlockModule<ETCMAmmoUIModule, ETCMAmmoUIBehaviour>("ETCMAmmoUIModule", canReload: true);
             UnityEngine.Object.DontDestroyOnLoad(SingleInstance<ETCMmodule>.Instance);
 
-            // ETCMUIƒIƒuƒWƒFƒNƒg‚ðì¬‚µACanvas‚ðƒAƒ^ƒbƒ`‚·‚é
+            // ETCMUIã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã€Canvasã‚’ã‚¢ã‚¿ãƒƒãƒã™ã‚‹
             UnityEngine.Object.DontDestroyOnLoad(ETCMUI = new GameObject("ETCM UI"));
             Canvas canvas = ETCMUI.AddComponent<Canvas>();
-            // Canvas‚ÌÝ’è‚ðs‚¤
+            // Canvasã®è¨­å®šã‚’è¡Œã†
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             canvas.sortingOrder = 0;
             canvas.gameObject.layer = LayerMask.NameToLayer("HUD");
-            // ‰æ–ÊƒTƒCƒY‚É‰ž‚¶‚ÄUI‚ðƒXƒP[ƒŠƒ“ƒO‚·‚é‚½‚ß‚ÌƒRƒ“ƒ|[ƒlƒ“ƒg‚ðƒAƒ^ƒbƒ`‚·‚é
+            // ç”»é¢ã‚µã‚¤ã‚ºã«å¿œã˜ã¦UIã‚’ã‚¹ã‚±ãƒ¼ãƒªãƒ³ã‚°ã™ã‚‹ãŸã‚ã®ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ã‚¢ã‚¿ãƒƒãƒã™ã‚‹
             ETCMUI.AddComponent<CanvasScaler>().scaleFactor = 1;
         }
     }

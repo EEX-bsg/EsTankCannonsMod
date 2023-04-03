@@ -63,6 +63,7 @@ namespace ETCM
         private Text magazineText;
         private Text totalText;
         private float fireRate = 0.1f;
+        private bool isSimulating = false;
 
         void Awake()
         {
@@ -73,6 +74,11 @@ namespace ETCM
         {
             shootingBehavour = base.GetComponent<AdShootingBehavour>();
             shootingBehavour.OnFire += OnFire;
+        }
+
+        void Update()
+        {
+            isSimulating = StatMaster.levelSimulating && ((StatMaster.isMP && (StatMaster.isHosting || StatMaster.isLocalSim)) || !StatMaster.isMP);
         }
 
         public override void SafeAwake()
@@ -104,7 +110,97 @@ namespace ETCM
         {
             base.OnSimulateStart();
             ETCMUI = Mod.ETCMUI;
-            // AmmoUIƒIƒuƒWƒFƒNƒg‚ğì¬
+            GenerateUI();
+            fireRate = rateOfFireSlider.Value;
+
+            ammoUI.SetActive(false);
+        }
+
+        public override void OnSimulateStop()
+        {
+            base.OnSimulateStop();
+            Destroy(ammoUI);
+        }
+
+        public override void SimulateUpdateAlways()
+        {
+            base.SimulateUpdateAlways();
+            if (useAmmoUIToggle.IsActive)
+            {
+                ammoUI.SetActive(true);
+            }
+            else
+            {
+                ammoUI.SetActive(false);
+                return;
+            }
+            if (base.Machine.InfiniteAmmo || !Module.useMagazine)
+            {
+                totalText.text = "-----";
+            }
+            else
+            {
+                totalText.text = IntToThreeDigitString(shootingBehavour.AmmoStock);
+            }
+            magazineText.text = IntToThreeDigitString(shootingBehavour.AmmoLeft);
+        }
+
+        private void OnFire()
+        {
+            if(!isSimulating) return;
+            if (Module.useMagazine && shootingBehavour.AmmoLeft == 0)
+            {
+                StartCoroutine(BulletTimerFadeIn(reloadTimeSlider.Value));
+            }
+            else
+            {
+                StartCoroutine(BulletTimerFadeIn(1/fireRate));
+            }
+        }
+
+        IEnumerator BulletTimerFadeIn(float time)
+        {
+            float rate = 1 / time;
+            USlider slider = ammoUI.transform.Find("ReloadTimer").gameObject.GetComponent<USlider>();
+            float timer = 0f;
+            slider.value = 0f;
+            while ( timer <= time )
+            {
+                slider.value = Mathf.Lerp(0f, 1f, timer * rate);
+                timer += Time.fixedDeltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+            slider.value = 1f;
+        }
+
+        public string IntToThreeDigitString(int num)
+        {
+            // 999ä»¥ä¸Šã®å ´åˆã¯999ã«ä¸¸ã‚ã‚‹
+            if (num > 999) num = 999;
+
+            // æ•´æ•°ã‚’3æ¡ã«ã™ã‚‹
+            string numStr = num.ToString("D3");
+
+            // çµæœã‚’è¿”ã™
+            return numStr;
+        }
+
+        public string IntToThreeDigitString(float num)
+        {
+            // æ•°å€¤ã‚’æ•´æ•°ã«å¤‰æ›ã—ã¦å°æ•°ç‚¹ä»¥ä¸‹ã‚’åˆ‡ã‚Šæ¨ã¦ã‚‹
+            int numInt = Mathf.FloorToInt(num);
+
+            return IntToThreeDigitString(numInt);
+        }
+
+        private void offsetUIValueChanged (float value)
+        {
+            offsetUISlider.Value = Mathf.Round(value);
+        }
+
+        private void GenerateUI()
+        {
+            // AmmoUIã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆ
             ammoUI = new GameObject("AmmoUI");
             ammoUI.transform.SetParent(ETCMUI.transform);
             ammoUI.layer = LayerMask.NameToLayer("HUD");
@@ -115,7 +211,7 @@ namespace ETCM
             ammoUITrans.pivot = new Vector2(0.5f, 0.5f);
             ammoUITrans.anchoredPosition = new Vector2(180, 100 + (offsetUISlider.Value * 100));
 
-            // ’eŠÛ‚ÌƒAƒCƒRƒ“‚ğ•\¦‚·‚é‚½‚ß‚ÌƒIƒuƒWƒFƒNƒg‚ğì¬
+            // å¼¾ä¸¸ã®ã‚¢ã‚¤ã‚³ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆ
             GameObject ammoIcon = new GameObject("AmmoIcon");
             ammoIcon.transform.SetParent(ammoUI.transform);
             ammoIcon.layer = LayerMask.NameToLayer("HUD");
@@ -131,7 +227,7 @@ namespace ETCM
             ammoImage.color = UIColor;
 
 
-            // ƒŠƒ[ƒhŠÔ‚ğ•\¦‚·‚é‚½‚ß‚ÌƒXƒ‰ƒCƒ_[‚ğì¬
+            // ãƒªãƒ­ãƒ¼ãƒ‰æ™‚é–“ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ã‚¹ãƒ©ã‚¤ãƒ€ãƒ¼ã‚’ä½œæˆ
             GameObject reloadSlider = new GameObject("ReloadTimer");
             reloadSlider.transform.SetParent(ammoUI.transform);
             reloadSlider.layer = LayerMask.NameToLayer("HUD");
@@ -237,91 +333,6 @@ namespace ETCM
             totalText.fontStyle = FontStyle.BoldAndItalic;
             totalText.color = UIColor;
             totalText.alignment = TextAnchor.MiddleRight;
-
-            fireRate = rateOfFireSlider.Value;
-
-            ammoUI.SetActive(false);
-        }
-
-        public override void OnSimulateStop()
-        {
-            base.OnSimulateStop();
-            Destroy(ammoUI);
-        }
-
-        public override void SimulateUpdateAlways()
-        {
-            base.SimulateUpdateAlways();
-            if (useAmmoUIToggle.IsActive)
-            {
-                ammoUI.SetActive(true);
-            }
-            else
-            {
-                ammoUI.SetActive(false);
-            }
-            if (base.Machine.InfiniteAmmo || !Module.useMagazine)
-            {
-                totalText.text = "-----";
-            }
-            else
-            {
-                totalText.text = IntToThreeDigitString(shootingBehavour.AmmoStock);
-            }
-            magazineText.text = IntToThreeDigitString(shootingBehavour.AmmoLeft);
-        }
-
-        private void OnFire()
-        {
-            if (!StatMaster.levelSimulating) return;
-            if (Module.useMagazine && shootingBehavour.AmmoLeft == 0)
-            {
-                StartCoroutine(BulletTimerFadeIn(reloadTimeSlider.Value));
-            }
-            else
-            {
-                StartCoroutine(BulletTimerFadeIn(1/fireRate));
-            }
-        }
-
-        IEnumerator BulletTimerFadeIn(float time)
-        {
-            float rate = 1 / time;
-            USlider slider = ammoUI.transform.Find("ReloadTimer").gameObject.GetComponent<USlider>();
-            float timer = 0f;
-            slider.value = 0f;
-            while ( timer <= time )
-            {
-                slider.value = Mathf.Lerp(0f, 1f, timer * rate);
-                timer += Time.fixedDeltaTime;
-                yield return new WaitForFixedUpdate();
-            }
-            slider.value = 1f;
-        }
-
-        public string IntToThreeDigitString(int num)
-        {
-            // 999ˆÈã‚Ìê‡‚Í999‚ÉŠÛ‚ß‚é
-            if (num > 999) num = 999;
-
-            // ®”‚ğ3Œ…‚É‚·‚é
-            string numStr = num.ToString("D3");
-
-            // Œ‹‰Ê‚ğ•Ô‚·
-            return numStr;
-        }
-
-        public string IntToThreeDigitString(float num)
-        {
-            // ”’l‚ğ®”‚É•ÏŠ·‚µ‚Ä¬”“_ˆÈ‰º‚ğØ‚èÌ‚Ä‚é
-            int numInt = Mathf.FloorToInt(num);
-
-            return IntToThreeDigitString(numInt);
-        }
-
-        private void offsetUIValueChanged (float value)
-        {
-            offsetUISlider.Value = Mathf.Round(value);
         }
     }
 }
