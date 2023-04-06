@@ -18,3 +18,28 @@ D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\E'sTankCannonsMod\src\EsTank
 D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\E'sTankCannonsMod\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.csproj.CopyComplete
 D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\E'sTankCannonsMod\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.dll
 D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\E'sTankCannonsMod\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.pdb
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.csprojAssemblyReference.cache
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.csproj.CoreCompileInputs.cache
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.pdb
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\EsTankCannonsMod.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\EsTankCannonsMod.pdb
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Assembly-CSharp.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\DynamicText.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\UnityEngine.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\AdCustomModule.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\UnityEngine.UI.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\mcs.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\System.Threading.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Mono.Cecil.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\UnityEngine.Networking.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Open.Nat.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\RakNetSwig.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Ookii.Dialogs.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\ch.sycoforge.Decal.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Ionic.Zip.Unity.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\NATTraversalForUNET.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\Newtonsoft.Json.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\bin\Debug\System.Runtime.Serialization.dll
+D:\steam\steamapps\common\Besiege\Besiege_Data\Mods\EsTankCannonMod Project\src\EsTankCannonsMod\obj\Debug\EsTankCannonsMod.csproj.CopyComplete
