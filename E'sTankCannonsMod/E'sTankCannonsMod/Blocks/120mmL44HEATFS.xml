@@ -59,8 +59,17 @@ Check the documentation for more information on how to use modules. -->
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.20" max="0.20" default="0.20" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+		<Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
+		<Slider displayName="Offset UI" key="offset-ui" min="0" max="10" default="0" unclamped="false"/>
 	</ModuleMapperTypes>
 <Modules>
+	<ETCMAmmoUIModule modid="50e63b55-b976-4009-82ab-66f989218122">
+		<UseAmmoUIToggle key="use-ammo-ui" />
+		<OffsetUISlider key="offset-ui" />
+		<RateOfFireSlider key="rate-of-fire" />
+		<useMagazine>false</useMagazine>
+		<Icon name="IconHEATFS" />
+	</ETCMAmmoUIModule>
 	<AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
 		<BlockState>
 			<!-- Deault = 15000.if set 0,become infinity -->
