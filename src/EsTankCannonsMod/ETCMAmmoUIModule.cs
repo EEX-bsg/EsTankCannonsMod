@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using Modding;
 using Modding.Serialization;
 using Modding.Modules;
+using Modding.Blocks;
 using ETCM;
 using skpCustomModule;
 using Vector3 = UnityEngine.Vector3;
@@ -63,7 +64,7 @@ namespace ETCM
         private Text magazineText;
         private Text totalText;
         private float fireRate = 0.1f;
-        private bool isSimulating = false;
+        private bool isOwnerSame = false;
 
         void Awake()
         {
@@ -74,11 +75,7 @@ namespace ETCM
         {
             shootingBehavour = base.GetComponent<AdShootingBehavour>();
             shootingBehavour.OnFire += OnFire;
-        }
-
-        void Update()
-        {
-            isSimulating = StatMaster.levelSimulating && ((StatMaster.isMP && (StatMaster.isHosting || StatMaster.isLocalSim)) || !StatMaster.isMP);
+            UpdateOwnerFlag();
         }
 
         public override void SafeAwake()
@@ -109,6 +106,8 @@ namespace ETCM
         public override void OnSimulateStart()
         {
             base.OnSimulateStart();
+            UpdateOwnerFlag();
+            if (!isOwnerSame) return;
             ETCMUI = Mod.ETCMUI;
             GenerateUI();
             fireRate = rateOfFireSlider.Value;
@@ -119,12 +118,14 @@ namespace ETCM
         public override void OnSimulateStop()
         {
             base.OnSimulateStop();
+            if (!isOwnerSame) return;
             Destroy(ammoUI);
         }
 
         public override void SimulateUpdateAlways()
         {
             base.SimulateUpdateAlways();
+            if (!isOwnerSame) return;
             if (useAmmoUIToggle.IsActive)
             {
                 ammoUI.SetActive(true);
@@ -147,7 +148,8 @@ namespace ETCM
 
         private void OnFire()
         {
-            if(!isSimulating) return;
+            if (!isOwnerSame) return;
+            if (!StatMaster.levelSimulating) return;
             if (Module.useMagazine && shootingBehavour.AmmoLeft == 0)
             {
                 StartCoroutine(BulletTimerFadeIn(reloadTimeSlider.Value));
@@ -196,6 +198,20 @@ namespace ETCM
         private void offsetUIValueChanged (float value)
         {
             offsetUISlider.Value = Mathf.Round(value);
+        }
+
+        private void UpdateOwnerFlag()
+        {
+            if (StatMaster.isMP)
+            {
+                ushort BlockPlayerID = BlockBehaviour.ParentMachine.PlayerID;
+                ushort LocalPlayerID = PlayerMachine.GetLocal().Player.NetworkId;
+                isOwnerSame = BlockPlayerID == LocalPlayerID;
+            }
+            else
+            {
+                isOwnerSame = true;
+            }
         }
 
         private void GenerateUI()
