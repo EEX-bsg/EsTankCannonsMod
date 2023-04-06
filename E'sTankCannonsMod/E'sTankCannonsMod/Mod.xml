@@ -237,6 +237,7 @@
 		<Texture name="IconRocket" path="Textures/Icons/IconRocket.png" />
 		<Texture name="Icon600mm" path="Textures/Icons/Icon600mm.png" />
 		<Texture name="IconBullet" path="Textures/Icons/IconBullet.png" />
+		<Texture name="IconSagidesu" path="Textures/Icons/IconSagidesu.png" />
 		<!--modアイコン-->
 		<Texture name="icon" path="icon.png" />
 		<!--サウンド-->
