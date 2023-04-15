@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
 		<Key displayName="Shot" key="fire" default="C" /> 
 		<Slider displayName="Power" key="power" min="260" max="260" default="260 " unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.20" max="0.20" default="0.20" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.195" max="0.195" default="0.195" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
 		<Slider displayName="Offset UI" key="offset-ui" min="0" max="10" default="0" unclamped="false"/>
@@ -168,12 +168,12 @@ Check the documentation for more information on how to use modules. -->
 			
 			<ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 			
-			<DefaultAmmo>30</DefaultAmmo>
+			<DefaultAmmo>19</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>5.5</ExplodeRadius>
-			<ExplodePower>9500.0</ExplodePower>
-			<ExplodeUpPower>-2.0</ExplodeUpPower>
+			<ExplodeRadius>6.0</ExplodeRadius>
+			<ExplodePower>13000.0</ExplodePower>
+			<ExplodeUpPower>-4.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
