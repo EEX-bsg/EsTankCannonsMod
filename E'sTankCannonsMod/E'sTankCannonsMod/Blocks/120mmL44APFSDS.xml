@@ -188,7 +188,7 @@ Check the documentation for more information on how to use modules. -->
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.02</FuseDelayTime>
 			
-			<RecoilMultiplier>0.24</RecoilMultiplier>
+			<RecoilMultiplier>0.231</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.0</RandomDiffusion>
 			
