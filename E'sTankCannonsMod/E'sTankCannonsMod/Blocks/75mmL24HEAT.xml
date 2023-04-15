@@ -117,14 +117,14 @@ Check the documentation for more information on how to use modules. -->
 			
 			<Colliders>
 				<CapsuleCollider>
-					<Position x="0.0" y="0.0" z="-5.0" />
+					<Position x="0.0" y="0.0" z="-3.0" />
 					<Rotation x="0.0" y="90.0" z="0.0" />
 					<Capsule direction="X" radius="0.075" height="0.30" />
 				</CapsuleCollider>
 			</Colliders>
 				
 				<Mesh name="100mmShell"> 
-					<Position x="0.0" y="0.0" z="-5.1" />
+					<Position x="0.0" y="0.0" z="-3.1" />
 					<Rotation x="0.0" y="-90.0" z="0.0" />
 					<Scale x="0.75" y="0.75" z="0.75" />
 				</Mesh>
@@ -172,7 +172,7 @@ Check the documentation for more information on how to use modules. -->
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>3.0</ExplodeRadius>
-			<ExplodePower>14000.0</ExplodePower>
+			<ExplodePower>16000.0</ExplodePower>
 			<ExplodeUpPower>-4.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
