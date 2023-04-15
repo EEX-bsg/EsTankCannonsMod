@@ -90,10 +90,6 @@
 	<!-- Any blocks your mod adds to the game.
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
-		<!--<Block path="Blocks/50000mmL0.036-typeCore.xml" />--><!--blockid:#22-->
-		<!--<Block path="Blocks/XmasCannon.xml" />--><!--blockid:#24-->
-		<!--<Block path="Blocks/PresentBoxBay.xml" />--><!--blockid:#25-->
-		<!-- <Block path="Blocks/PartyCracker.xml" />blockid:#32 -->
 		<Block path="Blocks/BV-2.xml" /><!--blockid:#34 -->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
@@ -103,24 +99,17 @@
 		<Block path="Blocks/90mmRecoillessHESH.xml" /><!--blockid:#27-->
 		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
 		<Block path="Blocks/88mmL74APHE.xml" /><!--blockid:#26-->
-		<!--<Block path="Blocks/88mmL74APCR.xml" />--><!--blockid:#6-->
 		<Block path="Blocks/75mmL48HE.xml" /><!--blockid:#12-->
 		<Block path="Blocks/75mmL48AP.xml" /><!--blockid:#13-->
 		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
-		<!--<Block path="Blocks/45mmL46HE.xml" />--><!--blockid:#7-->
-		<!--<Block path="Blocks/45mmL46AP.xml" />--><!--blockid:#8-->
 		<Block path="Blocks/45mmL46APHE.xml" /><!--blockid:#29-->
 		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
-		<!--<Block path="Blocks/12.7mmMachineGunHE.xml" />--><!--blockid:#19-->
 		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
 		<Block path="Blocks/RocketLauncher.xml" /><!--blockid:#30-->
 		<Block path="Blocks/GMissileLauncher.xml" /><!--blockid:#31-->
 		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
 		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
 		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
-		<!--<Block path="Blocks/nightvision.xml" />--><!--blockid:#21-->
-		<!--<Block path="Blocks/redBigFlag.xml" />--><!--blockid:#14-->
-		<!--<Block path="Blocks/blueBigFlag.xml" />--><!--blockid:#15-->
 		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
 		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
 
@@ -130,13 +119,6 @@
 		 The path attribute is relative to the location of this file. -->
 	<Entities>
 		<Entity path="Entities/HeavyTankTurret01.xml" />
-		<!-- <Entity path="Entities/120mmAPFSDS.xml" />
-		<Entity path="Entities/120mmHEAT.xml" />
-		<Entity path="Entities/88mmAPCR.xml" />
-		<Entity path="Entities/88mmAntiAir.xml" />
-		<Entity path="Entities/45mmHE.xml" />
-		<Entity path="Entities/45mmAP.xml" />
-		<Entity path="Entities/152mmHE.xml" /> -->
 	</Entities>
 	
 	<!-- Any logic trigger types your mod adds to the game. -->
@@ -182,7 +164,6 @@
 		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
 		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
 		<Mesh name="100mmShell" path="Models/100mmShell.obj" />
-		<Mesh name="88mmAPCR" path="Models/88mmAPCR.obj" />
 		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
 		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
 		<Mesh name="GMissile" path="Models/GMissile.obj" />
@@ -191,13 +172,7 @@
 		<Mesh name="antenna" path="Models/antenna.obj" />
 		<Mesh name="bigFlag" path="Models/big_flag.obj" />
 		<Mesh name="GunMount" path="Models/GunMount.obj" />
-		<!-- <Mesh name="Nightvision" path="Models/Nightvision.obj" /> -->
 		<Mesh name="core" path="Models/startblock.obj" />
-		<!-- <Mesh name="xmasTree" path="Models/xmasTree.obj" /> -->
-		<!-- <Mesh name="xmasBox" path="Models/xmasBox.obj" />  -->
-		<!-- <Mesh name="bomb01" path="Models/bomb01.obj" /> -->
-		<Mesh name="Cracker" path="Models/party-cracker.obj" />
-		<Mesh name="CrackerBullet" path="Models/CrackerBullet.obj" />
 		<Mesh name="BV-2" path="Models/BV-2.obj" />
 		<!--メタルテクスチャ-->
 		<Texture name="metalGrey" path="Textures/metal1.png" />
@@ -217,19 +192,13 @@
 		<Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
 		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
 		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
-		<!-- <Texture name="NightvisionTex" path="Textures/Nightvision.png" /> -->
 		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
 		<!-- <Texture name="rainbow" path="Textures/rainbow.png" /> -->
-		<!-- <Texture name="xmasTreeTex" path="Textures/xmastreeTex.png" /> -->
-		<!-- <Texture name="xmasBoxTex" path="Textures/xmasBoxTex.png" /> -->
 		<Texture name="CrackerTex" path="Textures/party-cracker-tex.png" />
 		<Texture name="CrackerBulletTex" path="Textures/CrackerBulletTex.png" />
 		<Texture name="BV-2Tex" path="Textures/BV-2_tex.png" />
 		<!--レベルエディタエンティティのサムネイル-->
 		<Texture name="TankTurret_tn" path="Thumbnails/Tank_Turret.png" />
-		<!-- <Texture name="120mmAPFSDS_tn" path="Thumbnails/120mmAPFSDS.png" />
-		<Texture name="120mmHEAT_tn" path="Thumbnails/120mmHEAT.png" />
-		<Texture name="88mmAntiAir_tn" path="Thumbnails/88mmAntiAir.png" /> -->
 		<!--UIIcon-->
 		<Texture name="IconAP" path="Textures/Icons/IconAP.png" />
 		<Texture name="IconHE" path="Textures/Icons/IconHE.png" />
