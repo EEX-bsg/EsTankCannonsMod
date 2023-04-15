@@ -55,7 +55,7 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="1700" max="1700" default="1700" unclamped="false"/>
+		<Slider displayName="Power" key="power" min="1500" max="1500" default="1500" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.25" max="0.25" default="0.25" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
@@ -130,7 +130,7 @@ Check the documentation for more information on how to use modules. -->
 				<Texture name="metalGrey" />
 				
 				
-				<Mass>2.0</Mass>
+				<Mass>1.7</Mass>
 				<Drag>0.0</Drag>
 				<AngularDrag>0.0</AngularDrag>
 				<IgnoreGravity>False</IgnoreGravity>
@@ -169,8 +169,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>16</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>4.0</ExplodeRadius>
-			<ExplodePower>9000.0</ExplodePower>
+			<ExplodeRadius>3.5</ExplodeRadius>
+			<ExplodePower>5000.0</ExplodePower>
 			<ExplodeUpPower>-4.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -185,7 +185,7 @@ Check the documentation for more information on how to use modules. -->
 			<RandomFuseInterval>0.0</RandomFuseInterval>
 			<FuseDelayTime>0.02</FuseDelayTime>
 			
-			<RecoilMultiplier>0.28</RecoilMultiplier>
+			<RecoilMultiplier>0.33</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
 			<RandomDiffusion>0.005</RandomDiffusion>
 			

@@ -55,7 +55,7 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="4800" max="4800" default="4800" unclamped="false"/>
+		<Slider displayName="Power" key="power" min="5100" max="5100" default="5100" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
 		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.12" max="0.12" default="0.12" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
@@ -186,7 +186,7 @@ Check the documentation for more information on how to use modules. -->
 			<BulletEffect>bulleteffect</BulletEffect>
 			
 			<RandomFuseInterval>0.0</RandomFuseInterval>
-			<FuseDelayTime>0.1</FuseDelayTime>
+			<FuseDelayTime>0.02</FuseDelayTime>
 			
 			<RecoilMultiplier>0.24</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>

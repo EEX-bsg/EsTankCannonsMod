@@ -162,13 +162,13 @@
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
 			<ExplodeRadius>6.0</ExplodeRadius>
-			<ExplodePower>12000.0</ExplodePower>
-			<ExplodeUpPower>0.0</ExplodeUpPower>
+			<ExplodePower>10000.0</ExplodePower>
+			<ExplodeUpPower>-2.0</ExplodeUpPower>
 			<useBooster>true</useBooster>
 			<useExplodeRotation>false</useExplodeRotation>
 			<useJamReducer>false</useJamReducer>
 			<useBeacon>true</useBeacon>
-			<GuidRatio>0.3</GuidRatio>
+			<GuidRatio>0.23</GuidRatio>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
