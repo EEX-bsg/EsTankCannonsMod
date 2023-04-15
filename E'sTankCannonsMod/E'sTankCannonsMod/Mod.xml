@@ -90,7 +90,6 @@
 	<!-- Any blocks your mod adds to the game.
 		 The path attribute is relative to the location of this file. -->
 	<Blocks>
-		<Block path="Blocks/BV-2.xml" /><!--blockid:#34 -->
 		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
 		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
 		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
@@ -112,7 +111,6 @@
 		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
 		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
 		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
-
 	</Blocks>
 	
 	<!-- Any entities (level objects) your mod adds to the game.
