@@ -73,7 +73,7 @@ Check the documentation for more information on how to use modules. -->
 
 		<Axis>X</Axis>
 
-		<MaxAngularSpeed>300</MaxAngularSpeed>
+		<MaxAngularSpeed>500</MaxAngularSpeed>
 		<TargetAngleSpeed>0.8</TargetAngleSpeed>
 
 		<HasLimits>True</HasLimits>
