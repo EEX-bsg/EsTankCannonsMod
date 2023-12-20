@@ -26,12 +26,15 @@
 24: (削除: XmasCannon)
 25: (削除: PresentBoxBay)
 26: 88mmL74APHE
-27: 100mmRecoillessHESH
+27: 90mmRecoillessHESH
 28: 600mmL8SB
 29: 45mmL46APHE
 30: RocketLauncher
 31: GMissileLauncher
 32: (削除: PartyCracker)
+33: 105mmL28HE
+34: (削除: BV-222)
+35: SnowMan
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE

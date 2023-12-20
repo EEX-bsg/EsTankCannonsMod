@@ -397,3 +397,7 @@ v1.4.2
 ・RocketLauncherの炸裂力を12000から8000に変更
 ・RocketLauncherのExplodeUpPowerを0から-5に変更
 ・現在使用していないリソースファイルやブロックデータを削除
+
+v1.4.3
+・期間限定武器の追加
+    Mr.ポーラナイト(SnowMan)
