@@ -9,11 +9,12 @@
 	<Name>E'sTankCannonsMod</Name>
 	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
 	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.4.3</Version>
+	<Version>1.4.4</Version>
 	<LoadOrder>1</LoadOrder>
 	
 	<Description>
-		v1.4.3 UPDATE!! This mod add tank cannons. Required "Add Custom Module Mod".  <!-- FIX: Insert a short description here. -->
+		v1.4.4 UPDATE!! This mod add tank cannons. 
+		Required "Add Custom Module Mod".
 	</Description>
 	
 	<!-- Square icon of the mod. Texture defined in the Resources section.

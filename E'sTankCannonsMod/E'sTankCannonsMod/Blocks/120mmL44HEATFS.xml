@@ -170,7 +170,7 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>14</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>3.5</ExplodeRadius>
+			<ExplodeRadius>4.0</ExplodeRadius>
 			<ExplodePower>13000.0</ExplodePower>
 			<ExplodeUpPower>-4.0</ExplodeUpPower>
 			
