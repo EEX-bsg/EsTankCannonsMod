@@ -112,6 +112,8 @@
         <Block path="Blocks/75mmL48AP.xml" />
         <!--blockid:#13-->
         <Block path="Blocks/75mmL24HEAT.xml" />
+        <!--blockid:#37-->
+        <Block path="Blocks/57mmL73AP.xml" />
         <!--blockid:#18-->
         <Block path="Blocks/45mmL46APHE.xml" />
         <!--blockid:#29-->

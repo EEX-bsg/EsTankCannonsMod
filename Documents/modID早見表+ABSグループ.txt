@@ -36,6 +36,7 @@
 34: (削除: BV-222)
 35: (削除: SnowMan)
 36: 76mm Motar[prev]
+37: 57mmL73AP AL[prev]
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE
