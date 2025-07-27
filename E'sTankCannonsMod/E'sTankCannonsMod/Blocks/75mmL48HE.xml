@@ -55,9 +55,9 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 <ModuleMapperTypes>
 		<Key displayName="Shot" key="fire" default="C" /> 
-		<Slider displayName="Power" key="power" min="260" max="260" default="260" unclamped="false"/>
+		<Slider displayName="Power" key="power" min="280" max="280" default="280" unclamped="false"/>
 		<!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.33" max="0.33" default="0.33" unclamped="false"/>
+		<Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.37" max="0.37" default="0.37" unclamped="false"/>
 		<Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
 		<Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
 		<Slider displayName="Offset UI" key="offset-ui" min="0" max="10" default="0" unclamped="false"/>
@@ -171,9 +171,9 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>20</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>4.5</ExplodeRadius>
-			<ExplodePower>8800.0</ExplodePower>
-			<ExplodeUpPower>-3.5</ExplodeUpPower>
+			<ExplodeRadius>5.0</ExplodeRadius>
+			<ExplodePower>9000.0</ExplodePower>
+			<ExplodeUpPower>-4</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
 			<ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>

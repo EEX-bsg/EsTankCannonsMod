@@ -189,7 +189,7 @@ Check the documentation for more information on how to use modules. -->
 			
 			<RecoilMultiplier>1.3</RecoilMultiplier>
 			<RandomInterval>0.03</RandomInterval>
-			<RandomDiffusion>0.01</RandomDiffusion>
+			<RandomDiffusion>0.015</RandomDiffusion>
 			
 			<PoolSize>50</PoolSize>
 			

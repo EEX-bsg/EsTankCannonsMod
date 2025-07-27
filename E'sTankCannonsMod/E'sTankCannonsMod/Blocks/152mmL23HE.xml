@@ -171,8 +171,8 @@ Check the documentation for more information on how to use modules. -->
 			<DefaultAmmo>8</DefaultAmmo>
 			<AmmoType>Cannon</AmmoType>
 			<ProjectilesExplode>true</ProjectilesExplode>
-			<ExplodeRadius>7.5</ExplodeRadius>
-			<ExplodePower>12000.0</ExplodePower>
+			<ExplodeRadius>8.0</ExplodeRadius>
+			<ExplodePower>13751.4</ExplodePower>
 			<ExplodeUpPower>-2.0</ExplodeUpPower>
 			
 			<SupportsExplosionGodTool>False</SupportsExplosionGodTool>
