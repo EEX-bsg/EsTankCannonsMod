@@ -16,17 +16,17 @@ to assist in positioning them correctly.
 The ID must be unique among blocks in your mod.
 It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
-    <ID>29</ID>
+    <ID>36</ID>
     <!-- Name of the block, shown in the user interface. -->
-    <Name>45mmL46APHE</Name>
+    <Name>76mm Motar[prev]</Name>
     <!-- TODO: Change the mass to something appropriate -->
-    <Mass>0.1</Mass>
+    <Mass>0.2</Mass>
     <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
     <SearchKeywords>
-        <Keyword>Es,45,he,es,l46</Keyword>
+        <Keyword>Es,Smoke,Grenade,Dischargers</Keyword>
     </SearchKeywords>
     <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -46,7 +46,7 @@ If the block has a fallback specified here, the fallback block is loaded instead
 Valid values are entries of the BlockType enum or the numeric ID of a block. Only normal blocks can
 be specified as
 fallback, not modded blocks. -->
-    <Fallback>Cannon</Fallback>
+    <Fallback>Swivel</Fallback>
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
     <!-- Blocks can have certain predefined behaviour added without any custom code.
 These behaviours are called modules.
@@ -55,10 +55,15 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
     <ModuleMapperTypes>
         <Key displayName="Shot" key="fire" default="C" />
-        <Slider displayName="Power" key="power" min="360" max="360" default="360" unclamped="false"/>
+        <Key displayName="Reload" key="reload" default="R" />
+        <Slider displayName="Power" key="power" min="20" max="40" default="40" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.5" max="0.5" default="0.5" unclamped="false"/>
+        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="3" max="3" default="3" unclamped="false"/>
+        <Slider displayName="Reload Time" key="reload-time" min="10.0" max="10.0" default="10.0" unclamped="false"/>
+        <Slider displayName="Shot Delay" key="delay-timer" min="0" max="3" default="0" unclamped="true"/>
+        <Slider displayName="Magazine Capacity" key="capacity" min="8.0" max="8.0" default="8.0" unclamped="false"/>
         <Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
+        <Toggle displayName="Auto Reload" key="auto-reload" default="true" />
         <Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
         <Slider displayName="Offset UI" key="offset-ui" min="0" max="10" default="0" unclamped="false"/>
     </ModuleMapperTypes>
@@ -67,8 +72,9 @@ Check the documentation for more information on how to use modules. -->
             <UseAmmoUIToggle key="use-ammo-ui" />
             <OffsetUISlider key="offset-ui" />
             <RateOfFireSlider key="rate-of-fire" />
-            <useMagazine>false</useMagazine>
-            <Icon name="IconAP" />
+            <useMagazine>true</useMagazine>
+            <Icon name="IconBullet" />
+            <ReloadTimeSlider key="reload-time" />
         </ETCMAmmoUIModule>
         <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
             <BlockState>
@@ -118,34 +124,28 @@ Check the documentation for more information on how to use modules. -->
                 <Colliders>
                     <CapsuleCollider>
                         <Position x="0.0" y="0.0" z="0.0" />
-                        <Rotation x="0.0" y="90.0" z="0.0" />
-                        <Capsule direction="X" radius="0.045" height="0.3" />
+                        <Rotation x="0.0" y="-90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.05" height="0.05" />
                     </CapsuleCollider>
                 </Colliders>
 
-                <Mesh name="100mmShell">
-                    <Position x="0.0" y="0.0" z="-0.1" />
-                    <Rotation x="0.0" y="-90.0" z="0.0" />
-                    <Scale x="0.45" y="0.45" z="0.45" />
+                <Mesh name="smokeGranade">
+                    <Position x="0.0" y="0.0" z="0.0" />
+                    <Rotation x="90.0" y="0" z="0" />
+                    <Scale x="1.0" y="1.0" z="1.0" />
                 </Mesh>
 
-                <Texture name="metalYellow" />
+                <Texture name="smokeGranadeTex" />
 
 
-                <Mass>1.0</Mass>
-                <Drag>0.5</Drag>
-                <AngularDrag>0.0</AngularDrag>
+                <Mass>0.5</Mass>
+                <Drag>0.3</Drag>
+                <AngularDrag>0.5</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
-                <EntityDamage>20</EntityDamage>
-                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>0</EntityDamage>
+                <BlockDamage>0</BlockDamage>
                 <Attaches>false</Attaches>
                 <CollisionTypeS>ContinuousDynamic</CollisionTypeS>
-
-                <BounceCombineType>Average</BounceCombineType>
-                <BounceStr>0.0</BounceStr>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
-                <FrictionCombineType>Average</FrictionCombineType>
-                <FrictionStr>10.0</FrictionStr>
 
             </ShootingState>
 
@@ -155,50 +155,67 @@ Check the documentation for more information on how to use modules. -->
             <HoldToShootToggle key="hold-to-shoot" />
 
             <ProjectileStart>
-                <Position x="0.0" y="0.0" z="4.5" />
-                <Rotation x="0.0" y="0.0" z="90.0" />
+                <Position x="0.0" y="0.0" z="0.33" />
+                <Rotation x="0.0" y="0.0" z="0.0" />
                 <Scale x="1.0" y="1.0" z="1.0" />
             </ProjectileStart>
 
             <ShotFlashPosition>
-                <Position x="0.0" y="0.0" z="4.0" />
-                <Rotation x="0.0" y="0.0" z="90.0" />
-                <Scale x="2.0" y="2.0" z="2.0" />
+                <Position x="0.0" y="0.0" z="0.6" />
+                <Rotation x="0.0" y="0.0" z="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
             </ShotFlashPosition>
 
-            <ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
+            <ShowPlaceholderProjectile>true</ShowPlaceholderProjectile>
 
-            <DefaultAmmo>115</DefaultAmmo>
+            <DefaultAmmo>16</DefaultAmmo>
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
-            <ExplodeRadius>2.5</ExplodeRadius>
-            <ExplodePower>6000.0</ExplodePower>
-            <ExplodeUpPower>-1.0</ExplodeUpPower>
+            <ExplodeRadius>2.0</ExplodeRadius>
+            <ExplodePower>2000.0</ExplodePower>
+            <ExplodeUpPower>0.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
-            <ProjectilesDespawnImmediately>True</ProjectilesDespawnImmediately>
+            <ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 
             <AssetBundleName name="myasset" />
             <ExplodeEffect>smallExplode</ExplodeEffect>
-            <ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
-            <!-- <TrailEffect>newBulletTrailWV100</TrailEffect> -->
+            <ShotFlashEffect>flash</ShotFlashEffect>
+            <!--
+			<TrailEffect>Trail</TrailEffect>
+			-->
+            <!--
+			<BulletEffect>bulleteffect</BulletEffect>
+			-->
 
-            <BulletEffect>bulleteffect</BulletEffect>
+            <useDelayTimer>true</useDelayTimer>
+            <DelayTimerSlider key="delay-timer" />
 
-            <RandomFuseInterval>0.0</RandomFuseInterval>
-            <FuseDelayTime>0.03</FuseDelayTime>
-
-            <RecoilMultiplier>0.25</RecoilMultiplier>
+            <RecoilMultiplier>0.0</RecoilMultiplier>
             <RandomInterval>0.03</RandomInterval>
-            <RandomDiffusion>0.03</RandomDiffusion>
+            <RandomDiffusion>0.05</RandomDiffusion>
 
             <PoolSize>50</PoolSize>
 
+            <useMagazine>true</useMagazine>
+            <MagazineInfo>
+                <MagazineCapacitySlider key="capacity" />
+                <ReloadTimeSlider key="reload-time" />
+                <useReloadKey>true</useReloadKey>
+                <ReloadKey key="reload" />
+                <forceAutoReload>false</forceAutoReload>
+                <useAutoReloadToggle>true</useAutoReloadToggle>
+                <AutoReloadToggle key="auto-reload" />
+                <ReloadSounds>
+                    <AudioClip name="Reload10s" />
+                </ReloadSounds>
+            </MagazineInfo>
+
             <Sounds>
-                <AudioClip name="CannonSound2" />
+                <AudioClip name="granadeShot" />
             </Sounds>
             <HitSounds>
-                <AudioClip name="HitSound" />
+                <AudioClip name="MedievalCannonHitSound" />
             </HitSounds>
         </AdShootingProp>
     </Modules>
@@ -227,20 +244,20 @@ The Trigger element is optional. -->
     <!-- Optionally specify type of damage done to entities.
 Can be one of "Blunt", "Sharp", "Fire" -->
     <!-- <DamageType>Blunt</DamageType> -->
-    <Mesh name="45mmL46">
+    <Mesh name="smokeGranadeDischarger">
         <!-- Must be defined as a resource in the
 	manifest. -->
-        <Position x="0.0" y="0.0" z="0.05" />
-        <Rotation x="0.0" y="90.0" z="0.0" />
-        <Scale x="2.0" y="2.0" z="2.0" />
+        <Position x="0.0" y="0.0" z="0.3" />
+        <Rotation x="90.0" y="0.0" z="0.0" />
+        <Scale x="1.00" y="1.00" z="1.00" />
     </Mesh>
-    <Texture name="EcannonTex" />
+    <Texture name="metalGrey" />
     <!-- Must be defined as a resource
 	in the manifest. -->
     <Icon>
-        <Position x="0.2" y="0.2" z="0.0" />
-        <Rotation x="60.0" y="30.0" z="30.0" />
-        <Scale x="0.25" y="0.25" z="0.25" />
+        <Position x="0.0" y="0.0" z="0.0" />
+        <Rotation x="-45.0" y="-45.0" z="0.0" />
+        <Scale x="1.0" y="1.0" z="1.0" />
     </Icon>
     <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
 to be displayed. The child elements define how and where it is displayed. -->
@@ -275,34 +292,32 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
     <Colliders>
         <!-- TODO: Insert Collider definitions here.
 	Examples: -->
+
         <BoxCollider>
-            <Position x="0.0" y="0.0" z="0.22" />
+            <Position x="0.0" y="0.0" z="0.1" />
             <Rotation x="0.0" y="0.0" z="0.0" />
-            <Scale x="0.33" y="0.33" z="0.33" />
-            <!--yが前zが上-->
+            <Scale x="0.2" y="0.2" z="0.1" />
         </BoxCollider>
+
         <!--<SphereCollider>
 		<Position x="0.0" y="0.0" z="0.0" />
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
-        <CapsuleCollider>
-            <Position x="0.0" y="-0.0" z="2.0" />
-            <Rotation x="0.0" y="90.0" z="0.0" />
-            <Capsule direction="X" radius="0.1" height="3.7" />
-        </CapsuleCollider>
+        <!--<CapsuleCollider>
+		<Position x="0.0" y="0.0" z="0.0" />
+		<Rotation x="0.0" y="0.0" z="0.0" />
+		<Capsule direction="Z" radius="0.1" height="0.4" />
+	</CapsuleCollider>-->
     </Colliders>
     <BasePoint hasAddingPoint="false">
-        <Stickiness enabled="true" radius="0.6" />
+        <Stickiness enabled="true" radius="0.3" />
         <!-- Can only have motion if sticky -->
         <Motion x="false" y="false" z="false" />
         <!-- Optional -->
     </BasePoint>
     <AddingPoints>
-        <!-- TODO: Insert AddingPoint definitions here. Example:-->
-        <!--<AddingPoint>
-		<Position x="0.0" y="0.0" z="0.0" />
-		<Rotation x="0.0" y="0.0" z="0.0" />
-		<Stickiness enabled="false" radius="0"/>
-	</AddingPoint>-->
+        <AddingPoints>
+
+        </AddingPoints>
     </AddingPoints>
 </Block>

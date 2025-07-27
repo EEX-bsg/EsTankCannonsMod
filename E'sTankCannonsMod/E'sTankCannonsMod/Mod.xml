@@ -1,237 +1,287 @@
 <Mod>
-	<!-- Mod manifest file.
-		 You should at the very least replace the values marked with FIX.
-		 
-		 See the documentation for further information on any of these elements.
+    <!-- Mod manifest file.
+        You should at the very least replace the values marked with FIX.
+        
+        See the documentation for further information on any of these elements.
 	-->
 
-	<!-- General information about the mod. -->
-	<Name>E'sTankCannonsMod</Name>
-	<Author>EEX-slime</Author> <!-- FIX: Insert your name here. -->
-	<!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-	<Version>1.4.4</Version>
-	<LoadOrder>1</LoadOrder>
-	
-	<Description>
-		v1.4.4 UPDATE!! This mod add tank cannons. 
+    <!-- General information about the mod. -->
+    <Name>E'sTankCannonsMod</Name>
+    <Author>EEX-slime</Author>    <!-- FIX: Insert your name here. -->
+    <!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
+    <Version>1.4.5</Version>
+    <LoadOrder>1</LoadOrder>
+
+    <Description>
+		v1.4.5 UPDATE!! This mod add tank cannons.
 		Required "Add Custom Module Mod".
-	</Description>
-	
-	<!-- Square icon of the mod. Texture defined in the Resources section.
-		 This is displayed in the mod list and, if WorkshopThumbnail is not set, used as thumbnail when uploaded to the Steam workshop. -->
-	<Icon name="icon" />
-	<WorkshopThumbnail name="icon" />
-	
-	<!-- Texture resource used as thumbnail when uploading the mod to the workshop.
-		 If this is not present, the Icon texture is used instead.
-		 This can be set to have different icons in the mod list and the workshop. -->
-	<!-- <WorkshopThumbnail name="thumbnail" /> -->
-	
-	<!-- Enables reloading of various values at runtime. This is normally triggered automatically when a file is changed,
-		 you can also trigger it by pressing Ctrl+H.
-		 Reloadable values include:
+    </Description>
+
+    <!-- Square icon of the mod. Texture defined in the Resources section.
+        This is displayed in the mod list and, if WorkshopThumbnail is not set, used as thumbnail when uploaded to the Steam workshop. -->
+    <Icon name="icon" />
+    <WorkshopThumbnail name="icon" />
+
+    <!-- Texture resource used as thumbnail when uploading the mod to the workshop.
+        If this is not present, the Icon texture is used instead.
+        This can be set to have different icons in the mod list and the workshop. -->
+    <!-- <WorkshopThumbnail name="thumbnail" /> -->
+
+    <!-- Enables reloading of various values at runtime. This is normally triggered automatically when a file is changed,
+        you can also trigger it by pressing Ctrl+H.
+        Reloadable values include:
 			- Colliders
 			- Adding Points
 			- FireInteractions
 			- Mesh Transforms
-		 
-		 Also gives some extra information about warnings and errors parsing the XML files, at the cost
-		 of a slight increase in loading time for mods with many XML elements.
-		 
-		 It is generally recommended to turn this on while developing the mod, but keep it off for any releases.
-		 Important: You cannot upload mods to Steam or WeGame while Debug is turned on.
-		 
-		 Note: This value is independent of the Debug values for specific Blocks and Entities.-->
-	<Debug>false</Debug>
-	
-	<!-- Whether the mod can be used in MP or only in SP.
-		 SP-only mods are easier to write but obviously more limited in their uses.
-		 SP-only mods will be loaded when the first singleplayer level is loaded.
-		 Once an SP-only mod was loaded, it is impossible to start a multiplayer game until the game is restarted since the mod can't be unloaded again. -->
-	<MultiplayerCompatible>true</MultiplayerCompatible>
-	
-	<!-- Include this to make the mod be loaded in the title screen.
-		 Normally mods will only be loaded when the actual game is entered
-		 (i.e. when starting/joining an MP session or entering an SP level).
-		 
-		 Only use this if there is a good reason for it!
-		 Mods that are immediately loaded when starting the game are significantly
-		 less user-friendly, whenever the mod is disabled the game needs to be restarted.-->
-	<!-- <LoadInTitleScreen /> -->
-	
-	<!-- Note on IDs -->
-	<!-- Many elements of your mod need to have an ID assigned that will identify them.
-		 This includes blocks, entities, triggers and events.
-		 IDs are always integers (except the mod ID, that is an unsigned long).
-		 
-		 Except for the ID of the mod itself, they are always local to the mod.
-		 That means you do not need to worry about any conflicts with other mods, because
-		 the mod loader identifies these elements using the mod ID and the element ID.
-		 
-		 You should not change IDs after you have published your mod in any way.
-		 If you do, saved machines and levels will not load the elements correctly anymore.
-		 
-		 Do not rely on the game using the IDs you specified internally in fields such as in BlockBehaviour.BlockID.
-		 In many cases (e.g. blocks and entities) the game will identify your elements by another ID computed based
-		 on the mod and element IDs.
+        
+        Also gives some extra information about warnings and errors parsing the XML files, at the cost
+        of a slight increase in loading time for mods with many XML elements.
+        
+        It is generally recommended to turn this on while developing the mod, but keep it off for any releases.
+        Important: You cannot upload mods to Steam or WeGame while Debug is turned on.
+        
+        Note: This value is independent of the Debug values for specific Blocks and Entities.-->
+    <Debug>false</Debug>
+
+    <!-- Whether the mod can be used in MP or only in SP.
+        SP-only mods are easier to write but obviously more limited in their uses.
+        SP-only mods will be loaded when the first singleplayer level is loaded.
+        Once an SP-only mod was loaded, it is impossible to start a multiplayer game until the game is restarted since the mod can't be unloaded again. -->
+    <MultiplayerCompatible>true</MultiplayerCompatible>
+
+    <!-- Include this to make the mod be loaded in the title screen.
+        Normally mods will only be loaded when the actual game is entered
+        (i.e. when starting/joining an MP session or entering an SP level).
+        
+        Only use this if there is a good reason for it!
+        Mods that are immediately loaded when starting the game are significantly
+        less user-friendly, whenever the mod is disabled the game needs to be restarted.-->
+    <!-- <LoadInTitleScreen /> -->
+
+    <!-- Note on IDs -->
+    <!-- Many elements of your mod need to have an ID assigned that will identify them.
+        This includes blocks, entities, triggers and events.
+        IDs are always integers (except the mod ID, that is an unsigned long).
+        
+        Except for the ID of the mod itself, they are always local to the mod.
+        That means you do not need to worry about any conflicts with other mods, because
+        the mod loader identifies these elements using the mod ID and the element ID.
+        
+        You should not change IDs after you have published your mod in any way.
+        If you do, saved machines and levels will not load the elements correctly anymore.
+        
+        Do not rely on the game using the IDs you specified internally in fields such as in BlockBehaviour.BlockID.
+        In many cases (e.g. blocks and entities) the game will identify your elements by another ID computed based
+        on the mod and element IDs.
 	-->
-	
-	<!-- Any assemblies that contain code for your mod.
-		 If an assembly listed here contains an implementation of the Mod class,
-		 its OnLoad method will be called.
-		 BlockScripts for your blocks (if any) will be searched for in these assemblies.
-		 The path attribute is relative to the location of this file. -->
-	<Assemblies>
-		<!-- <Assembly path="SomeAssembly.dll" /> -->
-		<!-- <ScriptAssembly path="SomeAssembly/" /> -->
-		<Assembly path="modchecker.dll" />
-		<Assembly path="EsTankCannonsMod.dll" />
-	</Assemblies>
-	
-	<!-- Any blocks your mod adds to the game.
-		 The path attribute is relative to the location of this file. -->
-	<Blocks>
-		<Block path="Blocks/600mmL8SB.xml" /><!--blockid:#28-->
-		<Block path="Blocks/152mmL23HE.xml" /><!--blockid:#9-->
-		<Block path="Blocks/120mmL44APFSDS.xml" /><!--blockid:#1-->
-		<Block path="Blocks/120mmL44HEATFS.xml" /><!--blockid:#4-->
-		<Block path="Blocks/105mmL28HE.xml" /><!--blockid:#33-->
-		<Block path="Blocks/90mmRecoillessHESH.xml" /><!--blockid:#27-->
-		<Block path="Blocks/88mmL74AntiAir.xml" /><!--blockid:#5-->
-		<Block path="Blocks/88mmL74APHE.xml" /><!--blockid:#26-->
-		<Block path="Blocks/75mmL48HE.xml" /><!--blockid:#12-->
-		<Block path="Blocks/75mmL48AP.xml" /><!--blockid:#13-->
-		<Block path="Blocks/75mmL24HEAT.xml" /><!--blockid:#18-->
-		<Block path="Blocks/45mmL46APHE.xml" /><!--blockid:#29-->
-		<Block path="Blocks/20mmL65HE.xml" /><!--blockid:#11-->
-		<Block path="Blocks/12.7mmMachineGunT.xml" /><!--blockid:#20-->
-		<Block path="Blocks/RocketLauncher.xml" /><!--blockid:#30-->
-		<Block path="Blocks/GMissileLauncher.xml" /><!--blockid:#31-->
-		<Block path="Blocks/medievalCannon.xml" /><!--blockid:#10-->
-		<Block path="Blocks/smokegranade.xml" /><!--blockid:#2-->
-		<Block path="Blocks/antenna.xml" /><!--blockid:#3-->
-		<Block path="Blocks/redSmallFlag.xml" /><!--blockid:#16-->
-		<Block path="Blocks/blueSmallFlag.xml" /><!--blockid:#17-->
-	</Blocks>
-	
-	<!-- Any entities (level objects) your mod adds to the game.
-		 The path attribute is relative to the location of this file. -->
-	<Entities>
-		<Entity path="Entities/HeavyTankTurret01.xml" />
-	</Entities>
-	
-	<!-- Any logic trigger types your mod adds to the game. -->
-	<!-- See the ModTriggers class for info on how to activate your triggers. -->
-	<Triggers>
-		
-	</Triggers>
-	
-	<!-- Any logic event types your mod adds to the game. -->
-	<!-- See the ModEvents class for info on how to handle your events being activated. -->
-	<Events>
-		
-	</Events>
-	
-	<!-- Access these keys using the ModKeys class. -->
-	<Keys>
-		
-	</Keys>
-	
-	<!-- The mod loader will automatically make all resources listed here available
-		 to your mod via the ModResource class.
-		 The path attribute is relative to the Resources/ directory.
-		 You also need to list resources used in your Blocks and Entities.
-		 Available resource types are Mesh, Texture, AudioClip, and AssetBundle. -->
-	<Resources>
-		<!--砲モデル-->
-		<Mesh name="120mmL44" path="Models/120mmL44.obj" />
-		<Mesh name="105mmL28" path="Models/105mmL28.obj" />
-		<Mesh name="88mmL74" path="Models/88mmL74.obj" />
-		<Mesh name="45mmL46" path="Models/45mmL46.obj" />
-		<Mesh name="152mmL23" path="Models/152mmL23.obj" />
-		<Mesh name="20mmL65" path="Models/20mmL65.obj" />
-		<Mesh name="75mmL48" path="Models/75mmL48.obj" />
-		<Mesh name="75mmL24" path="Models/75mmL24.obj" />
-		<Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
-		<Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
-		<Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
-		<Mesh name="90mmRecoilless" path="Models/90mmL34_recoilless.obj" />
-		<Mesh name="600mmL8" path="Models/600mmL8.obj" />
-		<Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
-		<Mesh name="RocketBay" path="Models/rocket-bay.obj" />
-		<!--弾モデル-->
-		<Mesh name="APFSDS" path="Models/APFSDS.obj" />
-		<Mesh name="HEATFS" path="Models/HEATFS.obj" />
-		<Mesh name="100mmShell" path="Models/100mmShell.obj" />
-		<Mesh name="smokeGranade" path="Models/smokegranade.obj" />
-		<Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
-		<Mesh name="GMissile" path="Models/GMissile.obj" />
-		<Mesh name="Rocket" path="Models/rocket.obj" />
-		<!--その他ブロックモデル-->
-		<Mesh name="antenna" path="Models/antenna.obj" />
-		<Mesh name="bigFlag" path="Models/big_flag.obj" />
-		<Mesh name="GunMount" path="Models/GunMount.obj" />
-		<Mesh name="core" path="Models/startblock.obj" />
-		<Mesh name="BV-2" path="Models/BV-2.obj" />
-		<!--メタルテクスチャ-->
-		<Texture name="metalGrey" path="Textures/metal1.png" />
-		<Texture name="metalWhite" path="Textures/metal2.png" />
-		<Texture name="metalYellow" path="Textures/metal3.png" />
-		<Texture name="metalGreen" path="Textures/metal4.png" />
-		<Texture name="metalBlack" path="Textures/metal5.png" />
-		<Texture name="metalDarkgreen" path="Textures/metal6.png" />
-		<!--専用弾丸テクスチャ-->
-		<Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
-		<Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
-		<Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
-		<Texture name="GMissileTex" path="Textures/GMmissile_tex.png" />
-		<!--その他のテクスチャ-->
-		<Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
-		<Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
-		<Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
-		<Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
-		<Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
-		<Texture name="coreTex" path="Textures/startblocktex_png.png" />
-		<Texture name="BV-2Tex" path="Textures/BV-2_tex.png" />
-		<!--レベルエディタエンティティのサムネイル-->
-		<Texture name="TankTurret_tn" path="Thumbnails/Tank_Turret.png" />
-		<!--UIIcon-->
-		<Texture name="IconAP" path="Textures/Icons/IconAP.png" />
-		<Texture name="IconHE" path="Textures/Icons/IconHE.png" />
-		<Texture name="IconHEAT" path="Textures/Icons/IconHEAT.png" />
-		<Texture name="IconAPFSDS" path="Textures/Icons/IconAPFSDS.png" />
-		<Texture name="IconHEATFS" path="Textures/Icons/IconHEATFS.png" />
-		<Texture name="IconRocket" path="Textures/Icons/IconRocket.png" />
-		<Texture name="Icon600mm" path="Textures/Icons/Icon600mm.png" />
-		<Texture name="IconBullet" path="Textures/Icons/IconBullet.png" />
-		<Texture name="IconSagidesu" path="Textures/Icons/IconSagidesu.png" />
-		<!--modアイコン-->
-		<Texture name="icon" path="icon.png" />
-		<!--サウンド-->
-		<AudioClip name="CannonSound" path="Sounds/120fire.wav" />
-		<AudioClip name="CannonSound2" path="Sounds/88fire.wav" />
-		<AudioClip name="HitSound" path="Sounds/hit.wav" />
-		<AudioClip name="muon" path="Sounds/muon.wav" />
-		<AudioClip name="granadeShot" path="Sounds/smokegrabadeshot.wav" />
-		<AudioClip name="MedievalCannonSound" path="Sounds/MedievalCannonSound.wav" />
-		<AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
-		<AudioClip name="machinegunfire" path="Sounds/RifleFire.wav" />
-		<AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
-		<AudioClip name="nice" path="Sounds/nice.wav" />
-		<AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
-		<AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
-		<AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
-		<AudioClip name="Booster" path="Sounds/Booster.wav" />
-		<AudioClip name="Reload10s" path="Sounds/Reload10s.wav" />
-		<AudioClip name="Reload5s" path="Sounds/Reload5s.wav" />
-		<AudioClip name="Reload" path="Sounds/Reload.wav" />
-		<!--アセット-->
-		<AssetBundle name="myasset" path="assets/tank_effect" />
-		<AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
-	</Resources>
+
+    <!-- Any assemblies that contain code for your mod.
+        If an assembly listed here contains an implementation of the Mod class,
+        its OnLoad method will be called.
+        BlockScripts for your blocks (if any) will be searched for in these assemblies.
+        The path attribute is relative to the location of this file. -->
+    <Assemblies>
+        <!-- <Assembly path="SomeAssembly.dll" /> -->
+        <!-- <ScriptAssembly path="SomeAssembly/" /> -->
+        <Assembly path="modchecker.dll" />
+        <Assembly path="EsTankCannonsMod.dll" />
+    </Assemblies>
+
+    <!-- Any blocks your mod adds to the game.
+        The path attribute is relative to the location of this file. -->
+    <Blocks>
+        <Block path="Blocks/130mmL54HEAT.xml" />
+        <!--blockid:#38-->
+
+        <Block path="Blocks/57mmL73AP.xml" />
+        <!--blockid:#37-->
+
+        <Block path="Blocks/76mmMotar.xml" />
+        <!--blockid:#36-->
+
+        <Block path="Blocks/600mmL8SB.xml" />
+        <!--blockid:#28-->
+
+        <Block path="Blocks/152mmL23HE.xml" />
+        <!--blockid:#9-->
+
+        <Block path="Blocks/120mmL44APFSDS.xml" />
+        <!--blockid:#1-->
+
+        <Block path="Blocks/120mmL44HEATFS.xml" />
+        <!--blockid:#4-->
+
+        <Block path="Blocks/105mmL28HE.xml" />
+        <!--blockid:#33-->
+
+        <Block path="Blocks/90mmRecoillessHESH.xml" />
+        <!--blockid:#27-->
+
+        <Block path="Blocks/88mmL74AntiAir.xml" />
+        <!--blockid:#5-->
+
+        <Block path="Blocks/88mmL74APHE.xml" />
+        <!--blockid:#26-->
+
+        <Block path="Blocks/75mmL48HE.xml" />
+        <!--blockid:#12-->
+
+        <Block path="Blocks/75mmL48AP.xml" />
+        <!--blockid:#13-->
+
+        <Block path="Blocks/75mmL24HEAT.xml" />
+        <!--blockid:#18-->
+
+        <Block path="Blocks/45mmL46APHE.xml" />
+        <!--blockid:#29-->
+
+        <Block path="Blocks/20mmL65HE.xml" />
+        <!--blockid:#11-->
+
+        <Block path="Blocks/12.7mmMachineGunT.xml" />
+        <!--blockid:#20-->
+
+        <Block path="Blocks/RocketLauncher.xml" />
+        <!--blockid:#30-->
+
+        <Block path="Blocks/GMissileLauncher.xml" />
+        <!--blockid:#31-->
+
+        <Block path="Blocks/medievalCannon.xml" />
+        <!--blockid:#10-->
+
+        <Block path="Blocks/smokegranade.xml" />
+        <!--blockid:#2-->
+
+        <Block path="Blocks/antenna.xml" />
+        <!--blockid:#3-->
+
+        <Block path="Blocks/redSmallFlag.xml" />
+        <!--blockid:#16-->
+
+        <Block path="Blocks/blueSmallFlag.xml" />
+        <!--blockid:#17-->
+    </Blocks>
+
+    <!-- Any entities (level objects) your mod adds to the game.
+        The path attribute is relative to the location of this file. -->
+    <Entities>
+        <Entity path="Entities/HeavyTankTurret01.xml" />
+    </Entities>
+
+    <!-- Any logic trigger types your mod adds to the game. -->
+    <!-- See the ModTriggers class for info on how to activate your triggers. -->
+    <Triggers>
+
+    </Triggers>
+
+    <!-- Any logic event types your mod adds to the game. -->
+    <!-- See the ModEvents class for info on how to handle your events being activated. -->
+    <Events>
+
+    </Events>
+
+    <!-- Access these keys using the ModKeys class. -->
+    <Keys>
+
+    </Keys>
+
+    <!-- The mod loader will automatically make all resources listed here available
+        to your mod via the ModResource class.
+        The path attribute is relative to the Resources/ directory.
+        You also need to list resources used in your Blocks and Entities.
+        Available resource types are Mesh, Texture, AudioClip, and AssetBundle. -->
+    <Resources>
+        <!--砲モデル-->
+        <Mesh name="120mmL44" path="Models/120mmL44.obj" />
+        <Mesh name="105mmL28" path="Models/105mmL28.obj" />
+        <Mesh name="88mmL74" path="Models/88mmL74.obj" />
+        <Mesh name="45mmL46" path="Models/45mmL46.obj" />
+        <Mesh name="152mmL23" path="Models/152mmL23.obj" />
+        <Mesh name="20mmL65" path="Models/20mmL65.obj" />
+        <Mesh name="75mmL48" path="Models/75mmL48.obj" />
+        <Mesh name="75mmL24" path="Models/75mmL24.obj" />
+        <Mesh name="12.7mmMachineGun" path="Models/12.7mmMachineGun.obj" />
+        <Mesh name="smokeGranadeDischarger" path="Models/smokedischarger.obj" />
+        <Mesh name="MedievalCannon" path="Models/MedievalCannon.obj" />
+        <Mesh name="90mmRecoilless" path="Models/90mmL34_recoilless.obj" />
+        <Mesh name="600mmL8" path="Models/600mmL8.obj" />
+        <Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
+        <Mesh name="RocketBay" path="Models/rocket-bay.obj" />
+        <!--弾モデル-->
+        <Mesh name="APFSDS" path="Models/APFSDS.obj" />
+        <Mesh name="HEATFS" path="Models/HEATFS.obj" />
+        <Mesh name="100mmShell" path="Models/100mmShell.obj" />
+        <Mesh name="smokeGranade" path="Models/smokegranade.obj" />
+        <Mesh name="120mmICO球" path="Models/120mmICO球.obj" />
+        <Mesh name="GMissile" path="Models/GMissile.obj" />
+        <Mesh name="Rocket" path="Models/rocket.obj" />
+        <!--その他ブロックモデル-->
+        <Mesh name="antenna" path="Models/antenna.obj" />
+        <Mesh name="bigFlag" path="Models/big_flag.obj" />
+        <Mesh name="GunMount" path="Models/GunMount.obj" />
+        <Mesh name="core" path="Models/startblock.obj" />
+        <Mesh name="BV-2" path="Models/BV-2.obj" />
+        <!--メタルテクスチャ-->
+        <Texture name="metalGrey" path="Textures/metal1.png" />
+        <Texture name="metalWhite" path="Textures/metal2.png" />
+        <Texture name="metalYellow" path="Textures/metal3.png" />
+        <Texture name="metalGreen" path="Textures/metal4.png" />
+        <Texture name="metalBlack" path="Textures/metal5.png" />
+        <Texture name="metalDarkgreen" path="Textures/metal6.png" />
+        <!--専用弾丸テクスチャ-->
+        <Texture name="88mmShellTex" path="Textures/88mmShellTex.png" />
+        <Texture name="smokeGranadeTex" path="Textures/smokegranadeTex.png" />
+        <Texture name="MedievalCannonTex" path="Textures/MedievalCannonTex.png" />
+        <Texture name="GMissileTex" path="Textures/GMmissile_tex.png" />
+        <!--その他のテクスチャ-->
+        <Texture name="12.7mmMachineGunTex" path="Textures/12.7mmMachineGun.png" />
+        <Texture name="88mmL74Tex" path="Textures/88mmL74_tex_edit.png" />
+        <Texture name="EcannonTex" path="Textures/E-Canon_tex.png" />
+        <Texture name="redBigFlagTex" path="Textures/red_big_flag.png" />
+        <Texture name="blueBigFlagTex" path="Textures/blue_big_flag.png" />
+        <Texture name="coreTex" path="Textures/startblocktex_png.png" />
+        <Texture name="BV-2Tex" path="Textures/BV-2_tex.png" />
+        <!--レベルエディタエンティティのサムネイル-->
+        <Texture name="TankTurret_tn" path="Thumbnails/Tank_Turret.png" />
+        <!--UIIcon-->
+        <Texture name="IconAP" path="Textures/Icons/IconAP.png" />
+        <Texture name="IconHE" path="Textures/Icons/IconHE.png" />
+        <Texture name="IconHEAT" path="Textures/Icons/IconHEAT.png" />
+        <Texture name="IconAPFSDS" path="Textures/Icons/IconAPFSDS.png" />
+        <Texture name="IconHEATFS" path="Textures/Icons/IconHEATFS.png" />
+        <Texture name="IconRocket" path="Textures/Icons/IconRocket.png" />
+        <Texture name="Icon600mm" path="Textures/Icons/Icon600mm.png" />
+        <Texture name="IconBullet" path="Textures/Icons/IconBullet.png" />
+        <Texture name="IconSagidesu" path="Textures/Icons/IconSagidesu.png" />
+        <!--modアイコン-->
+        <Texture name="icon" path="icon.png" />
+        <!--サウンド-->
+        <AudioClip name="CannonSound" path="Sounds/120fire.wav" />
+        <AudioClip name="CannonSound2" path="Sounds/88fire.wav" />
+        <AudioClip name="HitSound" path="Sounds/hit.wav" />
+        <AudioClip name="muon" path="Sounds/muon.wav" />
+        <AudioClip name="granadeShot" path="Sounds/smokegrabadeshot.wav" />
+        <AudioClip name="MedievalCannonSound" path="Sounds/MedievalCannonSound.wav" />
+        <AudioClip name="MedievalCannonHitSound" path="Sounds/MedievalCannonHitSound.wav" />
+        <AudioClip name="machinegunfire" path="Sounds/RifleFire.wav" />
+        <AudioClip name="machinegunhit" path="Sounds/machinegunhit.wav" />
+        <AudioClip name="nice" path="Sounds/nice.wav" />
+        <AudioClip name="TAIYA_explode01" path="Sounds/TAIYA_explode01.wav" />
+        <AudioClip name="merryxmas" path="Sounds/merryxmas.wav" />
+        <AudioClip name="GrabObjectSound" path="Sounds/GrabObjectSound.wav" />
+        <AudioClip name="Booster" path="Sounds/Booster.wav" />
+        <AudioClip name="Reload10s" path="Sounds/Reload10s.wav" />
+        <AudioClip name="Reload5s" path="Sounds/Reload5s.wav" />
+        <AudioClip name="Reload" path="Sounds/Reload.wav" />
+        <!--アセット-->
+        <AssetBundle name="myasset" path="assets/tank_effect" />
+        <AssetBundle name="myassetMac" path="assetsMac/tank_effectmac" />
+    </Resources>
 
 
-<!-- This value is automatically generated. Do not change it or you may break machine&level save files. -->
-<ID>50e63b55-b976-4009-82ab-66f989218122</ID>
+    <!-- This value is automatically generated. Do not change it or you may break machine&level save files. -->
+    <ID>50e63b55-b976-4009-82ab-66f989218122</ID>
 
 </Mod>

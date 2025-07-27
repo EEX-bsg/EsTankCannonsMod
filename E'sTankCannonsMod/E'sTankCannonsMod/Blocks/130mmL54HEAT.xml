@@ -16,17 +16,17 @@ to assist in positioning them correctly.
 The ID must be unique among blocks in your mod.
 It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
-    <ID>29</ID>
+    <ID>38</ID>
     <!-- Name of the block, shown in the user interface. -->
-    <Name>45mmL46APHE</Name>
+    <Name>130mmL54HEAT[prev]</Name>
     <!-- TODO: Change the mass to something appropriate -->
-    <Mass>0.1</Mass>
+    <Mass>5.0</Mass>
     <!-- Additional keywords that can be used to search for this block
 in the search tab of the block bar.
 Blocks can always be searched for by name and author,
 additional keywords can be specified here. -->
     <SearchKeywords>
-        <Keyword>Es,45,he,es,l46</Keyword>
+        <Keyword>Es,120,HEAT,es,heat,fs,l44</Keyword>
     </SearchKeywords>
     <!-- Optional.
 Only has an effect if the OnFlip method in the block script is not overriden.
@@ -55,9 +55,9 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
     <ModuleMapperTypes>
         <Key displayName="Shot" key="fire" default="C" />
-        <Slider displayName="Power" key="power" min="360" max="360" default="360" unclamped="false"/>
+        <Slider displayName="Power" key="power" min="1800" max="1800" default="1800" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.5" max="0.5" default="0.5" unclamped="false"/>
+        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.20" max="0.20" default="0.20" unclamped="false"/>
         <Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
         <Toggle displayName="Display Ammo Count" key="use-ammo-ui" default="false" />
         <Slider displayName="Offset UI" key="offset-ui" min="0" max="10" default="0" unclamped="false"/>
@@ -68,7 +68,7 @@ Check the documentation for more information on how to use modules. -->
             <OffsetUISlider key="offset-ui" />
             <RateOfFireSlider key="rate-of-fire" />
             <useMagazine>false</useMagazine>
-            <Icon name="IconAP" />
+            <Icon name="IconHEATFS" />
         </ETCMAmmoUIModule>
         <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
             <BlockState>
@@ -117,31 +117,30 @@ Check the documentation for more information on how to use modules. -->
 
                 <Colliders>
                     <CapsuleCollider>
-                        <Position x="0.0" y="0.0" z="0.0" />
+                        <Position x="0.0" y="0.0" z="-13.0" />
                         <Rotation x="0.0" y="90.0" z="0.0" />
-                        <Capsule direction="X" radius="0.045" height="0.3" />
+                        <Capsule direction="X" radius="0.12" height="1.0" />
                     </CapsuleCollider>
                 </Colliders>
 
-                <Mesh name="100mmShell">
-                    <Position x="0.0" y="0.0" z="-0.1" />
-                    <Rotation x="0.0" y="-90.0" z="0.0" />
-                    <Scale x="0.45" y="0.45" z="0.45" />
+                <Mesh name="HEATFS">
+                    <Position x="0.0" y="0.0" z="-13.0" />
+                    <Rotation x="0.0" y="0.0" z="0.0" />
+                    <Scale x="1.0" y="1.0" z="1.0" />
                 </Mesh>
+                <Texture name="metalGreen" />
 
-                <Texture name="metalYellow" />
 
-
-                <Mass>1.0</Mass>
-                <Drag>0.5</Drag>
-                <AngularDrag>0.0</AngularDrag>
+                <Mass>3.0</Mass>
+                <Drag>0.1</Drag>
+                <AngularDrag>100.0</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
-                <EntityDamage>20</EntityDamage>
-                <BlockDamage>10000</BlockDamage>
-                <Attaches>false</Attaches>
+                <EntityDamage>100</EntityDamage>
+                <BlockDamage>10000.0</BlockDamage>
+                <Attaches>true</Attaches>
                 <CollisionTypeS>ContinuousDynamic</CollisionTypeS>
 
-                <BounceCombineType>Average</BounceCombineType>
+                <BounceCombineType>Minimum</BounceCombineType>
                 <BounceStr>0.0</BounceStr>
                 <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
@@ -155,47 +154,47 @@ Check the documentation for more information on how to use modules. -->
             <HoldToShootToggle key="hold-to-shoot" />
 
             <ProjectileStart>
-                <Position x="0.0" y="0.0" z="4.5" />
-                <Rotation x="0.0" y="0.0" z="90.0" />
+                <Position x="0.0" y="-23.5" z="0.5" />
+                <Rotation x="90.0" y="0.0" z="0.0" />
                 <Scale x="1.0" y="1.0" z="1.0" />
             </ProjectileStart>
 
             <ShotFlashPosition>
-                <Position x="0.0" y="0.0" z="4.0" />
-                <Rotation x="0.0" y="0.0" z="90.0" />
-                <Scale x="2.0" y="2.0" z="2.0" />
+                <Position x="0.0" y="-8.5" z="0.5" />
+                <Rotation x="90.0" y="0.0" z="0.0" />
+                <Scale x="1.0" y="1.0" z="1.0" />
             </ShotFlashPosition>
 
             <ShowPlaceholderProjectile>false</ShowPlaceholderProjectile>
 
-            <DefaultAmmo>115</DefaultAmmo>
+            <DefaultAmmo>14</DefaultAmmo>
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
-            <ExplodeRadius>2.5</ExplodeRadius>
-            <ExplodePower>6000.0</ExplodePower>
-            <ExplodeUpPower>-1.0</ExplodeUpPower>
+            <ExplodeRadius>3.0</ExplodeRadius>
+            <ExplodePower>8000.0</ExplodePower>
+            <ExplodeUpPower>-2.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
-            <ProjectilesDespawnImmediately>True</ProjectilesDespawnImmediately>
+            <ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>
 
             <AssetBundleName name="myasset" />
-            <ExplodeEffect>smallExplode</ExplodeEffect>
-            <ShotFlashEffect>NewMachineGunShotEffect</ShotFlashEffect>
-            <!-- <TrailEffect>newBulletTrailWV100</TrailEffect> -->
+            <ExplodeEffect>APFSDShit</ExplodeEffect>
+            <ShotFlashEffect>120mmShotEffect</ShotFlashEffect>
+            <TrailEffect>newBulletTrailV100</TrailEffect>
 
-            <BulletEffect>bulleteffect</BulletEffect>
+            <BulletEffect>heatbulleteffect</BulletEffect>
 
             <RandomFuseInterval>0.0</RandomFuseInterval>
-            <FuseDelayTime>0.03</FuseDelayTime>
+            <FuseDelayTime>0.0</FuseDelayTime>
 
-            <RecoilMultiplier>0.25</RecoilMultiplier>
+            <RecoilMultiplier>0.55</RecoilMultiplier>
             <RandomInterval>0.03</RandomInterval>
-            <RandomDiffusion>0.03</RandomDiffusion>
+            <RandomDiffusion>0.02</RandomDiffusion>
 
             <PoolSize>50</PoolSize>
 
             <Sounds>
-                <AudioClip name="CannonSound2" />
+                <AudioClip name="CannonSound" />
             </Sounds>
             <HitSounds>
                 <AudioClip name="HitSound" />
@@ -227,19 +226,19 @@ The Trigger element is optional. -->
     <!-- Optionally specify type of damage done to entities.
 Can be one of "Blunt", "Sharp", "Fire" -->
     <!-- <DamageType>Blunt</DamageType> -->
-    <Mesh name="45mmL46">
+    <Mesh name="120mmL44">
         <!-- Must be defined as a resource in the
 	manifest. -->
-        <Position x="0.0" y="0.0" z="0.05" />
-        <Rotation x="0.0" y="90.0" z="0.0" />
+        <Position x="0.0" y="0.4" z="0.5" />
+        <Rotation x="0.0" y="-90.0" z="90.0" />
         <Scale x="2.0" y="2.0" z="2.0" />
     </Mesh>
-    <Texture name="EcannonTex" />
+    <Texture name="metalGrey" />
     <!-- Must be defined as a resource
 	in the manifest. -->
     <Icon>
         <Position x="0.2" y="0.2" z="0.0" />
-        <Rotation x="60.0" y="30.0" z="30.0" />
+        <Rotation x="-120.0" y="30.0" z="-30.0" />
         <Scale x="0.25" y="0.25" z="0.25" />
     </Icon>
     <!-- Including this causes a direction arrow, like the one on wheels and other turnable blocks,
@@ -276,9 +275,9 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
         <!-- TODO: Insert Collider definitions here.
 	Examples: -->
         <BoxCollider>
-            <Position x="0.0" y="0.0" z="0.22" />
+            <Position x="0.0" y="0.0" z="0.5" />
             <Rotation x="0.0" y="0.0" z="0.0" />
-            <Scale x="0.33" y="0.33" z="0.33" />
+            <Scale x="0.8" y="0.8" z="0.8" />
             <!--yが前zが上-->
         </BoxCollider>
         <!--<SphereCollider>
@@ -286,9 +285,9 @@ If the Colliders element here is present, all ignoreForGhost attributes are igno
 		<Radius>1.0</Radius>
 	</SphereCollider>-->
         <CapsuleCollider>
-            <Position x="0.0" y="-0.0" z="2.0" />
-            <Rotation x="0.0" y="90.0" z="0.0" />
-            <Capsule direction="X" radius="0.1" height="3.7" />
+            <Position x="0.0" y="-4.3" z="0.5" />
+            <Rotation x="90.0" y="90.0" z="90.0" />
+            <Capsule direction="Z" radius="0.24" height="8.5" />
         </CapsuleCollider>
     </Colliders>
     <BasePoint hasAddingPoint="false">
