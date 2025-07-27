@@ -91,6 +91,15 @@
     <!-- Any blocks your mod adds to the game.
         The path attribute is relative to the location of this file. -->
     <Blocks>
+        <Block path="Blocks/130mmL54HEAT.xml" />
+        <!--blockid:#38-->
+
+        <Block path="Blocks/57mmL73AP.xml" />
+        <!--blockid:#37-->
+
+        <Block path="Blocks/76mmMotar.xml" />
+        <!--blockid:#36-->
+
         <Block path="Blocks/600mmL8SB.xml" />
         <!--blockid:#28-->
 
@@ -124,9 +133,6 @@
         <Block path="Blocks/75mmL24HEAT.xml" />
         <!--blockid:#18-->
 
-        <Block path="Blocks/57mmL73AP.xml" />
-        <!--blockid:#37-->
-
         <Block path="Blocks/45mmL46APHE.xml" />
         <!--blockid:#29-->
 
@@ -141,9 +147,6 @@
 
         <Block path="Blocks/GMissileLauncher.xml" />
         <!--blockid:#31-->
-
-        <Block path="Blocks/76mmMotar.xml" />
-        <!--blockid:#36-->
 
         <Block path="Blocks/medievalCannon.xml" />
         <!--blockid:#10-->
