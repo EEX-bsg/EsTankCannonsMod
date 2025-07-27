@@ -93,48 +93,70 @@
     <Blocks>
         <Block path="Blocks/600mmL8SB.xml" />
         <!--blockid:#28-->
+
         <Block path="Blocks/152mmL23HE.xml" />
         <!--blockid:#9-->
+
         <Block path="Blocks/120mmL44APFSDS.xml" />
         <!--blockid:#1-->
+
         <Block path="Blocks/120mmL44HEATFS.xml" />
         <!--blockid:#4-->
+
         <Block path="Blocks/105mmL28HE.xml" />
         <!--blockid:#33-->
+
         <Block path="Blocks/90mmRecoillessHESH.xml" />
         <!--blockid:#27-->
+
         <Block path="Blocks/88mmL74AntiAir.xml" />
         <!--blockid:#5-->
+
         <Block path="Blocks/88mmL74APHE.xml" />
         <!--blockid:#26-->
+
         <Block path="Blocks/75mmL48HE.xml" />
         <!--blockid:#12-->
+
         <Block path="Blocks/75mmL48AP.xml" />
         <!--blockid:#13-->
+
         <Block path="Blocks/75mmL24HEAT.xml" />
-        <!--blockid:#37-->
-        <Block path="Blocks/57mmL73AP.xml" />
         <!--blockid:#18-->
+
+        <Block path="Blocks/57mmL73AP.xml" />
+        <!--blockid:#37-->
+
         <Block path="Blocks/45mmL46APHE.xml" />
         <!--blockid:#29-->
+
         <Block path="Blocks/20mmL65HE.xml" />
         <!--blockid:#11-->
+
         <Block path="Blocks/12.7mmMachineGunT.xml" />
         <!--blockid:#20-->
+
         <Block path="Blocks/RocketLauncher.xml" />
         <!--blockid:#30-->
+
         <Block path="Blocks/GMissileLauncher.xml" />
-        <!--blockid:#36-->
-        <Block path="Blocks/76mmMotar.xml" />
         <!--blockid:#31-->
+
+        <Block path="Blocks/76mmMotar.xml" />
+        <!--blockid:#36-->
+
         <Block path="Blocks/medievalCannon.xml" />
         <!--blockid:#10-->
+
         <Block path="Blocks/smokegranade.xml" />
         <!--blockid:#2-->
+
         <Block path="Blocks/antenna.xml" />
         <!--blockid:#3-->
+
         <Block path="Blocks/redSmallFlag.xml" />
         <!--blockid:#16-->
+
         <Block path="Blocks/blueSmallFlag.xml" />
         <!--blockid:#17-->
     </Blocks>
