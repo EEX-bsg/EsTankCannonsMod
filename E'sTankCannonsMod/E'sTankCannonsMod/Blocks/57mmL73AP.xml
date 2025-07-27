@@ -53,8 +53,9 @@ These behaviours are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
-    <ModuleMapperTypes>
+   <ModuleMapperTypes>
         <Key displayName="Shot" key="fire" default="C" />
+        <Key displayName="Reload" key="reload" default="R" />
         <Slider displayName="Power" key="power" min="1200" max="1200" default="1200" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
         <Slider displayName="Rate Of Fire" key="rate-of-fire" min="1.5" max="1.5" default="1.5" unclamped="false"/>
@@ -72,6 +73,7 @@ Check the documentation for more information on how to use modules. -->
             <RateOfFireSlider key="rate-of-fire" />
             <useMagazine>true</useMagazine>
             <Icon name="IconAP" />
+            <ReloadTimeSlider key="reload-time" />
         </ETCMAmmoUIModule>
         <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
             <BlockState>
