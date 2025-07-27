@@ -35,6 +35,7 @@
 33: 105mmL28HE
 34: (削除: BV-222)
 35: (削除: SnowMan)
+36: 76mm Motar[prev]
 
 ABSグループ
 ・120mmL44APFSDS,120mmL44HEATFS,152mmL23HE

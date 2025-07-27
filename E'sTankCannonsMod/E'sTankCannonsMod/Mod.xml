@@ -122,6 +122,8 @@
         <Block path="Blocks/RocketLauncher.xml" />
         <!--blockid:#30-->
         <Block path="Blocks/GMissileLauncher.xml" />
+        <!--blockid:#36-->
+        <Block path="Blocks/76mmMotar.xml" />
         <!--blockid:#31-->
         <Block path="Blocks/medievalCannon.xml" />
         <!--blockid:#10-->
