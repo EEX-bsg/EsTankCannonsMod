@@ -57,7 +57,7 @@ Check the documentation for more information on how to use modules. -->
         <Key displayName="Up" key="up" default="UpArrow" />
         <Key displayName="down" key="down" default="DownArrow" />
         <Key displayName="Shot" key="fire" default="C" />
-        <Slider displayName="Power" key="power" min="45" max="45" default="45" unclamped="false"/>
+        <Slider displayName="Power" key="power" min="22" max="22" default="22" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
         <Slider displayName="Rate Of Fire" key="rate-of-fire" min="2.0" max="2.0" default="2.0" unclamped="false"/>
         <Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
@@ -182,7 +182,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalYellow" />
 
 
-                <Mass>0.05</Mass>
+                <Mass>0.025</Mass>
                 <Drag>0.1</Drag>
                 <AngularDrag>0.0</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
@@ -215,8 +215,8 @@ Check the documentation for more information on how to use modules. -->
             <DefaultAmmo>500</DefaultAmmo>
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
-            <ExplodeRadius>0.4</ExplodeRadius>
-            <ExplodePower>1000.0</ExplodePower>
+            <ExplodeRadius>0.2</ExplodeRadius>
+            <ExplodePower>100.0</ExplodePower>
             <ExplodeUpPower>0.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -347,7 +347,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalGrey" />
 
 
-                <Mass>0.05</Mass>
+                <Mass>0.0025</Mass>
                 <Drag>0.1</Drag>
                 <AngularDrag>0.0</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
@@ -431,7 +431,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalGrey" />
 
 
-                <Mass>0.05</Mass>
+                <Mass>0.025</Mass>
                 <Drag>0.1</Drag>
                 <AngularDrag>0.0</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
