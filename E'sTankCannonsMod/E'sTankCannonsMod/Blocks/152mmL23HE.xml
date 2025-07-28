@@ -172,8 +172,8 @@ Check the documentation for more information on how to use modules. -->
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
             <ExplodeRadius>8.0</ExplodeRadius>
-            <ExplodePower>13751.4</ExplodePower>
-            <ExplodeUpPower>-2.0</ExplodeUpPower>
+            <ExplodePower>16000.0</ExplodePower>
+            <ExplodeUpPower>-3.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
             <ProjectilesDespawnImmediately>false</ProjectilesDespawnImmediately>

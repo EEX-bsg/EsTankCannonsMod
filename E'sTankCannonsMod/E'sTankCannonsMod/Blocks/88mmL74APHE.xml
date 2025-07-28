@@ -170,7 +170,7 @@ Check the documentation for more information on how to use modules. -->
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
             <ExplodeRadius>3.0</ExplodeRadius>
-            <ExplodePower>5000.0</ExplodePower>
+            <ExplodePower>7000.0</ExplodePower>
             <ExplodeUpPower>-4.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -185,7 +185,7 @@ Check the documentation for more information on how to use modules. -->
             <RandomFuseInterval>0.0</RandomFuseInterval>
             <FuseDelayTime>0.01</FuseDelayTime>
 
-            <RecoilMultiplier>0.33</RecoilMultiplier>
+            <RecoilMultiplier>0.23</RecoilMultiplier>
             <RandomInterval>0.03</RandomInterval>
             <RandomDiffusion>0.005</RandomDiffusion>
 

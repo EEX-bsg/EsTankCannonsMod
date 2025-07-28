@@ -75,6 +75,7 @@ namespace ETCM
         {
             shootingBehavour = base.GetComponent<AdShootingBehavour>();
             shootingBehavour.OnFire += OnFire;
+            shootingBehavour.OnMagazineReload += OnMagazineReload;
             UpdateOwnerFlag();
         }
 
@@ -150,14 +151,14 @@ namespace ETCM
         {
             if (!isOwnerSame) return;
             if (!StatMaster.levelSimulating) return;
-            if (Module.useMagazine && shootingBehavour.AmmoLeft == 0)
-            {
-                StartCoroutine(BulletTimerFadeIn(reloadTimeSlider.Value));
-            }
-            else
-            {
-                StartCoroutine(BulletTimerFadeIn(1/fireRate));
-            }
+            StartCoroutine(BulletTimerFadeIn(1/fireRate));
+        }
+
+        private void OnMagazineReload()
+        {
+            if (!isOwnerSame) return;
+            if (ammoUI == null) return;
+            StartCoroutine(BulletTimerFadeIn(reloadTimeSlider.Value));
         }
 
         IEnumerator BulletTimerFadeIn(float time)
