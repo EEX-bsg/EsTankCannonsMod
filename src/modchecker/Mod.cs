@@ -1,84 +1,35 @@
 using System;
 using Modding;
 using UnityEngine;
+using Localisation;
 
 namespace warning
 {
     public class Mod : ModEntryPoint
     {
+        public static GameObject WarningObject;
+        public static bool isEnglish = true; //日本語以外は全部英語
+        public static class ACMmod
+        {
+            public static readonly string name = "Add Custome Module Mod";
+            public static readonly Guid id = new Guid("a4577151-2173-4084-a456-4b29e8d3e01f");
+            public static readonly string workshopUrl = "https://steamcommunity.com/sharedfiles/filedetails/?id=1778796598";
+        }
+
 
         public override void OnLoad()
         {
-            UnityEngine.Object.DontDestroyOnLoad(SingleInstance<CreateWarningGUI>.Instance);
-        }
-
-    }
-    public class CreateTextArea : SingleInstance<CreateTextArea>
-    {
-        public override string Name
-        {
-            get
+            if (SingleInstance<LocalisationManager>.Instance.currLangName == "日本語")
             {
-                return "CreateTextArea";
+                isEnglish = false;
             }
-        }
-        private string textToEdit = "AddCustomModuleMod(ACMmod) is not loaded.\nPlease try the following.\n1. Subscribe to ACM on SteamWorkshop.\n2. Open the Mods tab in Besiege's title scene.\n3. Turn on the ACMmod and E'sTankCannonsMod.\n4. Restart Besiege.\nIf the problem persists, contact @EEX_bsg.";
-        private GUIStyle style = new GUIStyle();
-        private int width = Screen.width;
-        private int height = Screen.height;
-        void OnGUI()
-        {
-            style.fontSize = width / 40;
-            style.normal.textColor = Color.red;
-            // テキストエリアを表示する
-            GUI.TextArea(new Rect(width / 10, height / 10, width - (width / 10), height - (height / 10)), textToEdit, style);
-        }
-        internal static void destroyMe()
-        {
-            Destroy(Instance);
-        }
-    }
-    public class CreateWarningGUI : SingleInstance<CreateWarningGUI>
-    {
-        public override string Name
-        {
-            get
+            bool isACMmodEnabled = Mods.IsModLoaded(ACMmod.id);
+            if (!isACMmodEnabled)
             {
-                return "CreateWarningGUI";
-            }
-        }
-        private static readonly Guid ACMguid = new Guid("a4577151-2173-4084-a456-4b29e8d3e01f");
-        private static bool w = true;
-
-
-        private void warning()
-        {
-            if (!Mods.IsModLoaded(ACMguid))
-            {
-                w = false;
-                Debug.LogError("ETCM-ModChecker: ACM is not loaded");
-                DontDestroyOnLoad(SingleInstance<CreateTextArea>.Instance);
-
+                UnityEngine.Object.DontDestroyOnLoad(WarningObject = new GameObject("ModRequirementNOticeUI"));
+                WarningObject.AddComponent<warning.ModRequirementNotice>();
             }
         }
 
-        void Update()
-        {
-            if (w)
-            {
-                if (!(StatMaster.inMenu || StatMaster.isMainMenu))
-                {
-                    warning();
-                }
-            }
-            else
-            {
-                if (StatMaster.inMenu || StatMaster.isMainMenu)
-                {
-                    CreateTextArea.destroyMe();
-                    w = true;
-                }
-            }
-        }
     }
 }
