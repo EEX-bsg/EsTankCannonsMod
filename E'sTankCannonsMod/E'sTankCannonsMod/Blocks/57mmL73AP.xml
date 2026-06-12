@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
     <ID>37</ID>
     <!-- Name of the block, shown in the user interface. -->
-    <Name>57mmL73AP AL[prev]</Name>
+    <Name>57mmL73AP AL</Name>
     <!-- TODO: Change the mass to something appropriate -->
     <Mass>1.0</Mass>
     <!-- Additional keywords that can be used to search for this block
@@ -194,7 +194,7 @@ Check the documentation for more information on how to use modules. -->
 
             <RecoilMultiplier>0.30</RecoilMultiplier>
             <RandomInterval>0.03</RandomInterval>
-            <RandomDiffusion>0.01</RandomDiffusion>
+            <RandomDiffusion>0.003</RandomDiffusion>
 
             <RandomFuseInterval>0.0</RandomFuseInterval>
 

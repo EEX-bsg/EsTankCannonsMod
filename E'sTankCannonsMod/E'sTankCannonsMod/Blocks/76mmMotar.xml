@@ -18,7 +18,7 @@ It may conflict with blocks of other mods, the mod loader handles this.
 The easiest way of assigning IDs is to use 1, 2, 3, etc.-->
     <ID>36</ID>
     <!-- Name of the block, shown in the user interface. -->
-    <Name>76mm Motar[prev]</Name>
+    <Name>76mm Motar</Name>
     <!-- TODO: Change the mass to something appropriate -->
     <Mass>0.2</Mass>
     <!-- Additional keywords that can be used to search for this block
