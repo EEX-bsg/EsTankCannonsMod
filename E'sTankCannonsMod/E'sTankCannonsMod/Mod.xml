@@ -9,11 +9,11 @@
     <Name>E'sTankCannonsMod</Name>
     <Author>EEX-slime</Author>    <!-- FIX: Insert your name here. -->
     <!-- Major.Minor.Build mod自体のシステム等が大きく変わる.ブロック等の追加.ブロックの調整 配布するときにバージョン変える -->
-    <Version>1.4.6</Version>
+    <Version>1.5.0</Version>
     <LoadOrder>1</LoadOrder>
 
     <Description>
-		v1.4.6 UPDATE!! This mod add tank cannons.
+		v1.5.0 UPDATE!! This mod add tank cannons.
 		Required "Add Custom Module Mod".
     </Description>
 
@@ -100,7 +100,7 @@
         <Block path="Blocks/152mmL23HE.xml" />
         <!--blockid:#9-->
 
-        <Block path="Blocks/130mmL54HEAT.xml" />
+        <!-- <Block path="Blocks/130mmL54HEAT.xml" /> -->
         <!--blockid:#38-->
 
         <Block path="Blocks/120mmL44APFSDS.xml" />
@@ -209,6 +209,8 @@
         <Mesh name="600mmL8" path="Models/600mmL8.obj" />
         <Mesh name="GMissileLauncher" path="Models/GMissile-Launcher.obj" />
         <Mesh name="RocketBay" path="Models/rocket-bay.obj" />
+        <Mesh name="130mmL54" path="Models/130mmL54.obj" />
+        <Mesh name="57mmL73" path="Models/57mmL73.obj" />
         <!--弾モデル-->
         <Mesh name="APFSDS" path="Models/APFSDS.obj" />
         <Mesh name="HEATFS" path="Models/HEATFS.obj" />
