@@ -55,7 +55,7 @@ and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
     <ModuleMapperTypes>
         <Key displayName="Shot" key="fire" default="C" />
-        <Slider displayName="Power" key="power" min="280" max="280" default="280" unclamped="false"/>
+        <Slider displayName="Power" key="power" min="250" max="250" default="250" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
         <Slider displayName="Rate Of Fire" key="rate-of-fire" min="0.37" max="0.37" default="0.37" unclamped="false"/>
         <Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
