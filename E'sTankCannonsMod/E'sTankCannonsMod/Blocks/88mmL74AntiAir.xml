@@ -199,7 +199,7 @@ Check the documentation for more information on how to use modules. -->
 
             <RecoilMultiplier>1.0</RecoilMultiplier>
             <RandomInterval>0.03</RandomInterval>
-            <RandomDiffusion>0.01</RandomDiffusion>
+            <RandomDiffusion>0.002</RandomDiffusion>
 
             <useTimefuse>true</useTimefuse>
             <TimefuseSlider key="fuse-timer" />
