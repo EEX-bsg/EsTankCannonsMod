@@ -162,7 +162,7 @@
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
             <ExplodeRadius>6.0</ExplodeRadius>
-            <ExplodePower>11000.0</ExplodePower>
+            <ExplodePower>9000.0</ExplodePower>
             <ExplodeUpPower>-2.0</ExplodeUpPower>
             <useBooster>true</useBooster>
             <useExplodeRotation>false</useExplodeRotation>

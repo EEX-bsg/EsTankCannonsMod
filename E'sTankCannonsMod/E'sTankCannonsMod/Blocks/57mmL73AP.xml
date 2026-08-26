@@ -137,7 +137,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalBlack" />
 
 
-                <Mass>2.0</Mass>
+                <Mass>3.0</Mass>
                 <Drag>0.1</Drag>
                 <AngularDrag>0.0</AngularDrag>
                 <IgnoreGravity>False</IgnoreGravity>
