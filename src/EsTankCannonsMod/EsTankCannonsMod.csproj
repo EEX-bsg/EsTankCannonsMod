@@ -57,6 +57,8 @@
     <Compile Include="ETCMAmmoUIModule.cs" />
     <Compile Include="ETCMmodule.cs" />
     <Compile Include="ETCMSoundBlockModule.cs" />
+    <Compile Include="ETCMTimeFuseControlModule.cs" />
+    <Compile Include="ETCMTimeFuseHUD.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

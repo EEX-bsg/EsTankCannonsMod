@@ -58,7 +58,7 @@ Check the documentation for more information on how to use modules. -->
         <Key displayName="Reload" key="reload" default="R" />
         <Slider displayName="Power" key="power" min="40" max="40" default="40 " unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="9.0" max="9.0" default="9.0" unclamped="false"/>
+        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="12.0" max="12.0" default="12.0" unclamped="false"/>
         <Slider displayName="Reload Time" key="reload-time" min="5.0" max="5.0" default="5.0" unclamped="false"/>
         <Slider displayName="Shot Delay" key="delay-timer" min="0" max="3" default="0" unclamped="true"/>
         <Slider displayName="Magazine Capacity" key="capacity" min="18.0" max="18.0" default="18.0" unclamped="false"/>
@@ -180,8 +180,8 @@ Check the documentation for more information on how to use modules. -->
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
             <useExplodeRotation>true</useExplodeRotation>
-            <ExplodeRadius>0.8</ExplodeRadius>
-            <ExplodePower>2000.0</ExplodePower>
+            <ExplodeRadius>1.0</ExplodeRadius>
+            <ExplodePower>6000.0</ExplodePower>
             <ExplodeUpPower>0.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>

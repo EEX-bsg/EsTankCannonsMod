@@ -59,7 +59,7 @@ Check the documentation for more information on how to use modules. -->
         <Key displayName="Shot" key="fire" default="C" />
         <Slider displayName="Power" key="power" min="22" max="22" default="22" unclamped="false"/>
         <!--<Slider displayName="range" key="range" min="10" max="10" default="10" unclamped="false"/>-->
-        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="2.0" max="2.0" default="2.0" unclamped="false"/>
+        <Slider displayName="Rate Of Fire" key="rate-of-fire" min="2.5" max="2.5" default="2.5" unclamped="false"/>
         <Toggle displayName="Hold To Shoot" key="hold-to-shoot" default="true" />
         <Slider displayName="Speed" key="speed" min="0" max="1" default="0.5" unclamped="false"/>
         <Toggle displayName="Auto" key="automatic" default="false" />
@@ -310,7 +310,7 @@ Check the documentation for more information on how to use modules. -->
             <!--<BulletEffect>bulleteffect</BulletEffect>-->
 
             <useDelay>true</useDelay>
-            <DelayTime>0.125</DelayTime>
+            <DelayTime>0.1</DelayTime>
 
             <RecoilMultiplier>0.01</RecoilMultiplier>
             <RandomInterval>0.0</RandomInterval>
@@ -394,7 +394,7 @@ Check the documentation for more information on how to use modules. -->
             <!--<BulletEffect>bulleteffect</BulletEffect>-->
 
             <useDelay>true</useDelay>
-            <DelayTime>0.250</DelayTime>
+            <DelayTime>0.2</DelayTime>
 
             <RecoilMultiplier>0.01</RecoilMultiplier>
             <RandomInterval>0.0</RandomInterval>
@@ -478,7 +478,7 @@ Check the documentation for more information on how to use modules. -->
             <!--<BulletEffect>bulleteffect</BulletEffect>-->
 
             <useDelay>true</useDelay>
-            <DelayTime>0.370</DelayTime>
+            <DelayTime>0.3</DelayTime>
 
             <RecoilMultiplier>0.01</RecoilMultiplier>
             <RandomInterval>0.0</RandomInterval>

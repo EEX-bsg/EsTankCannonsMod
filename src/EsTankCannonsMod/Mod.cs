@@ -34,6 +34,7 @@ namespace ETCM
             // Called when the mod is loaded.
             CustomModules.AddBlockModule<ETCMSoundBlockModule, ETCMSoundBlockBehaviour>("ETCMSoundBlockModule", canReload: true);
             CustomModules.AddBlockModule<ETCMAmmoUIModule, ETCMAmmoUIBehaviour>("ETCMAmmoUIModule", canReload: true);
+            CustomModules.AddBlockModule<ETCMTimeFuseControlModule, ETCMTimeFuseControlBehaviour>("ETCMTimeFuseControlModule", canReload: true);
             UnityEngine.Object.DontDestroyOnLoad(SingleInstance<ETCMmodule>.Instance);
 
             // ETCMUIオブジェクトを作成し、Canvasをアタッチする
@@ -45,6 +46,8 @@ namespace ETCM
             canvas.gameObject.layer = LayerMask.NameToLayer("HUD");
             // 画面サイズに応じてUIをスケーリングするためのコンポーネントをアタッチする
             ETCMUI.AddComponent<CanvasScaler>().scaleFactor = 1;
+            // タイムフューズHUDはローカルに1個だけ常設する
+            ETCMUI.AddComponent<ETCMTimeFuseHUD>();
         }
     }
 }
