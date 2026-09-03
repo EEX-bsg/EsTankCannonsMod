@@ -15,7 +15,8 @@ namespace ETCM
         // 最終入力からこの秒数が経過したら自動で隠す
         private const float DisplayDuration = 2f;
 
-        private readonly Color32 UIColor = new Color32(0, 255, 214, 255);
+        private readonly Color32 TextColor = new Color32(255, 255, 255, 255);
+        private readonly Color32 OutlineColor = new Color32(110, 110, 110, 255);
 
         private GameObject fuseUI;
         private Text fuseText;
@@ -49,7 +50,7 @@ namespace ETCM
             if (seconds != lastShownValue)
             {
                 lastShownValue = seconds;
-                fuseText.text = "FUZE " + seconds.ToString("F2") + " s";
+                fuseText.text = seconds.ToString("F2") + "s";
             }
             hideTime = Time.unscaledTime + DisplayDuration;
             SetShown(true);
@@ -80,17 +81,23 @@ namespace ETCM
             rect.anchorMin = new Vector2(0.5f, 0.5f);
             rect.anchorMax = new Vector2(0.5f, 0.5f);
             rect.pivot = new Vector2(0.5f, 0.5f);
-            rect.sizeDelta = new Vector2(260, 40);
-            // 画面中心よりやや右。位置は固定でオフセット調整用スライダーは設けない
-            rect.anchoredPosition = new Vector2(170, -20);
+            rect.sizeDelta = new Vector2(160, 26);
+            // 画面中心よりやや右下。位置は固定でオフセット調整用スライダーは設けない
+            rect.anchoredPosition = new Vector2(170, -70);
 
             fuseText = fuseUI.AddComponent<Text>();
-            fuseText.text = "FUZE 0.00 s";
+            fuseText.text = "0.00s";
             fuseText.font = arial;
-            fuseText.fontSize = 26;
-            fuseText.fontStyle = FontStyle.BoldAndItalic;
-            fuseText.color = UIColor;
+            fuseText.fontSize = 16;
+            fuseText.fontStyle = FontStyle.Bold;
+            fuseText.color = TextColor;
             fuseText.alignment = TextAnchor.MiddleLeft;
+
+            // 細い灰色の縁取り
+            Outline outline = fuseUI.AddComponent<Outline>();
+            outline.effectColor = OutlineColor;
+            outline.effectDistance = new Vector2(1f, -1f);
+            outline.useGraphicAlpha = false;
         }
     }
 }
