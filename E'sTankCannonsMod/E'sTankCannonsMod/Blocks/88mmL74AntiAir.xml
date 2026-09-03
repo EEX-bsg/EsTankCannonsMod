@@ -190,7 +190,7 @@ Check the documentation for more information on how to use modules. -->
             <AmmoType>Cannon</AmmoType>
             <ProjectilesExplode>true</ProjectilesExplode>
             <ExplodeRadius>6.0</ExplodeRadius>
-            <ExplodePower>1000.0</ExplodePower>
+            <ExplodePower>3000.0</ExplodePower>
             <ExplodeUpPower>1.0</ExplodeUpPower>
 
             <SupportsExplosionGodTool>False</SupportsExplosionGodTool>
@@ -202,7 +202,7 @@ Check the documentation for more information on how to use modules. -->
             <TrailEffect>newBulletTrailV100</TrailEffect>
             <BulletEffect>bulleteffect</BulletEffect>
 
-            <RandomFuseInterval>0.05</RandomFuseInterval>
+            <RandomFuseInterval>0.0</RandomFuseInterval>
             <FuseDelayTime>0.0</FuseDelayTime>
 
             <RecoilMultiplier>1.0</RecoilMultiplier>
@@ -211,7 +211,6 @@ Check the documentation for more information on how to use modules. -->
 
             <useTimefuse>true</useTimefuse>
             <TimefuseSlider key="fuse-timer" />
-            <RandomFuseInterval>0.0</RandomFuseInterval>
 
             <PoolSize>50</PoolSize>
 
