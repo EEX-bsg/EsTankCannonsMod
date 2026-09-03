@@ -13,7 +13,7 @@ namespace ETCM
         public static ETCMTimeFuseHUD Instance;
 
         // 最終入力からこの秒数が経過したら自動で隠す
-        private const float DisplayDuration = 2f;
+        private const float DisplayDuration = 1.5f;
 
         private readonly Color32 TextColor = new Color32(255, 255, 255, 255);
         private readonly Color32 OutlineColor = new Color32(110, 110, 110, 255);
@@ -82,13 +82,13 @@ namespace ETCM
             rect.anchorMax = new Vector2(0.5f, 0.5f);
             rect.pivot = new Vector2(0.5f, 0.5f);
             rect.sizeDelta = new Vector2(160, 26);
-            // 画面中心よりやや右下。位置は固定でオフセット調整用スライダーは設けない
-            rect.anchoredPosition = new Vector2(170, -70);
+            // 画面中心よりやや右。位置は固定でオフセット調整用スライダーは設けない
+            rect.anchoredPosition = new Vector2(170, 0);
 
             fuseText = fuseUI.AddComponent<Text>();
             fuseText.text = "0.00s";
             fuseText.font = arial;
-            fuseText.fontSize = 16;
+            fuseText.fontSize = 20;
             fuseText.fontStyle = FontStyle.Bold;
             fuseText.color = TextColor;
             fuseText.alignment = TextAnchor.MiddleLeft;
