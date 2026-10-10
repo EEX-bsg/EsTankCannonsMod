@@ -86,6 +86,8 @@ Required "Add Custom Module Mod".
         <!-- <ScriptAssembly path="SomeAssembly/" /> -->
         <Assembly path="modchecker.dll" />
         <Assembly path="EsTankCannonsMod.dll" />
+        <Assembly path="ETCM.AcmBridge.dll" />
+        <Assembly path="ETCM.EwlBridge.dll" />
     </Assemblies>
 
     <!-- Any blocks your mod adds to the game.

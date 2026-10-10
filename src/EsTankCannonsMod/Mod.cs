@@ -35,6 +35,7 @@ namespace ETCM
             CustomModules.AddBlockModule<ETCMSoundBlockModule, ETCMSoundBlockBehaviour>("ETCMSoundBlockModule", canReload: true);
             CustomModules.AddBlockModule<ETCMAmmoUIModule, ETCMAmmoUIBehaviour>("ETCMAmmoUIModule", canReload: true);
             CustomModules.AddBlockModule<ETCMTimeFuseControlModule, ETCMTimeFuseControlBehaviour>("ETCMTimeFuseControlModule", canReload: true);
+            Backend.RegisterStubs();
             UnityEngine.Object.DontDestroyOnLoad(SingleInstance<ETCMmodule>.Instance);
 
             // ETCMUIオブジェクトを作成し、Canvasをアタッチする
