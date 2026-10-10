@@ -22,6 +22,7 @@ namespace ETCM.EwlBridge
         {
             // EWL の標準モジュールを E砲名義で登録し直す(XML 側は modid なし)
             CustomModules.AddBlockModule<EwlWeaponModule, EwlWeaponBehaviour>("EwlWeapon", false);
+            CustomModules.AddBlockModule<EwlBlockPhysicsModule, EwlBlockPhysicsBehaviour>("EwlBlockPhysics", false);
             Backend.ConnectAmmo = ConnectAmmo;
         }
 

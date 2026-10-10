@@ -130,6 +130,13 @@ Check the documentation for more information on how to use modules. -->
                 </FireSounds>
             </Effects>
         </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>150000</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+        </EwlBlockPhysics>
         <AdBlockProp>
             <BlockState>
                 <!-- Deault = 15000.if set 0,become infinity -->

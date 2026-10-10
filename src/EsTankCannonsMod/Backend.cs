@@ -30,7 +30,10 @@ namespace ETCM
                 CustomModules.AddBlockModule<AdBlockPropStub, AdBlockPropStubBehaviour>("AdBlockProp", false);
             }
             if (!UseEwl)
+            {
                 CustomModules.AddBlockModule<EwlWeaponStub, EwlWeaponStubBehaviour>("EwlWeapon", false);
+                CustomModules.AddBlockModule<EwlBlockPhysicsStub, EwlBlockPhysicsStubBehaviour>("EwlBlockPhysics", false);
+            }
             Mod.Log("Weapon backend: " + (UseEwl ? "EWL" : UseAcm ? "ACM" : "none"));
         }
     }
@@ -48,7 +51,9 @@ namespace ETCM
     [XmlRoot("AdShootingProp")] public class AdShootingPropStub : BlockModule { }
     [XmlRoot("AdBlockProp")] public class AdBlockPropStub : BlockModule { }
     [XmlRoot("EwlWeapon")] public class EwlWeaponStub : BlockModule { }
+    [XmlRoot("EwlBlockPhysics")] public class EwlBlockPhysicsStub : BlockModule { }
     public class AdShootingPropStubBehaviour : BlockModuleBehaviour<AdShootingPropStub> { }
     public class AdBlockPropStubBehaviour : BlockModuleBehaviour<AdBlockPropStub> { }
     public class EwlWeaponStubBehaviour : BlockModuleBehaviour<EwlWeaponStub> { }
+    public class EwlBlockPhysicsStubBehaviour : BlockModuleBehaviour<EwlBlockPhysicsStub> { }
 }
