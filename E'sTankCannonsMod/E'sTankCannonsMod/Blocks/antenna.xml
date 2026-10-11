@@ -65,7 +65,7 @@ Check the documentation for more information on how to use modules. -->
             </Sounds>
         </ETCMSoundBlockModule>
 
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
                 <!-- Deault = 15000.if set 0,become infinity -->
                 <JointStr>6500</JointStr>
@@ -105,6 +105,19 @@ Check the documentation for more information on how to use modules. -->
                 <LimitAngular>45</LimitAngular>
             </RotateState>
         </AdBlockProp>
+        <EwlBlockPhysics>
+            <JointStrength>6500</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+            <Rotation>
+                <AxisZ>Free</AxisZ>
+                <Spring>10.0</Spring>
+                <Damper>0.1</Damper>
+                <Limit>45</Limit>
+            </Rotation>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->

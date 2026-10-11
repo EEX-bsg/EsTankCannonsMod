@@ -70,7 +70,7 @@ Check the documentation for more information on how to use modules. -->
             <useMagazine>false</useMagazine>
             <Icon name="IconHE" />
         </ETCMAmmoUIModule>
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
                 <!-- Deault = 15000.if set 0,become infinity -->
                 <JointStr>150000</JointStr>
@@ -111,7 +111,7 @@ Check the documentation for more information on how to use modules. -->
             </RotateState>
         </AdBlockProp>
 
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
             <ShootingState>
 
                 <Colliders>
@@ -198,6 +198,79 @@ Check the documentation for more information on how to use modules. -->
                 <AudioClip name="HitSound" />
             </HitSounds>
         </AdShootingProp>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <Muzzle>
+                <Position x="0.0" y="-15.0" z="0.5" />
+                <Rotation x="90.0" y="0.0" z="0.0" />
+            </Muzzle>
+            <Fire>
+                <!-- ACM 換算: 100 * Power(2640) * 0.01 / Mass(3) -->
+                <Velocity>880</Velocity>
+                <!-- 1 / RateOfFire(0.25) -->
+                <Interval>4.0</Interval>
+                <!-- atan(RandomDiffusion 0.002) [度] -->
+                <Spread>0.115</Spread>
+                <RandomDelay>0.03</RandomDelay>
+                <Recoil>0.23</Recoil>
+                <Ammo>16</Ammo>
+            </Fire>
+            <Projectile>
+                <Mass>3</Mass>
+                <Drag>0.0</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <Friction>10.0</Friction>
+                <FrictionCombine>Average</FrictionCombine>
+                <Bounciness>0.0</Bounciness>
+                <BounceCombine>Average</BounceCombine>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="0.0" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.088" height="0.6" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="0.88" y="0.88" z="0.88" />
+                </Mesh>
+                <Texture name="metalGrey" />
+            </Projectile>
+            <Impact>
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>100</EntityDamage>
+                <ExplosionRadius>3.0</ExplosionRadius>
+                <!-- ACM: ExplodePower(7000) x2、ExplodeUpPower(-4) x0.25 -->
+                <ExplosionPower>14000</ExplosionPower>
+                <ExplosionUpPower>-1</ExplosionUpPower>
+                <FuseDelay>0.01</FuseDelay>
+            </Impact>
+            <Effects>
+                <AssetBundle name="myasset" />
+                <ShotFlash>120mmShotEffect</ShotFlash>
+                <ShotFlashPosition x="0.0" y="-14.0" z="0.5" />
+                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
+                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
+                <Bullet>bulleteffect</Bullet>
+                <Explosion>APFSDShit</Explosion>
+                <FireSounds>
+                    <AudioClip name="CannonSound2" />
+                </FireSounds>
+                <ExplosionSounds>
+                    <AudioClip name="HitSound" />
+                </ExplosionSounds>
+            </Effects>
+        </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>150000</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->
