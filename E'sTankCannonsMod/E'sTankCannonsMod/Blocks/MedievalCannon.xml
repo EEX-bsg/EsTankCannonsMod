@@ -241,6 +241,13 @@ Check the documentation for more information on how to use modules. -->
             <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>40</EntityDamage>
+                <!-- ゴッドツール「爆発する砲弾」のときだけ爆発(ACM: SupportsExplosionGodTool) -->
+                <ExplodesOnlyWithGodTool>true</ExplodesOnlyWithGodTool>
+                <ExplosionRadius>3.0</ExplosionRadius>
+                <!-- ACM: ExplodePower(1500) x2、ExplodeUpPower(3) x0.25 -->
+                <ExplosionPower>3000</ExplosionPower>
+                <ExplosionUpPower>0.75</ExplosionUpPower>
+                <FuseRandom>0.05</FuseRandom>
             </Impact>
             <Effects>
                 <AssetBundle name="myasset" />
@@ -248,9 +255,13 @@ Check the documentation for more information on how to use modules. -->
                 <ShotFlashPosition x="0.0" y="-1.7" z="0.562" />
                 <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
                 <ShotFlashScale x="1.0" y="1.0" z="1.0" />
+                <Explosion>smallExplode</Explosion>
                 <FireSounds>
                     <AudioClip name="MedievalCannonSound" />
                 </FireSounds>
+                <ExplosionSounds>
+                    <AudioClip name="MedievalCannonHitSound" />
+                </ExplosionSounds>
             </Effects>
         </EwlWeapon>
         <EwlBlockPhysics>
