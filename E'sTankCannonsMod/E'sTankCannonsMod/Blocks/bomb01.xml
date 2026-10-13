@@ -210,7 +210,7 @@ Check the documentation for more information on how to use modules. -->
                 <Interval>10.0</Interval>
                 <!-- atan(RandomDiffusion 0.0) [度] -->
                 <Spread>0.000</Spread>
-                <RandomDelay>0.0</RandomDelay>
+                <DelayRandomExtra>0.0</DelayRandomExtra>
                 <Recoil>0.0</Recoil>
                 <Ammo>10</Ammo>
             </Fire>

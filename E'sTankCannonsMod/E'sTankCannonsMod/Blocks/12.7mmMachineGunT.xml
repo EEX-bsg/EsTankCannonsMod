@@ -508,7 +508,7 @@ Check the documentation for more information on how to use modules. -->
                 <Interval>0.4</Interval>
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
-                <RandomDelay>0.0</RandomDelay>
+                <DelayRandomExtra>0.0</DelayRandomExtra>
                 <Recoil>0.01</Recoil>
                 <Ammo>500</Ammo>
             </Fire>
@@ -570,7 +570,7 @@ Check the documentation for more information on how to use modules. -->
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.1</Delay>
-                <RandomDelay>0.0</RandomDelay>
+                <DelayRandomExtra>0.0</DelayRandomExtra>
                 <Recoil>0.01</Recoil>
                 <Ammo>500</Ammo>
             </Fire>
@@ -624,7 +624,7 @@ Check the documentation for more information on how to use modules. -->
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.2</Delay>
-                <RandomDelay>0.0</RandomDelay>
+                <DelayRandomExtra>0.0</DelayRandomExtra>
                 <Recoil>0.01</Recoil>
                 <Ammo>500</Ammo>
             </Fire>
@@ -679,7 +679,7 @@ Check the documentation for more information on how to use modules. -->
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.3</Delay>
-                <RandomDelay>0.0</RandomDelay>
+                <DelayRandomExtra>0.0</DelayRandomExtra>
                 <Recoil>0.01</Recoil>
                 <Ammo>500</Ammo>
             </Fire>

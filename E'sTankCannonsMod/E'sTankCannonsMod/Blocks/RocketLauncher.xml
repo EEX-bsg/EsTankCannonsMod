@@ -212,7 +212,7 @@
         <EwlWeapon>
             <FireKey key="fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <DelaySlider key="delay-timer" />
+            <FireDelaySlider key="delay-timer" />
             <TimeFuseSlider key="fuse-timer" />
             <Muzzle>
                 <Position x="0.0" y="-0.2" z="0.5" />
@@ -226,7 +226,7 @@
                 <!-- 1 / RateOfFire(0.5) -->
                 <Interval>2.0</Interval>
                 <Spread>0.000</Spread>
-                <RandomDelay>0.03</RandomDelay>
+                <DelayRandomExtra>0.03</DelayRandomExtra>
                 <Recoil>0</Recoil>
                 <Ammo>10</Ammo>
                 <MagazineCapacity>2</MagazineCapacity>

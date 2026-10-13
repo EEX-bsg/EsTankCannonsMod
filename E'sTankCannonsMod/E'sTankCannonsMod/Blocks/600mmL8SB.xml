@@ -225,7 +225,7 @@ Check the documentation for more information on how to use modules. -->
                 <!-- atan(RandomDiffusion 0.02) [度] -->
                 <Spread>1.146</Spread>
                 <Delay>1.2</Delay>
-                <RandomDelay>0.8</RandomDelay>
+                <DelayRandomExtra>0.8</DelayRandomExtra>
                 <Recoil>0.1</Recoil>
                 <Ammo>3</Ammo>
             </Fire>
@@ -259,7 +259,7 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM: ExplodePower(20000) x2、ExplodeUpPower(0) x0.25 -->
                 <ExplosionPower>40000</ExplosionPower>
                 <ExplosionUpPower>0</ExplosionUpPower>
-                <FuseDelay>0.5</FuseDelay>
+                <DetonationDelay>0.5</DetonationDelay>
             </Impact>
             <Effects>
                 <AssetBundle name="myasset" />

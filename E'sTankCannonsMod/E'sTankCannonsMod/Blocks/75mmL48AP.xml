@@ -86,7 +86,7 @@ Check the documentation for more information on how to use modules. -->
                 <Interval>2.7027</Interval>
                 <!-- atan(RandomDiffusion 0.007) [度] -->
                 <Spread>0.401</Spread>
-                <RandomDelay>0.03</RandomDelay>
+                <DelayRandomExtra>0.03</DelayRandomExtra>
                 <Recoil>0.10</Recoil>
                 <Ammo>21</Ammo>
             </Fire>

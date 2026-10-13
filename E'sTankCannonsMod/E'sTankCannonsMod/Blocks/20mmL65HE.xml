@@ -228,7 +228,7 @@ Check the documentation for more information on how to use modules. -->
             <HoldToFireToggle key="hold-to-shoot" />
             <ReloadKey key="reload" />
             <AutoReloadToggle key="auto-reload" />
-            <DelaySlider key="delay-timer" />
+            <FireDelaySlider key="delay-timer" />
             <Muzzle>
                 <Position x="0.0" y="0.0" z="4.0" />
                 <Rotation x="0.0" y="0.0" z="90.0" />
@@ -240,7 +240,7 @@ Check the documentation for more information on how to use modules. -->
                 <Interval>0.08333</Interval>
                 <!-- atan(RandomDiffusion 0.005) [度] -->
                 <Spread>0.286</Spread>
-                <RandomDelay>0.03</RandomDelay>
+                <DelayRandomExtra>0.03</DelayRandomExtra>
                 <Recoil>0.2</Recoil>
                 <Ammo>324</Ammo>
                 <MagazineCapacity>18</MagazineCapacity>
