@@ -226,7 +226,6 @@
                 <!-- ACM: PurgeVector(0,1,0) x PurgePower(5) x 100 を1物理フレーム(0.01s)、弾 Mass 2 -->
                 <EjectVelocity x="0.0" y="2.5" z="0.0" />
                 <!-- 1 / RateOfFire(0.5) -->
-                <Interval>2.0</Interval>
                 <Spread>0.000</Spread>
                 <DelayRandomExtra>0.03</DelayRandomExtra>
                 <Recoil>0</Recoil>

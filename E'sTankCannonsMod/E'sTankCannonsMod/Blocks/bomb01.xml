@@ -208,7 +208,6 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM 換算: 100 * Power(1) * 0.01 / Mass(2.3) -->
                 <Velocity>0.4348</Velocity>
                 <!-- 1 / RateOfFire(0.1) -->
-                <Interval>10.0</Interval>
                 <!-- atan(RandomDiffusion 0.0) [度] -->
                 <Spread>0.000</Spread>
                 <DelayRandomExtra>0.0</DelayRandomExtra>

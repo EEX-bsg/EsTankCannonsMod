@@ -506,7 +506,6 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
                 <Velocity>880</Velocity>
                 <!-- 1 / RateOfFire(2.5) -->
-                <Interval>0.4</Interval>
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <DelayRandomExtra>0.0</DelayRandomExtra>
@@ -568,7 +567,6 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.05) -->
                 <Velocity>440</Velocity>
                 <!-- 1 / RateOfFire(2.5) -->
-                <Interval>0.4</Interval>
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.1</Delay>
@@ -623,7 +621,6 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.0025) -->
                 <Velocity>8800</Velocity>
                 <!-- 1 / RateOfFire(2.5) -->
-                <Interval>0.4</Interval>
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.2</Delay>
@@ -679,7 +676,6 @@ Check the documentation for more information on how to use modules. -->
                 <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
                 <Velocity>880</Velocity>
                 <!-- 1 / RateOfFire(2.5) -->
-                <Interval>0.4</Interval>
                 <!-- atan(RandomDiffusion 0.006) [度] -->
                 <Spread>0.344</Spread>
                 <Delay>0.3</Delay>
