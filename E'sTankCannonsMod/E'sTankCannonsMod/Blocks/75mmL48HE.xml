@@ -202,6 +202,7 @@ Check the documentation for more information on how to use modules. -->
         </AdShootingProp>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-8.5" z="0.5" />

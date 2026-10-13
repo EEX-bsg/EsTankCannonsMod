@@ -211,6 +211,7 @@
         </AdShootingProp>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <FireDelaySlider key="delay-timer" />
             <TimeFuseSlider key="fuse-timer" />

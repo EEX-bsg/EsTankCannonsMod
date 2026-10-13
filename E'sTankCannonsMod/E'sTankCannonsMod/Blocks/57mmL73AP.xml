@@ -227,6 +227,7 @@ Check the documentation for more information on how to use modules. -->
         </AdShootingProp>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <ReloadKey key="reload" />
             <AutoReloadToggle key="auto-reload" />

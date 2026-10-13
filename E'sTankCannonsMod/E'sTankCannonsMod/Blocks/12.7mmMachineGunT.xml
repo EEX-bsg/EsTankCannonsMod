@@ -496,6 +496,7 @@ Check the documentation for more information on how to use modules. -->
         </AdShootingProp>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-2.0" z="0.0" />
@@ -557,6 +558,7 @@ Check the documentation for more information on how to use modules. -->
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-2.0" z="0.0" />
@@ -611,6 +613,7 @@ Check the documentation for more information on how to use modules. -->
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-2.0" z="0.0" />
@@ -666,6 +669,7 @@ Check the documentation for more information on how to use modules. -->
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-2.0" z="0.0" />

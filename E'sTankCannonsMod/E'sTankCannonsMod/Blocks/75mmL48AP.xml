@@ -74,6 +74,7 @@ Check the documentation for more information on how to use modules. -->
              ACM 側の値は凍結(更新しない)。調整は EWL 側にだけ入れる。 -->
         <EwlWeapon>
             <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <Muzzle>
                 <Position x="0.0" y="-8.5" z="0.5" />
