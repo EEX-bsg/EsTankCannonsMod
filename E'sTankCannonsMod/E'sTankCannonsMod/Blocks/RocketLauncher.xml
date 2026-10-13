@@ -214,6 +214,7 @@
             <HoldToFireToggle key="hold-to-shoot" />
             <FireDelaySlider key="delay-timer" />
             <TimeFuseSlider key="fuse-timer" />
+            <MagazineCapacitySlider key="capacity" />
             <Muzzle>
                 <Position x="0.0" y="-0.2" z="0.5" />
                 <Rotation x="90" y="0.0" z="0.0" />

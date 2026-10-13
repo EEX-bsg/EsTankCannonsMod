@@ -240,6 +240,7 @@ Check the documentation for more information on how to use modules. -->
             <HoldToFireToggle key="hold-to-shoot" />
             <ReloadKey key="reload" />
             <AutoReloadToggle key="auto-reload" />
+            <MagazineCapacitySlider key="capacity" />
             <TimeFuseSlider key="fuse-timer" />
             <Muzzle>
                 <Position x="0.0" y="-15.0" z="0.5" />
