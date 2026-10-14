@@ -249,7 +249,7 @@ Check the documentation for more information on how to use modules. -->
                 <EntityDamage>50</EntityDamage>
                 <DetonationDelay>0.02</DetonationDelay>
                 <Trail>newBulletTrailV100</Trail>
-                <Effect>bulleteffect</Effect>
+                <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
                     <Radius>0.05</Radius>
                     <!-- ACM: ExplodePower(30000) x2、ExplodeUpPower(0) x0.25 -->

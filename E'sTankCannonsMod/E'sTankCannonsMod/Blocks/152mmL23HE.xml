@@ -248,7 +248,7 @@ Check the documentation for more information on how to use modules. -->
                 <EntityDamage>20</EntityDamage>
                 <StickOnHit>true</StickOnHit>
                 <Trail>newBulletTrailWV100</Trail>
-                <Effect>bulleteffect</Effect>
+                <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
                     <Radius>8.0</Radius>
                     <!-- ACM: ExplodePower(16000) x2、ExplodeUpPower(-3) x0.25 -->

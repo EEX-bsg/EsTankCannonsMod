@@ -291,7 +291,7 @@ Check the documentation for more information on how to use modules. -->
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>100</EntityDamage>
                 <Trail>newBulletTrailV100</Trail>
-                <Effect>bulleteffect</Effect>
+                <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
                     <Radius>6.0</Radius>
                     <!-- ACM: ExplodePower(3000) x2、ExplodeUpPower(1.0) x0.25 -->

@@ -119,7 +119,7 @@ Check the documentation for more information on how to use modules. -->
                 <BlockDamage>10000.0</BlockDamage>
                 <EntityDamage>40</EntityDamage>
                 <Trail>newBulletTrailWV100</Trail>
-                <Effect>bulleteffect</Effect>
+                <AttachedEffect>bulleteffect</AttachedEffect>
             </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>

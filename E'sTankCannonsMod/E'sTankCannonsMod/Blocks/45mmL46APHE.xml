@@ -248,7 +248,7 @@ Check the documentation for more information on how to use modules. -->
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>20</EntityDamage>
                 <DetonationDelay>0.03</DetonationDelay>
-                <Effect>bulleteffect</Effect>
+                <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
                     <Radius>2.5</Radius>
                     <!-- ACM: ExplodePower(5000) x2、ExplodeUpPower(-1) x0.25 -->

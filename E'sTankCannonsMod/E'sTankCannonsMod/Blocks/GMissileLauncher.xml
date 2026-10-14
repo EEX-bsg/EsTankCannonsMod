@@ -246,7 +246,7 @@
                 <Texture name="GMissileTex" />
                 <BlockDamage>2.0</BlockDamage>
                 <EntityDamage>100</EntityDamage>
-                <Effect>MissileEffect</Effect>
+                <AttachedEffect>MissileEffect</AttachedEffect>
                 <Explosion>
                     <Radius>6.0</Radius>
                     <!-- ACM: ExplodePower(9000) x2、ExplodeUpPower(-2) x0.25 -->

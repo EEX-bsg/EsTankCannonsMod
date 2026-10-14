@@ -259,7 +259,7 @@
                 <Texture name="metalGrey" />
                 <BlockDamage>0.3</BlockDamage>
                 <EntityDamage>40</EntityDamage>
-                <Effect>MissileEffect</Effect>
+                <AttachedEffect>MissileEffect</AttachedEffect>
                 <Explosion>
                     <Radius>3.0</Radius>
                     <!-- ACM: ExplodePower(8000) x2、ExplodeUpPower(-5) x0.25 -->
