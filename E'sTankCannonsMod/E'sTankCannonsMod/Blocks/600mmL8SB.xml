@@ -214,21 +214,25 @@ Check the documentation for more information on how to use modules. -->
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-8.0" z="3.0" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(80000) * 0.01 / Mass(200) -->
-                <Velocity>400</Velocity>
-                <!-- 1 / RateOfFire(0.02) -->
-                <!-- atan(RandomDiffusion 0.02) [度] -->
-                <Spread>1.146</Spread>
-                <Delay>1.2</Delay>
-                <DelayRandomExtra>0.8</DelayRandomExtra>
-                <Recoil>0.1</Recoil>
-                <Ammo>3</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-8.0" z="3.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(80000) * 0.01 / Mass(200) -->
+            <MuzzleVelocity>400</MuzzleVelocity>
+            <!-- 1 / RateOfFire(0.02) -->
+            <!-- atan(RandomDiffusion 0.02) [度] -->
+            <Spread>1.146</Spread>
+            <FireDelay>1.2</FireDelay>
+            <FireDelayRandomExtra>0.8</FireDelayRandomExtra>
+            <RecoilMultiplier>0.1</RecoilMultiplier>
+            <TotalAmmo>3</TotalAmmo>
+            <MuzzleFlash>FLAKexplode</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-8.0" z="3.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="TAIYA_explode01" />
+            </FireSounds>
             <Projectile>
                 <Mass>200.0</Mass>
                 <Drag>0.3</Drag>
@@ -251,30 +255,20 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="6.0" y="12.0" z="12.0" />
                 </Mesh>
                 <Texture name="metalGrey" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>100000.0</BlockDamage>
                 <EntityDamage>100000</EntityDamage>
-                <ExplosionRadius>50</ExplosionRadius>
-                <!-- ACM: ExplodePower(20000) x2、ExplodeUpPower(0) x0.25 -->
-                <ExplosionPower>40000</ExplosionPower>
-                <ExplosionUpPower>0</ExplosionUpPower>
                 <DetonationDelay>0.5</DetonationDelay>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>FLAKexplode</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-8.0" z="3.0" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
-                <Explosion>5000kgBombExplode</Explosion>
-                <FireSounds>
-                    <AudioClip name="TAIYA_explode01" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="HitSound" />
-                </ExplosionSounds>
-            </Effects>
+                <Explosion>
+                    <Radius>50</Radius>
+                    <!-- ACM: ExplodePower(20000) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>40000</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>5000kgBombExplode</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>150000</JointStrength>

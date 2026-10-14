@@ -216,30 +216,29 @@
             <FireDelaySlider key="delay-timer" />
             <TimeFuseSlider key="fuse-timer" />
             <MagazineCapacitySlider key="capacity" />
-            <Muzzle>
-                <Position x="0.0" y="-0.2" z="0.5" />
-                <Rotation x="90" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM のブースター弾は初速なし(砲の速度を引き継ぐだけ)で反動もない -->
-                <Velocity>0</Velocity>
-                <!-- ACM: PurgeVector(0,1,0) x PurgePower(5) x 100 を1物理フレーム(0.01s)、弾 Mass 2 -->
-                <EjectVelocity x="0.0" y="2.5" z="0.0" />
-                <!-- 1 / RateOfFire(0.5) -->
-                <Spread>0.000</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>0</Recoil>
-                <Ammo>10</Ammo>
-                <MagazineCapacity>2</MagazineCapacity>
-                <ReloadTime>10.0</ReloadTime>
-                <AutoReload>true</AutoReload>
-            </Fire>
-            <Booster>
-                <!-- ACM: 100 x Power(8)。時限信管か命中まで燃焼 -->
-                <Thrust>800</Thrust>
-                <!-- ACM の安定翼(横滑り速度 x 10 の力 x 2 枚) -->
-                <LateralDrag>20</LateralDrag>
-            </Booster>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-0.2" z="0.5" />
+            <MuzzleRotation x="90" y="0.0" z="0.0" />
+            <!-- ACM のブースター弾は初速なし(砲の速度を引き継ぐだけ)で反動もない -->
+            <MuzzleVelocity>0</MuzzleVelocity>
+            <!-- ACM: PurgeVector(0,1,0) x PurgePower(5) x 100 を1物理フレーム(0.01s)、弾 Mass 2 -->
+            <EjectVelocity x="0.0" y="2.5" z="0.0" />
+            <!-- 1 / RateOfFire(0.5) -->
+            <Spread>0.000</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0</RecoilMultiplier>
+            <TotalAmmo>10</TotalAmmo>
+            <MagazineCapacity>2</MagazineCapacity>
+            <ReloadTime>10.0</ReloadTime>
+            <AutoReload>true</AutoReload>
+            <ShowLoadedProjectile>true</ShowLoadedProjectile>
+            <!-- ACM の発射音 muon は無音。点火時に1回鳴る飛翔音 Booster を発射音にする -->
+            <FireSounds>
+                <AudioClip name="Booster" />
+            </FireSounds>
+            <ReloadSounds>
+                <AudioClip name="Reload" />
+            </ReloadSounds>
             <Projectile>
                 <Mass>2.0</Mass>
                 <Drag>0.0</Drag>
@@ -258,31 +257,26 @@
                     <Scale x="0.75" y="0.75" z="0.75" />
                 </Mesh>
                 <Texture name="metalGrey" />
-                <ShowWhenLoaded>true</ShowWhenLoaded>
-            </Projectile>
-            <Impact>
                 <BlockDamage>0.3</BlockDamage>
                 <EntityDamage>40</EntityDamage>
-                <ExplosionRadius>3.0</ExplosionRadius>
-                <!-- ACM: ExplodePower(8000) x2、ExplodeUpPower(-5) x0.25 -->
-                <ExplosionPower>16000</ExplosionPower>
-                <ExplosionUpPower>-1.25</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <Bullet>MissileEffect</Bullet>
-                <Explosion>APFSDShit</Explosion>
-                <!-- ACM の発射音 muon は無音。点火時に1回鳴る飛翔音 Booster を発射音にする -->
-                <FireSounds>
-                    <AudioClip name="Booster" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="MedievalCannonHitSound" />
-                </ExplosionSounds>
-                <ReloadSounds>
-                    <AudioClip name="Reload" />
-                </ReloadSounds>
-            </Effects>
+                <Effect>MissileEffect</Effect>
+                <Explosion>
+                    <Radius>3.0</Radius>
+                    <!-- ACM: ExplodePower(8000) x2、ExplodeUpPower(-5) x0.25 -->
+                    <Force>16000</Force>
+                    <UpwardsModifier>-1.25</UpwardsModifier>
+                    <Effect>APFSDShit</Effect>
+                    <Sounds>
+                        <AudioClip name="MedievalCannonHitSound" />
+                    </Sounds>
+                </Explosion>
+                <Booster>
+                    <!-- ACM: 100 x Power(8)。時限信管か命中まで燃焼 -->
+                    <Thrust>800</Thrust>
+                    <!-- ACM の安定翼(横滑り速度 x 10 の力 x 2 枚) -->
+                    <LateralDrag>20</LateralDrag>
+                </Booster>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>30000</JointStrength>

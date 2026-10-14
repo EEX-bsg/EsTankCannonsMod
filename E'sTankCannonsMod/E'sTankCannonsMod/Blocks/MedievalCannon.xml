@@ -200,20 +200,24 @@ Check the documentation for more information on how to use modules. -->
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <TimeFuseSlider key="fuse-timer" />
-            <Muzzle>
-                <Position x="0.0" y="-1.5" z="0.562" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(480) * 0.01 / Mass(2) -->
-                <Velocity>240</Velocity>
-                <!-- 1 / RateOfFire(0.8) -->
-                <!-- atan(RandomDiffusion 0.01) [度] -->
-                <Spread>0.573</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>0.1</Recoil>
-                <Ammo>100</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-1.5" z="0.562" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(480) * 0.01 / Mass(2) -->
+            <MuzzleVelocity>240</MuzzleVelocity>
+            <!-- 1 / RateOfFire(0.8) -->
+            <!-- atan(RandomDiffusion 0.01) [度] -->
+            <Spread>0.573</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0.1</RecoilMultiplier>
+            <TotalAmmo>100</TotalAmmo>
+            <MuzzleFlash>flash</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.562" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="1.0" y="1.0" z="1.0" />
+            <FireSounds>
+                <AudioClip name="MedievalCannonSound" />
+            </FireSounds>
             <Projectile>
                 <Mass>2.0</Mass>
                 <Drag>0.2</Drag>
@@ -237,32 +241,22 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="3.8" y="3.8" z="3.8" />
                 </Mesh>
                 <Texture name="metalBlack" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>40</EntityDamage>
-                <!-- ゴッドツール「爆発する砲弾」のときだけ爆発(ACM: SupportsExplosionGodTool) -->
-                <ExplodesOnlyWithGodTool>true</ExplodesOnlyWithGodTool>
-                <ExplosionRadius>3.0</ExplosionRadius>
-                <!-- ACM: ExplodePower(1500) x2、ExplodeUpPower(3) x0.25 -->
-                <ExplosionPower>3000</ExplosionPower>
-                <ExplosionUpPower>0.75</ExplosionUpPower>
                 <DetonationDelayRandomExtra>0.05</DetonationDelayRandomExtra>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>flash</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-1.7" z="0.562" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="1.0" y="1.0" z="1.0" />
-                <Explosion>smallExplode</Explosion>
-                <FireSounds>
-                    <AudioClip name="MedievalCannonSound" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="MedievalCannonHitSound" />
-                </ExplosionSounds>
-            </Effects>
+                <Explosion>
+                    <!-- ゴッドツール「爆発する砲弾」のときだけ爆発(ACM: SupportsExplosionGodTool) -->
+                    <OnlyWithExplodingCannonballs>true</OnlyWithExplodingCannonballs>
+                    <Radius>3.0</Radius>
+                    <!-- ACM: ExplodePower(1500) x2、ExplodeUpPower(3) x0.25 -->
+                    <Force>3000</Force>
+                    <UpwardsModifier>0.75</UpwardsModifier>
+                    <Effect>smallExplode</Effect>
+                    <Sounds>
+                        <AudioClip name="MedievalCannonHitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>15000</JointStrength>

@@ -195,20 +195,25 @@ Check the documentation for more information on how to use modules. -->
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
             <FireDelaySlider key="delay-timer" />
-            <Muzzle>
-                <Position x="0.0" y="0.0" z="0.33" />
-                <Rotation x="0.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(3) * 0.01 / Mass(0.1) -->
-                <Velocity>30</Velocity>
-                <!-- 1 / RateOfFire(0.1) -->
-                <!-- atan(RandomDiffusion 0.01) [度] -->
-                <Spread>0.573</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>0.0</Recoil>
-                <Ammo>1</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="0.0" z="0.33" />
+            <MuzzleRotation x="0.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(3) * 0.01 / Mass(0.1) -->
+            <MuzzleVelocity>30</MuzzleVelocity>
+            <!-- 1 / RateOfFire(0.1) -->
+            <!-- atan(RandomDiffusion 0.01) [度] -->
+            <Spread>0.573</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0.0</RecoilMultiplier>
+            <TotalAmmo>1</TotalAmmo>
+            <ShowLoadedProjectile>true</ShowLoadedProjectile>
+            <MuzzleFlash>flash</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="0.0" z="0.6" />
+            <MuzzleFlashRotation x="0.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="1.0" y="1.0" z="1.0" />
+            <FireSounds>
+                <AudioClip name="granadeShot" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.1</Mass>
                 <Drag>0.2</Drag>
@@ -227,31 +232,20 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="1.0" y="1.0" z="1.0" />
                 </Mesh>
                 <Texture name="smokeGranadeTex" />
-                <ShowWhenLoaded>true</ShowWhenLoaded>
-            </Projectile>
-            <Impact>
                 <BlockDamage>0</BlockDamage>
                 <EntityDamage>0</EntityDamage>
-                <!-- ACM は ExplodeRadius 0 でも ExplodeEffect を出す。EWL は半径 0 だと起爆しないので、
-                     効果を出すだけの最小半径にして力は 0 にする -->
-                <ExplosionRadius>0.01</ExplosionRadius>
-                <ExplosionPower>0</ExplosionPower>
-                <ExplosionUpPower>0</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>flash</ShotFlash>
-                <ShotFlashPosition x="0.0" y="0.0" z="0.6" />
-                <ShotFlashRotation x="0.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="1.0" y="1.0" z="1.0" />
-                <Explosion>smoke</Explosion>
-                <FireSounds>
-                    <AudioClip name="granadeShot" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="HitSound" />
-                </ExplosionSounds>
-            </Effects>
+                <Explosion>
+                    <!-- ACM は ExplodeRadius 0 でも ExplodeEffect を出す。EWL は半径 0 だと起爆しないので、
+                         効果を出すだけの最小半径にして力は 0 にする -->
+                    <Radius>0.01</Radius>
+                    <Force>0</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>smoke</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>150000</JointStrength>

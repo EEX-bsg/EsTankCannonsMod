@@ -231,22 +231,29 @@ Check the documentation for more information on how to use modules. -->
             <AutoReloadToggle key="auto-reload" />
             <MagazineCapacitySlider key="capacity" />
             <FireDelaySlider key="delay-timer" />
-            <Muzzle>
-                <Position x="0.0" y="0.0" z="4.0" />
-                <Rotation x="0.0" y="0.0" z="90.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(40) * 0.01 / Mass(0.05) -->
-                <Velocity>800</Velocity>
-                <!-- 1 / RateOfFire(12) -->
-                <!-- atan(RandomDiffusion 0.005) [度] -->
-                <Spread>0.286</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>0.2</Recoil>
-                <Ammo>324</Ammo>
-                <MagazineCapacity>18</MagazineCapacity>
-                <ReloadTime>5.0</ReloadTime>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="0.0" z="4.0" />
+            <MuzzleRotation x="0.0" y="0.0" z="90.0" />
+            <!-- ACM 換算: 100 * Power(40) * 0.01 / Mass(0.05) -->
+            <MuzzleVelocity>800</MuzzleVelocity>
+            <!-- 1 / RateOfFire(12) -->
+            <!-- atan(RandomDiffusion 0.005) [度] -->
+            <Spread>0.286</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0.2</RecoilMultiplier>
+            <TotalAmmo>324</TotalAmmo>
+            <MagazineCapacity>18</MagazineCapacity>
+            <ReloadTime>5.0</ReloadTime>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="0.0" z="3.3" />
+            <MuzzleFlashRotation x="0.0" y="0.0" z="90.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
+            <ReloadSounds>
+                <AudioClip name="Reload10s" />
+            </ReloadSounds>
             <Projectile>
                 <Mass>0.05</Mass>
                 <Drag>0.3</Drag>
@@ -269,34 +276,21 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.2" y="0.2" z="0.2" />
                 </Mesh>
                 <Texture name="metalYellow" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>10</EntityDamage>
-                <ExplosionRadius>1.0</ExplosionRadius>
-                <!-- ACM: ExplodePower(6000) x2、ExplodeUpPower(0) x0.25 -->
-                <ExplosionPower>12000</ExplosionPower>
-                <ExplosionUpPower>0</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>NewMachineGunShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="0.0" z="3.3" />
-                <ShotFlashRotation x="0.0" y="0.0" z="90.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
                 <Trail>newBulletTrailGV100</Trail>
-                <Explosion>machinegunHit</Explosion>
-                <ExplosionFacesNormal>true</ExplosionFacesNormal>
-                <FireSounds>
-                    <AudioClip name="machinegunfire" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="machinegunhit" />
-                </ExplosionSounds>
-                <ReloadSounds>
-                    <AudioClip name="Reload10s" />
-                </ReloadSounds>
-            </Effects>
+                <Explosion>
+                    <Radius>1.0</Radius>
+                    <!-- ACM: ExplodePower(6000) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>12000</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>machinegunHit</Effect>
+                    <FacesHitNormal>true</FacesHitNormal>
+                    <Sounds>
+                        <AudioClip name="machinegunhit" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>150000</JointStrength>

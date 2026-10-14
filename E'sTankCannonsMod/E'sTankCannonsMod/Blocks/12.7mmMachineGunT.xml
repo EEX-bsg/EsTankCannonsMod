@@ -498,20 +498,24 @@ Check the documentation for more information on how to use modules. -->
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-2.0" z="0.0" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
-                <Velocity>880</Velocity>
-                <!-- 1 / RateOfFire(2.5) -->
-                <!-- atan(RandomDiffusion 0.006) [度] -->
-                <Spread>0.344</Spread>
-                <DelayRandomExtra>0.0</DelayRandomExtra>
-                <Recoil>0.01</Recoil>
-                <Ammo>500</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
+            <MuzzleVelocity>880</MuzzleVelocity>
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.025</Mass>
                 <Drag>0.1</Drag>
@@ -531,49 +535,43 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.127" y="0.127" z="0.127" />
                 </Mesh>
                 <Texture name="metalYellow" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>10</EntityDamage>
-                <ExplosionRadius>0.2</ExplosionRadius>
-                <!-- ACM: ExplodePower(100) x2、ExplodeUpPower(0) x0.25 -->
-                <ExplosionPower>200</ExplosionPower>
-                <ExplosionUpPower>0</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>NewMachineGunShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-1.7" z="0.0" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
-                <Explosion>machinegunHit</Explosion>
-                <FireSounds>
-                    <AudioClip name="machinegunfire" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="machinegunhit" />
-                </ExplosionSounds>
-            </Effects>
+                <Explosion>
+                    <Radius>0.2</Radius>
+                    <!-- ACM: ExplodePower(100) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>200</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>machinegunHit</Effect>
+                    <Sounds>
+                        <AudioClip name="machinegunhit" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-2.0" z="0.0" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.05) -->
-                <Velocity>440</Velocity>
-                <!-- 1 / RateOfFire(2.5) -->
-                <!-- atan(RandomDiffusion 0.006) [度] -->
-                <Spread>0.344</Spread>
-                <Delay>0.1</Delay>
-                <DelayRandomExtra>0.0</DelayRandomExtra>
-                <Recoil>0.01</Recoil>
-                <Ammo>500</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.05) -->
+            <MuzzleVelocity>440</MuzzleVelocity>
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.1</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.05</Mass>
                 <Drag>0.1</Drag>
@@ -593,41 +591,33 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.127" y="0.127" z="0.127" />
                 </Mesh>
                 <Texture name="metalYellow" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>10</EntityDamage>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>NewMachineGunShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-1.7" z="0.0" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
-                <FireSounds>
-                    <AudioClip name="machinegunfire" />
-                </FireSounds>
-            </Effects>
+            </Projectile>
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-2.0" z="0.0" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.0025) -->
-                <Velocity>8800</Velocity>
-                <!-- 1 / RateOfFire(2.5) -->
-                <!-- atan(RandomDiffusion 0.006) [度] -->
-                <Spread>0.344</Spread>
-                <Delay>0.2</Delay>
-                <DelayRandomExtra>0.0</DelayRandomExtra>
-                <Recoil>0.01</Recoil>
-                <Ammo>500</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.0025) -->
+            <MuzzleVelocity>8800</MuzzleVelocity>
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.2</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.0025</Mass>
                 <Drag>0.1</Drag>
@@ -647,42 +637,34 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.127" y="0.127" z="0.127" />
                 </Mesh>
                 <Texture name="metalGrey" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>10</EntityDamage>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>NewMachineGunShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-1.7" z="0.0" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
                 <Trail>newBulletTrailGV100</Trail>
-                <FireSounds>
-                    <AudioClip name="machinegunfire" />
-                </FireSounds>
-            </Effects>
+            </Projectile>
         </EwlWeapon>
         <EwlWeapon>
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-2.0" z="0.0" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
-                <Velocity>880</Velocity>
-                <!-- 1 / RateOfFire(2.5) -->
-                <!-- atan(RandomDiffusion 0.006) [度] -->
-                <Spread>0.344</Spread>
-                <Delay>0.3</Delay>
-                <DelayRandomExtra>0.0</DelayRandomExtra>
-                <Recoil>0.01</Recoil>
-                <Ammo>500</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(22) * 0.01 / Mass(0.025) -->
+            <MuzzleVelocity>880</MuzzleVelocity>
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.3</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.025</Mass>
                 <Drag>0.1</Drag>
@@ -702,22 +684,10 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.127" y="0.127" z="0.127" />
                 </Mesh>
                 <Texture name="metalGrey" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>10</EntityDamage>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>NewMachineGunShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-1.7" z="0.0" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
                 <Trail>newBulletTrailGV100</Trail>
-                <FireSounds>
-                    <AudioClip name="machinegunfire" />
-                </FireSounds>
-            </Effects>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>15000</JointStrength>

@@ -226,22 +226,30 @@ Check the documentation for more information on how to use modules. -->
             <AutoReloadToggle key="auto-reload" />
             <MagazineCapacitySlider key="capacity" />
             <FireDelaySlider key="delay-timer" />
-            <Muzzle>
-                <Position x="0.0" y="0.0" z="0.33" />
-                <Rotation x="0.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(40) * 0.01 / Mass(0.5) -->
-                <Velocity>80</Velocity>
-                <!-- 1 / RateOfFire(3) -->
-                <!-- atan(RandomDiffusion 0.05) [度] -->
-                <Spread>2.862</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>0.0</Recoil>
-                <Ammo>24</Ammo>
-                <MagazineCapacity>8</MagazineCapacity>
-                <ReloadTime>10.0</ReloadTime>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="0.0" z="0.33" />
+            <MuzzleRotation x="0.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(40) * 0.01 / Mass(0.5) -->
+            <MuzzleVelocity>80</MuzzleVelocity>
+            <!-- 1 / RateOfFire(3) -->
+            <!-- atan(RandomDiffusion 0.05) [度] -->
+            <Spread>2.862</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0.0</RecoilMultiplier>
+            <TotalAmmo>24</TotalAmmo>
+            <MagazineCapacity>8</MagazineCapacity>
+            <ReloadTime>10.0</ReloadTime>
+            <ShowLoadedProjectile>true</ShowLoadedProjectile>
+            <MuzzleFlash>flash</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="0.0" z="0.6" />
+            <MuzzleFlashRotation x="0.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="1.0" y="1.0" z="1.0" />
+            <FireSounds>
+                <AudioClip name="granadeShot" />
+            </FireSounds>
+            <ReloadSounds>
+                <AudioClip name="Reload10s" />
+            </ReloadSounds>
             <Projectile>
                 <Mass>0.5</Mass>
                 <Drag>0.3</Drag>
@@ -260,33 +268,19 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="1.0" y="1.0" z="1.0" />
                 </Mesh>
                 <Texture name="smokeGranadeTex" />
-                <ShowWhenLoaded>true</ShowWhenLoaded>
-            </Projectile>
-            <Impact>
                 <BlockDamage>0</BlockDamage>
                 <EntityDamage>0</EntityDamage>
-                <ExplosionRadius>3.0</ExplosionRadius>
-                <!-- ACM: ExplodePower(2000) x2、ExplodeUpPower(0) x0.25 -->
-                <ExplosionPower>4000</ExplosionPower>
-                <ExplosionUpPower>0</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>flash</ShotFlash>
-                <ShotFlashPosition x="0.0" y="0.0" z="0.6" />
-                <ShotFlashRotation x="0.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="1.0" y="1.0" z="1.0" />
-                <Explosion>smallExplode</Explosion>
-                <FireSounds>
-                    <AudioClip name="granadeShot" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="MedievalCannonHitSound" />
-                </ExplosionSounds>
-                <ReloadSounds>
-                    <AudioClip name="Reload10s" />
-                </ReloadSounds>
-            </Effects>
+                <Explosion>
+                    <Radius>3.0</Radius>
+                    <!-- ACM: ExplodePower(2000) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>4000</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>smallExplode</Effect>
+                    <Sounds>
+                        <AudioClip name="MedievalCannonHitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>150000</JointStrength>

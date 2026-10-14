@@ -204,20 +204,24 @@ Check the documentation for more information on how to use modules. -->
             <FireKey key="fire" />
             <FireRateSlider key="rate-of-fire" />
             <HoldToFireToggle key="hold-to-shoot" />
-            <Muzzle>
-                <Position x="0.0" y="-10.3" z="0.5" />
-                <Rotation x="90.0" y="0.0" z="0.0" />
-            </Muzzle>
-            <Fire>
-                <!-- ACM 換算: 100 * Power(180) * 0.01 / Mass(0.5) -->
-                <Velocity>360</Velocity>
-                <!-- 1 / RateOfFire(0.37) -->
-                <!-- atan(RandomDiffusion 0.015) [度] -->
-                <Spread>0.859</Spread>
-                <DelayRandomExtra>0.03</DelayRandomExtra>
-                <Recoil>1.3</Recoil>
-                <Ammo>20</Ammo>
-            </Fire>
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-10.3" z="0.5" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM 換算: 100 * Power(180) * 0.01 / Mass(0.5) -->
+            <MuzzleVelocity>360</MuzzleVelocity>
+            <!-- 1 / RateOfFire(0.37) -->
+            <!-- atan(RandomDiffusion 0.015) [度] -->
+            <Spread>0.859</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>1.3</RecoilMultiplier>
+            <TotalAmmo>20</TotalAmmo>
+            <MuzzleFlash>120mmShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-6.0" z="0.5" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="CannonSound2" />
+            </FireSounds>
             <Projectile>
                 <Mass>0.5</Mass>
                 <Drag>0.1</Drag>
@@ -240,32 +244,22 @@ Check the documentation for more information on how to use modules. -->
                     <Scale x="0.75" y="0.75" z="0.75" />
                 </Mesh>
                 <Texture name="metalGreen" />
-            </Projectile>
-            <Impact>
                 <BlockDamage>10000.0</BlockDamage>
                 <EntityDamage>40</EntityDamage>
-                <Attach>true</Attach>
-                <ExplosionRadius>3.0</ExplosionRadius>
-                <!-- ACM: ExplodePower(14000) x2、ExplodeUpPower(-4) x0.25 -->
-                <ExplosionPower>28000</ExplosionPower>
-                <ExplosionUpPower>-1</ExplosionUpPower>
-            </Impact>
-            <Effects>
-                <AssetBundle name="myasset" />
-                <ShotFlash>120mmShotEffect</ShotFlash>
-                <ShotFlashPosition x="0.0" y="-6.0" z="0.5" />
-                <ShotFlashRotation x="90.0" y="0.0" z="0.0" />
-                <ShotFlashScale x="2.0" y="2.0" z="2.0" />
+                <StickOnHit>true</StickOnHit>
                 <Trail>newBulletTrailWV100</Trail>
-                <Bullet>heatbulleteffect</Bullet>
-                <Explosion>APFSDShit</Explosion>
-                <FireSounds>
-                    <AudioClip name="CannonSound2" />
-                </FireSounds>
-                <ExplosionSounds>
-                    <AudioClip name="HitSound" />
-                </ExplosionSounds>
-            </Effects>
+                <Effect>heatbulleteffect</Effect>
+                <Explosion>
+                    <Radius>3.0</Radius>
+                    <!-- ACM: ExplodePower(14000) x2、ExplodeUpPower(-4) x0.25 -->
+                    <Force>28000</Force>
+                    <UpwardsModifier>-1</UpwardsModifier>
+                    <Effect>APFSDShit</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
         </EwlWeapon>
         <EwlBlockPhysics>
             <JointStrength>150000</JointStrength>
