@@ -48,10 +48,15 @@ namespace ETCM
     }
 
     // 不採用側の名前を受け止める空モジュール。未知の子要素は読み込み時に無視される。
-    [XmlRoot("AdShootingProp")] public class AdShootingPropStub : BlockModule { }
-    [XmlRoot("AdBlockProp")] public class AdBlockPropStub : BlockModule { }
-    [XmlRoot("EwlWeapon")] public class EwlWeaponStub : BlockModule { }
-    [XmlRoot("EwlBlockPhysics")] public class EwlBlockPhysicsStub : BlockModule { }
+    // 検証を省き、子要素ごとの "Child element X is not recognized." 警告を出さない。
+    public abstract class StubModule : BlockModule
+    {
+        protected override bool Validate(string elementName) { return true; }
+    }
+    [XmlRoot("AdShootingProp")] public class AdShootingPropStub : StubModule { }
+    [XmlRoot("AdBlockProp")] public class AdBlockPropStub : StubModule { }
+    [XmlRoot("EwlWeapon")] public class EwlWeaponStub : StubModule { }
+    [XmlRoot("EwlBlockPhysics")] public class EwlBlockPhysicsStub : StubModule { }
     public class AdShootingPropStubBehaviour : BlockModuleBehaviour<AdShootingPropStub> { }
     public class AdBlockPropStubBehaviour : BlockModuleBehaviour<AdBlockPropStub> { }
     public class EwlWeaponStubBehaviour : BlockModuleBehaviour<EwlWeaponStub> { }
