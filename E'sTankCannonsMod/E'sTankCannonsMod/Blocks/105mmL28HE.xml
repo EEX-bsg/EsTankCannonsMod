@@ -246,7 +246,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalYellow" />
                 <BlockDamage>10000.0</BlockDamage>
                 <EntityDamage>20</EntityDamage>
-                <StickOnHit>true</StickOnHit>
+                <AttachOnHit>true</AttachOnHit>
                 <Trail>newBulletTrailWV100</Trail>
                 <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
