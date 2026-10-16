@@ -212,6 +212,7 @@
             <MuzzleRotation x="90" y="0.0" z="0.0" />
             <!-- ACM のブースター弾は初速なし(砲の速度を引き継ぐだけ)で反動もない -->
             <MuzzleVelocity>0</MuzzleVelocity>
+            <BoosterPowerSlider key="power" />
             <!-- ACM: PurgeVector(0,0,1) x PurgePower(30) x 100 を1物理フレーム(0.01s)、弾 Mass 5 -->
             <EjectVelocity x="0.0" y="0.0" z="6.0" />
             <Spread>0.000</Spread>
@@ -258,8 +259,7 @@
                     </Sounds>
                 </Explosion>
                 <Booster>
-                    <!-- ACM: 100 x Power(10)。時限信管か命中まで燃焼 -->
-                    <Thrust>1000</Thrust>
+                    <!-- 推力は BoosterPowerSlider(100 x Power)。時限信管か命中まで燃焼 -->
                     <!-- ACM の安定翼(横滑り速度 x 10 の力 x 2 枚) -->
                     <LateralDrag>20</LateralDrag>
                 </Booster>

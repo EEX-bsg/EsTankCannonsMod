@@ -229,8 +229,7 @@ Check the documentation for more information on how to use modules. -->
             <AssetBundle name="myasset" />
             <MuzzlePosition x="0.0" y="0.0" z="0.33" />
             <MuzzleRotation x="0.0" y="0.0" z="0.0" />
-            <!-- ACM 換算: 100 * Power(40) * 0.01 / Mass(0.5) -->
-            <MuzzleVelocity>80</MuzzleVelocity>
+            <PowerSlider key="power" />
             <!-- 1 / RateOfFire(3) -->
             <!-- atan(RandomDiffusion 0.05) [度] -->
             <Spread>2.862</Spread>
