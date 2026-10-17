@@ -273,8 +273,8 @@
                 </Explosion>
                 <Booster>
                     <!-- 推力は BoosterPowerSlider(100 x Power)。時限信管か命中まで燃焼 -->
-                    <!-- ACM の安定翼(横滑り速度 x 10 の力 x 2 枚) -->
-                    <LateralDrag>20</LateralDrag>
+                    <!-- 安定翼: 機首を飛ぶ向きへ寄せる風見トルク(ACM とは別の方式) -->
+                    <Stability>0.5</Stability>
                 </Booster>
             </Projectile>
         </EwlWeapon>
