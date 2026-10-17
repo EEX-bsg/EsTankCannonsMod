@@ -243,6 +243,7 @@ Check the documentation for more information on how to use modules. -->
                 <Texture name="metalGrey" />
                 <BlockDamage>10000</BlockDamage>
                 <EntityDamage>100</EntityDamage>
+                <Trail>newBulletTrailWV100</Trail>
                 <DetonationDelay>0.01</DetonationDelay>
                 <AttachedEffect>bulleteffect</AttachedEffect>
                 <Explosion>
