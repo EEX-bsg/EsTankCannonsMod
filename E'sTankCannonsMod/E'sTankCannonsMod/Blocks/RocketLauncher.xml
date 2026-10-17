@@ -90,11 +90,11 @@
 
         <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>30000</JointStr>
-                <!-- Deault = 0.6 -->
+                <!-- Default = 0.6 -->
                 <FrictionStr>0.1</FrictionStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
             </BlockState>
             <SpringState>
