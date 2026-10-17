@@ -48,8 +48,8 @@ be specified as
 fallback, not modded blocks. -->
 <Fallback>Cannon</Fallback>
 <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
-<!-- Blocks can have certain predefined behaviour added without any custom code.
-These behaviours are called modules.
+<!-- Blocks can have certain predefined behavior added without any custom code.
+These behaviors are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
