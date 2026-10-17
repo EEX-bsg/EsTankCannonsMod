@@ -59,8 +59,8 @@
 
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
 
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-		 These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+		 These behaviors are called modules.
 		 The Shooting, Spewing, Spinning, and Steering modules are included by default
 		 and mods can also add new modules.
 		 Check the documentation for more information on how to use modules. -->
@@ -84,13 +84,13 @@
             <useMagazine>false</useMagazine>
             <Icon name="IconRocket" />
         </ETCMAmmoUIModule>
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>30000</JointStr>
-                <!-- Deault = 0.6 -->
+                <!-- Default = 0.6 -->
                 <FrictionStr>0.1</FrictionStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
             </BlockState>
             <SpringState>
@@ -99,7 +99,7 @@
             </RotateState>
         </AdBlockProp>
 
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -195,6 +195,80 @@
             </ProjectileSounds>
 
         </AdShootingProp>
+        <EwlBlockPhysics>
+            <JointStrength>30000</JointStrength>
+            <Material>
+                <Friction>0.1</Friction>
+            </Material>
+        </EwlBlockPhysics>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <FireDelaySlider key="delay-timer" />
+            <TimeFuseSlider key="fuse-timer" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-5.0" z="0.4" />
+            <MuzzleRotation x="90" y="0.0" z="0.0" />
+            <!-- ACM のブースター弾は初速なし(砲の速度を引き継ぐだけ)で反動もない -->
+            <MuzzleVelocity>0</MuzzleVelocity>
+            <BoosterPowerSlider key="power" />
+            <!-- ACM: PurgeVector(0,0,1) x PurgePower(30) x 100 を1物理フレーム(0.01s)、弾 Mass 5 -->
+            <EjectVelocity x="0.0" y="0.0" z="6.0" />
+            <Spread>0.000</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0</RecoilMultiplier>
+            <TotalAmmo>10</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-2.0" z="0.6" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <!-- ACM の発射音 muon は無音。点火時に1回鳴る飛翔音 Booster を発射音にする -->
+            <FireSounds>
+                <AudioClip name="Booster" />
+            </FireSounds>
+            <Projectile>
+                <Mass>5.0</Mass>
+                <Drag>0.0</Drag>
+                <AngularDrag>15.0</AngularDrag>
+                <IgnoreGravity>true</IgnoreGravity>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="0.0" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="0.0" z="0.0" />
+                        <Capsule direction="Z" radius="0.2" height="1.0" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="GMissile">
+                    <Position x="0.0" y="0.0" z="0.0" />
+                    <Rotation x="0.0" y="180" z="0" />
+                    <Scale x="2.0" y="2.0" z="2.0" />
+                </Mesh>
+                <Texture name="GMissileTex" />
+                <BlockDamage>2.0</BlockDamage>
+                <EntityDamage>100</EntityDamage>
+                <AttachedEffect>MissileEffect</AttachedEffect>
+                <Explosion>
+                    <Radius>6.0</Radius>
+                    <!-- ACM: ExplodePower(9000) x2、ExplodeUpPower(-2) x0.25 -->
+                    <Force>18000</Force>
+                    <UpwardsModifier>-0.5</UpwardsModifier>
+                    <Effect>largeExplode</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+                <Booster>
+                    <!-- 推力は BoosterPowerSlider(100 x Power)。時限信管か命中まで燃焼 -->
+                    <!-- 安定翼: 機首を飛ぶ向きへ寄せる風見トルク(ACM とは別の方式) -->
+                    <Stability>0.5</Stability>
+                </Booster>
+                <!-- EWL の誘導は仮実装(発射方向 30 度以内で最も近い敵のコアを発射時に選ぶ)。ACM の GuidRatio と同じ値 -->
+                <Guidance>
+                    <Gain>0.23</Gain>
+                </Guidance>
+            </Projectile>
+        </EwlWeapon>
 
     </Modules>
 

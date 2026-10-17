@@ -59,8 +59,8 @@
 
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
 
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-		 These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+		 These behaviors are called modules.
 		 The Shooting, Spewing, Spinning, and Steering modules are included by default
 		 and mods can also add new modules.
 		 Check the documentation for more information on how to use modules. -->
@@ -88,13 +88,13 @@
             <ReloadTimeSlider key="reload-time" />
         </ETCMAmmoUIModule>
 
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>30000</JointStr>
-                <!-- Deault = 0.6 -->
+                <!-- Default = 0.6 -->
                 <FrictionStr>0.1</FrictionStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
             </BlockState>
             <SpringState>
@@ -103,7 +103,7 @@
             </RotateState>
         </AdBlockProp>
 
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -209,6 +209,81 @@
             </ProjectileSounds>
 
         </AdShootingProp>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <FireDelaySlider key="delay-timer" />
+            <TimeFuseSlider key="fuse-timer" />
+            <MagazineCapacitySlider key="capacity" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-0.2" z="0.5" />
+            <MuzzleRotation x="90" y="0.0" z="0.0" />
+            <!-- ACM のブースター弾は初速なし(砲の速度を引き継ぐだけ)で反動もない -->
+            <MuzzleVelocity>0</MuzzleVelocity>
+            <BoosterPowerSlider key="power" />
+            <!-- ACM: PurgeVector(0,1,0) x PurgePower(5) x 100 を1物理フレーム(0.01s)、弾 Mass 2 -->
+            <EjectVelocity x="0.0" y="2.5" z="0.0" />
+            <!-- 1 / RateOfFire(0.5) -->
+            <Spread>0.000</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0</RecoilMultiplier>
+            <TotalAmmo>10</TotalAmmo>
+            <MagazineCapacity>2</MagazineCapacity>
+            <ReloadTime>10.0</ReloadTime>
+            <AutoReload>true</AutoReload>
+            <ShowLoadedProjectile>true</ShowLoadedProjectile>
+            <!-- ACM の発射音 muon は無音。点火時に1回鳴る飛翔音 Booster を発射音にする -->
+            <FireSounds>
+                <AudioClip name="Booster" />
+            </FireSounds>
+            <ReloadSounds>
+                <AudioClip name="Reload" />
+            </ReloadSounds>
+            <Projectile>
+                <Mass>2.0</Mass>
+                <Drag>0.0</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="0.0" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="0.0" z="0.0" />
+                        <Capsule direction="Z" radius="0.2" height="2.0" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="Rocket">
+                    <Position x="0.0" y="0.0" z="0.0" />
+                    <Rotation x="0.0" y="180" z="0" />
+                    <Scale x="0.75" y="0.75" z="0.75" />
+                </Mesh>
+                <Texture name="metalGrey" />
+                <BlockDamage>0.3</BlockDamage>
+                <EntityDamage>40</EntityDamage>
+                <AttachedEffect>MissileEffect</AttachedEffect>
+                <Explosion>
+                    <Radius>3.0</Radius>
+                    <!-- ACM: ExplodePower(8000) x2、ExplodeUpPower(-5) x0.25 -->
+                    <Force>16000</Force>
+                    <UpwardsModifier>-1.25</UpwardsModifier>
+                    <Effect>APFSDShit</Effect>
+                    <Sounds>
+                        <AudioClip name="MedievalCannonHitSound" />
+                    </Sounds>
+                </Explosion>
+                <Booster>
+                    <!-- 推力は BoosterPowerSlider(100 x Power)。時限信管か命中まで燃焼 -->
+                    <!-- 安定翼: 機首を飛ぶ向きへ寄せる風見トルク(ACM とは別の方式) -->
+                    <Stability>0.5</Stability>
+                </Booster>
+            </Projectile>
+        </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>30000</JointStrength>
+            <Material>
+                <Friction>0.1</Friction>
+            </Material>
+        </EwlBlockPhysics>
 
     </Modules>
 

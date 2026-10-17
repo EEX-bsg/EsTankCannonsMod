@@ -48,8 +48,8 @@ be specified as
 fallback, not modded blocks. -->
     <Fallback>Cannon</Fallback>
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+These behaviors are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
@@ -70,48 +70,48 @@ Check the documentation for more information on how to use modules. -->
             <useMagazine>false</useMagazine>
             <Icon name="IconAPFSDS" />
         </ETCMAmmoUIModule>
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>150000</JointStr>
-                <!-- Deault = 0.6, 0 to 1 -->
+                <!-- Default = 0.6, 0 to 1 -->
                 <FrictionStr>0.6</FrictionStr>
-                <!-- Deault = 0, 0 to 1 -->
+                <!-- Default = 0, 0 to 1 -->
                 <BounceStr>0</BounceStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <BounceCombineType>Multiply</BounceCombineType>
             </BlockState>
             <SpringState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <MotionX>Locked</MotionX>
                 <MotionY>Locked</MotionY>
                 <MotionZ>Locked</MotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitDistance>0</LimitDistance>
             </SpringState>
             <RotateState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <AngularMotionX>Locked</AngularMotionX>
                 <AngularMotionY>Locked</AngularMotionY>
                 <AngularMotionZ>Locked</AngularMotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitAngular>0</LimitAngular>
             </RotateState>
         </AdBlockProp>
 
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -143,7 +143,7 @@ Check the documentation for more information on how to use modules. -->
 
                 <BounceCombineType>Minimum</BounceCombineType>
                 <BounceStr>0.01</BounceStr>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
                 <FrictionStr>20.0</FrictionStr>
 
@@ -201,6 +201,73 @@ Check the documentation for more information on how to use modules. -->
                 <AudioClip name="HitSound" />
             </HitSounds>
         </AdShootingProp>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-11.5" z="0.5" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(0.142) -->
+            <!-- atan(RandomDiffusion 0.0) [度] -->
+            <Spread>0.000</Spread>
+            <FireDelayRandomExtra>0.03</FireDelayRandomExtra>
+            <RecoilMultiplier>0.231</RecoilMultiplier>
+            <TotalAmmo>10</TotalAmmo>
+            <MuzzleFlash>120mmShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-8.5" z="0.5" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="1.0" y="1.0" z="1.0" />
+            <FireSounds>
+                <AudioClip name="CannonSound" />
+            </FireSounds>
+            <Projectile>
+                <Mass>5.0</Mass>
+                <Drag>0.0</Drag>
+                <AngularDrag>100.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <Friction>20.0</Friction>
+                <FrictionCombine>Average</FrictionCombine>
+                <Bounciness>0.01</Bounciness>
+                <BounceCombine>Minimum</BounceCombine>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="0.0" y="0.0" z="-1.5" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.05" height="1.5" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="APFSDS">
+                    <Position x="0.0" y="0.0" z="-1.5" />
+                    <Rotation x="0.0" y="0" z="0" />
+                    <Scale x="0.1" y="0.1" z="0.1" />
+                </Mesh>
+                <Texture name="metalWhite" />
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>50</EntityDamage>
+                <DetonationDelay>0.02</DetonationDelay>
+                <Trail>newBulletTrailV100</Trail>
+                <AttachedEffect>bulleteffect</AttachedEffect>
+                <Explosion>
+                    <Radius>0.05</Radius>
+                    <!-- ACM: ExplodePower(30000) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>60000</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>APFSDShit</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
+        </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>150000</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->

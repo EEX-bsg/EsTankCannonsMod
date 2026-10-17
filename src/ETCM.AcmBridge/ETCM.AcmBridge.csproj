@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E80EC2E6-4C51-4461-9412-0C224DBCDA32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ETCM.AcmBridge</RootNamespace>
+    <AssemblyName>ETCM.AcmBridge</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdCustomModule">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\346010\1778796598\AddCustomModuleMod\AdCustomModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(BESIEGE_GAME_ASSEMBLIES)Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(BESIEGE_UNITY_ASSEMBLIES)UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EsTankCannonsMod\EsTankCannonsMod.csproj">
+      <Project>{EEBD38A0-4E65-4973-9672-FDFAE7F7FDC6}</Project>
+      <Name>EsTankCannonsMod</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcmBridge.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(ProjectDir)..\..\E'sTankCannonsMod\E'sTankCannonsMod\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

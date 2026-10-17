@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdCustomModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\workshop\content\346010\1778796598\AddCustomModuleMod\AdCustomModule.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>$(BESIEGE_GAME_ASSEMBLIES)Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -54,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend.cs" />
     <Compile Include="ETCMAmmoUIModule.cs" />
     <Compile Include="ETCMmodule.cs" />
     <Compile Include="ETCMSoundBlockModule.cs" />

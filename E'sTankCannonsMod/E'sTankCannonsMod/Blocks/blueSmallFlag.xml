@@ -48,53 +48,66 @@ be specified as
 fallback, not modded blocks. -->
     <!--<Fallback>Cannon</Fallback>-->
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+These behaviors are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
 
     <Modules>
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>6500</JointStr>
-                <!-- Deault = 0.6, 0 to 1 -->
+                <!-- Default = 0.6, 0 to 1 -->
                 <FrictionStr>0.6</FrictionStr>
-                <!-- Deault = 0, 0 to 1 -->
+                <!-- Default = 0, 0 to 1 -->
                 <BounceStr>0</BounceStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <BounceCombineType>Multiply</BounceCombineType>
             </BlockState>
             <SpringState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <MotionX>Locked</MotionX>
                 <MotionY>Locked</MotionY>
                 <MotionZ>Locked</MotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitDistance>0</LimitDistance>
             </SpringState>
             <RotateState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <AngularMotionX>Locked</AngularMotionX>
                 <AngularMotionY>Locked</AngularMotionY>
                 <AngularMotionZ>Free</AngularMotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>10.0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0.1</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitAngular>45</LimitAngular>
             </RotateState>
         </AdBlockProp>
+        <EwlBlockPhysics>
+            <JointStrength>6500</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+            <Rotation>
+                <AxisZ>Free</AxisZ>
+                <Spring>10.0</Spring>
+                <Damper>0.1</Damper>
+                <Limit>45</Limit>
+            </Rotation>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->

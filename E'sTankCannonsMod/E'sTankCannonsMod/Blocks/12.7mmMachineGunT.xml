@@ -48,8 +48,8 @@ be specified as
 fallback, not modded blocks. -->
     <Fallback>Cannon</Fallback>
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+These behaviors are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
@@ -98,19 +98,19 @@ Check the documentation for more information on how to use modules. -->
             <Icon name="IconBullet" />
         </ETCMAmmoUIModule>
 
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>15000</JointStr>
-                <!-- Deault = 0.6, 0 to 1 -->
+                <!-- Default = 0.6, 0 to 1 -->
                 <FrictionStr>0.5</FrictionStr>
-                <!-- Deault = 0, 0 to 1 -->
+                <!-- Default = 0, 0 to 1 -->
                 <BounceStr>0</BounceStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <BounceCombineType>Multiply</BounceCombineType>
                 <useSubObject>true</useSubObject>
 
@@ -130,38 +130,38 @@ Check the documentation for more information on how to use modules. -->
                 </SubObjectPosition>
             </BlockState>
             <SpringState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <MotionX>Locked</MotionX>
                 <MotionY>Locked</MotionY>
                 <MotionZ>Locked</MotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitDistance>0</LimitDistance>
 
                 <AnchorShiftX>0</AnchorShiftX>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <AnchorShiftY>0.9</AnchorShiftY>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <AnchorShiftZ>0</AnchorShiftZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
             </SpringState>
             <RotateState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <AngularMotionX>Free</AngularMotionX>
                 <AngularMotionY>Locked</AngularMotionY>
                 <AngularMotionZ>Locked</AngularMotionZ>
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitAngular>90</LimitAngular>
             </RotateState>
         </AdBlockProp>
         <!--HE1-->
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -243,7 +243,7 @@ Check the documentation for more information on how to use modules. -->
             </HitSounds>
         </AdShootingProp>
         <!--AP2-->
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -326,7 +326,7 @@ Check the documentation for more information on how to use modules. -->
             </HitSounds>
         </AdShootingProp>
         <!--T3-->
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -410,7 +410,7 @@ Check the documentation for more information on how to use modules. -->
             </HitSounds>
         </AdShootingProp>
         <!--T4-->
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -494,6 +494,208 @@ Check the documentation for more information on how to use modules. -->
                 <AudioClip name="machinegunhit" />
             </HitSounds>
         </AdShootingProp>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
+            <Projectile>
+                <Mass>0.025</Mass>
+                <Drag>0.1</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <PoolSize>100</PoolSize>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="-0.07" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.020" height="0.15" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="0.127" y="0.127" z="0.127" />
+                </Mesh>
+                <Texture name="metalYellow" />
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>10</EntityDamage>
+                <Explosion>
+                    <Radius>0.2</Radius>
+                    <!-- ACM: ExplodePower(100) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>200</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>machinegunHit</Effect>
+                    <Sounds>
+                        <AudioClip name="machinegunhit" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
+        </EwlWeapon>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.1</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
+            <Projectile>
+                <Mass>0.05</Mass>
+                <Drag>0.1</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <PoolSize>100</PoolSize>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="-0.07" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.020" height="0.15" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="0.127" y="0.127" z="0.127" />
+                </Mesh>
+                <Texture name="metalYellow" />
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>10</EntityDamage>
+            </Projectile>
+        </EwlWeapon>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.2</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
+            <Projectile>
+                <Mass>0.0025</Mass>
+                <Drag>0.1</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <PoolSize>100</PoolSize>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="-0.07" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.020" height="0.15" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="0.127" y="0.127" z="0.127" />
+                </Mesh>
+                <Texture name="metalGrey" />
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>10</EntityDamage>
+                <Trail>newBulletTrailGV100</Trail>
+            </Projectile>
+        </EwlWeapon>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-2.0" z="0.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(2.5) -->
+            <!-- atan(RandomDiffusion 0.006) [度] -->
+            <Spread>0.344</Spread>
+            <FireDelay>0.3</FireDelay>
+            <FireDelayRandomExtra>0.0</FireDelayRandomExtra>
+            <RecoilMultiplier>0.01</RecoilMultiplier>
+            <TotalAmmo>500</TotalAmmo>
+            <MuzzleFlash>NewMachineGunShotEffect</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-1.7" z="0.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="machinegunfire" />
+            </FireSounds>
+            <Projectile>
+                <Mass>0.025</Mass>
+                <Drag>0.1</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <PoolSize>100</PoolSize>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="-0.07" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.020" height="0.15" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="0.127" y="0.127" z="0.127" />
+                </Mesh>
+                <Texture name="metalGrey" />
+                <BlockDamage>10000</BlockDamage>
+                <EntityDamage>10</EntityDamage>
+                <Trail>newBulletTrailGV100</Trail>
+            </Projectile>
+        </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>15000</JointStrength>
+            <Material>
+                <Friction>0.5</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+            <Rotation>
+                <AxisX>Free</AxisX>
+                <Limit>90</Limit>
+            </Rotation>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->
