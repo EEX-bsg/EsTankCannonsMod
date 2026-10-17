@@ -95,10 +95,12 @@ namespace ETCM
             // キー状態が前の値のまま固まる。押下として扱わない。
             if (StatMaster.inMenu || StatMaster.stopHotkeys) return;
 
-            bool increasePressed = increaseKey.IsPressed;
-            bool decreasePressed = decreaseKey.IsPressed;
+            // IsPressed は MP ホストでクライアントの操作が1フレームしか立たず取りこぼすことがあるので、IsHeld の変化で取る。
+            // 実キーとエミュレーション(ロジックブロック等)は別経路。
+            bool increasePressed = increaseKey.IsHeld || increaseKey.EmulationHeld(true);
+            bool decreasePressed = decreaseKey.IsHeld || decreaseKey.EmulationHeld(true);
 
-            // 自前のエッジ再検出。false→trueの変化があったフレームだけを1押下とする
+            // 自前のエッジ検出。false→trueの変化があったフレームだけを1押下とする
             bool increaseEdge = increasePressed && !prevIncreasePressed;
             bool decreaseEdge = decreasePressed && !prevDecreasePressed;
             prevIncreasePressed = increasePressed;

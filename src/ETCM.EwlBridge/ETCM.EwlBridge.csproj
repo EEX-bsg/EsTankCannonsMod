@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A59FC8EE-1F1E-43AE-9175-8B0F7BD08B43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ETCM.EwlBridge</RootNamespace>
+    <AssemblyName>ETCM.EwlBridge</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EsWeaponsLib">
+      <HintPath>..\..\..\EsWeaponsLib Project\EsWeaponsLib\EsWeaponsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(BESIEGE_GAME_ASSEMBLIES)Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(BESIEGE_UNITY_ASSEMBLIES)UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EsTankCannonsMod\EsTankCannonsMod.csproj">
+      <Project>{EEBD38A0-4E65-4973-9672-FDFAE7F7FDC6}</Project>
+      <Name>EsTankCannonsMod</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EwlBridge.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(ProjectDir)..\..\E'sTankCannonsMod\E'sTankCannonsMod\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

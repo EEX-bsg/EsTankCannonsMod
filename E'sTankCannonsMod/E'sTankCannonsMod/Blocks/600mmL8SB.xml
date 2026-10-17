@@ -48,8 +48,8 @@ be specified as
 fallback, not modded blocks. -->
     <Fallback>Cannon</Fallback>
     <!-- <Script>Full Name of a BlockScript class, optional.</Script> -->
-    <!-- Blocks can have certain predefined behaviour added without any custom code.
-These behaviours are called modules.
+    <!-- Blocks can have certain predefined behavior added without any custom code.
+These behaviors are called modules.
 The Shooting, Spewing, Spinning, and Steering modules are included by default
 and mods can also add new modules.
 Check the documentation for more information on how to use modules. -->
@@ -70,19 +70,19 @@ Check the documentation for more information on how to use modules. -->
             <useMagazine>false</useMagazine>
             <Icon name="Icon600mm" />
         </ETCMAmmoUIModule>
-        <AdBlockProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdBlockProp>
             <BlockState>
-                <!-- Deault = 15000.if set 0,become infinity -->
+                <!-- Default = 15000.if set 0,become infinity -->
                 <JointStr>150000</JointStr>
-                <!-- Deault = 0.6, 0 to 1 -->
+                <!-- Default = 0.6, 0 to 1 -->
                 <FrictionStr>0.6</FrictionStr>
-                <!-- Deault = 0, 0 to 1 -->
+                <!-- Default = 0, 0 to 1 -->
                 <BounceStr>0</BounceStr>
-                <!-- Deault = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
+                <!-- Default = Discrete, select from Discrete, Continuous, ContinuousDynamic -->
                 <CollisionType>Discrete</CollisionType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Average</FrictionCombineType>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <BounceCombineType>Multiply</BounceCombineType>
                 <Colliders>
                     <BoxCollider>
@@ -95,32 +95,32 @@ Check the documentation for more information on how to use modules. -->
                 </Colliders>
             </BlockState>
             <SpringState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <MotionX>Locked</MotionX>
                 <MotionY>Locked</MotionY>
                 <MotionZ>Locked</MotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitDistance>0</LimitDistance>
             </SpringState>
             <RotateState>
-                <!-- Deault = Locked, select from Locked, Limited, Free -->
+                <!-- Default = Locked, select from Locked, Limited, Free -->
                 <AngularMotionX>Locked</AngularMotionX>
                 <AngularMotionY>Locked</AngularMotionY>
                 <AngularMotionZ>Locked</AngularMotionZ>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <SpringStr>0</SpringStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <DamperStr>0</DamperStr>
-                <!-- Deault = 0 -->
+                <!-- Default = 0 -->
                 <LimitAngular>0</LimitAngular>
             </RotateState>
         </AdBlockProp>
 
-        <AdShootingProp modid="a4577151-2173-4084-a456-4b29e8d3e01f">
+        <AdShootingProp>
 
             <ShootingState>
 
@@ -152,7 +152,7 @@ Check the documentation for more information on how to use modules. -->
 
                 <BounceCombineType>Minimum</BounceCombineType>
                 <BounceStr>0.0</BounceStr>
-                <!-- Deault = Average, select from Average, Maximum, Minimum, Mutiply -->
+                <!-- Default = Average, select from Average, Maximum, Minimum, Mutiply -->
                 <FrictionCombineType>Maximum</FrictionCombineType>
                 <FrictionStr>10.0</FrictionStr>
 
@@ -210,6 +210,81 @@ Check the documentation for more information on how to use modules. -->
                 <AudioClip name="HitSound" />
             </HitSounds>
         </AdShootingProp>
+        <EwlWeapon>
+            <FireKey key="fire" />
+            <FireRateSlider key="rate-of-fire" />
+            <HoldToFireToggle key="hold-to-shoot" />
+            <AssetBundle name="myasset" />
+            <MuzzlePosition x="0.0" y="-8.0" z="3.0" />
+            <MuzzleRotation x="90.0" y="0.0" z="0.0" />
+            <PowerSlider key="power" />
+            <!-- 1 / RateOfFire(0.02) -->
+            <!-- atan(RandomDiffusion 0.02) [度] -->
+            <Spread>1.146</Spread>
+            <FireDelay>1.2</FireDelay>
+            <FireDelayRandomExtra>0.8</FireDelayRandomExtra>
+            <RecoilMultiplier>0.1</RecoilMultiplier>
+            <TotalAmmo>3</TotalAmmo>
+            <MuzzleFlash>FLAKexplode</MuzzleFlash>
+            <MuzzleFlashPosition x="0.0" y="-8.0" z="3.0" />
+            <MuzzleFlashRotation x="90.0" y="0.0" z="0.0" />
+            <MuzzleFlashScale x="2.0" y="2.0" z="2.0" />
+            <FireSounds>
+                <AudioClip name="TAIYA_explode01" />
+            </FireSounds>
+            <Projectile>
+                <Mass>200.0</Mass>
+                <Drag>0.3</Drag>
+                <AngularDrag>0.0</AngularDrag>
+                <CollisionMode>ContinuousDynamic</CollisionMode>
+                <Friction>10.0</Friction>
+                <FrictionCombine>Maximum</FrictionCombine>
+                <Bounciness>0.0</Bounciness>
+                <BounceCombine>Minimum</BounceCombine>
+                <Colliders>
+                    <CapsuleCollider>
+                        <Position x="0.0" y="0.0" z="0.0" />
+                        <Rotation x="0.0" y="90.0" z="0.0" />
+                        <Capsule direction="X" radius="0.600" height="0.7" />
+                    </CapsuleCollider>
+                </Colliders>
+                <Mesh name="100mmShell">
+                    <Position x="0.0" y="0.0" z="-0.1" />
+                    <Rotation x="0.0" y="-90.0" z="0.0" />
+                    <Scale x="6.0" y="12.0" z="12.0" />
+                </Mesh>
+                <Texture name="metalGrey" />
+                <BlockDamage>100000.0</BlockDamage>
+                <EntityDamage>100000</EntityDamage>
+                <DetonationDelay>0.5</DetonationDelay>
+                <Explosion>
+                    <Radius>50</Radius>
+                    <!-- ACM: ExplodePower(20000) x2、ExplodeUpPower(0) x0.25 -->
+                    <Force>40000</Force>
+                    <UpwardsModifier>0</UpwardsModifier>
+                    <Effect>5000kgBombExplode</Effect>
+                    <Sounds>
+                        <AudioClip name="HitSound" />
+                    </Sounds>
+                </Explosion>
+            </Projectile>
+        </EwlWeapon>
+        <EwlBlockPhysics>
+            <JointStrength>150000</JointStrength>
+            <Material>
+                <Friction>0.6</Friction>
+                <BounceCombine>Multiply</BounceCombine>
+            </Material>
+            <!-- 他ブロックを接続できる面(ACM の BlockState/Colliders と同じ。SetLayer → layer、ColliderCenter → Center) -->
+            <AdditionalColliders>
+                <BoxCollider layer="12">
+                    <Position x="0.0" y="-0.4" z="-1.5" />
+                    <Rotation x="0.0" y="0.0" z="0.0" />
+                    <Scale x="5.0" y="5.3" z="6.0" />
+                    <Center x="0.0" y="0.0" z="0.75" />
+                </BoxCollider>
+            </AdditionalColliders>
+        </EwlBlockPhysics>
     </Modules>
     <!-- Include to make block take damage. -->
     <!-- <Health>20</Health> -->

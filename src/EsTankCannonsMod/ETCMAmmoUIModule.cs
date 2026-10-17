@@ -10,7 +10,6 @@ using Modding.Serialization;
 using Modding.Modules;
 using Modding.Blocks;
 using ETCM;
-using skpCustomModule;
 using Vector3 = UnityEngine.Vector3;
 using USlider = UnityEngine.UI.Slider;
 
@@ -49,7 +48,7 @@ namespace ETCM
     }
     public class ETCMAmmoUIBehaviour : BlockModuleBehaviour<ETCMAmmoUIModule>
     {
-        private AdShootingBehavour shootingBehavour;
+        private readonly AmmoFeed feed = new AmmoFeed();
         public Sprite AmmoIconImage;
         public static Font Arial;
         public Color32 BackgroundColor = new Color32(60, 60, 60, 255);
@@ -73,9 +72,9 @@ namespace ETCM
 
         void Start()
         {
-            shootingBehavour = base.GetComponent<AdShootingBehavour>();
-            shootingBehavour.OnFire += OnFire;
-            shootingBehavour.OnMagazineReload += OnMagazineReload;
+            feed.Fired = OnFire;
+            feed.ReloadStarted = OnMagazineReload;
+            if (Backend.ConnectAmmo == null || !Backend.ConnectAmmo(gameObject, feed)) Mod.Warning("Ammo UI: no weapon backend on " + name);
             UpdateOwnerFlag();
         }
 
@@ -142,9 +141,9 @@ namespace ETCM
             }
             else
             {
-                totalText.text = IntToThreeDigitString(shootingBehavour.AmmoStock);
+                totalText.text = IntToThreeDigitString(feed.AmmoStock());
             }
-            magazineText.text = IntToThreeDigitString(shootingBehavour.AmmoLeft);
+            magazineText.text = IntToThreeDigitString(feed.AmmoLeft());
         }
 
         private void OnFire()
